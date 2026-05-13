@@ -1,0 +1,401 @@
+# Replit Prompt — Cadmea
+
+Build a production-quality AI-powered urban decision platform called **Cadmea**.
+
+Cadmea is a smart interactive city intelligence platform designed for Lithuania.
+The goal is to help citizens, families, students, tourists, and expats make better decisions about where to live, travel, study, or invest using real public data combined with AI analysis.
+
+Cadmea is NOT just a map.
+It is an **AI-powered urban decision engine**.
+
+Users should be able to ask natural-language questions like:
+
+* “Where is the safest area for families in Vilnius?”
+* “Which districts have the cleanest air and lowest noise?”
+* “What is the best affordable area near public transport?”
+* “Where should tourists stay without needing a car?”
+* “Which areas have the best schools and green spaces?”
+* “Find places with low light pollution and good healthcare access.”
+
+The AI should instantly analyze real Lithuanian public datasets and respond with:
+
+* interactive map highlights,
+* district rankings,
+* AI-generated explanations,
+* livability scores,
+* comparisons,
+* charts,
+* and recommendations.
+
+The platform must feel polished, premium, modern, trustworthy, intelligent, eco-friendly, and Scandinavian-inspired.
+
+---
+
+# CORE DESIGN DIRECTION
+
+The website must support BOTH:
+
+1. Lithuanian
+2. English
+
+Add a modern language switcher in the navbar.
+
+The entire UI must support:
+
+* Dark mode
+* Light mode
+* Smooth animated transitions between themes
+
+The design language should feel:
+
+* nature-oriented,
+* calm,
+* eco-friendly,
+* clean,
+* intelligent,
+* modern Nordic/Baltic style.
+
+The platform should visually represent Lithuania’s identity:
+
+* forests,
+* greenery,
+* clean air,
+* nature,
+* lakes,
+* modern urban life,
+* sustainability.
+
+Avoid:
+
+* generic government dashboards,
+* overly corporate fintech style,
+* cluttered analytics panels,
+* childish illustrations,
+* excessive neon cyberpunk aesthetics.
+
+---
+
+# VISUAL STYLE
+
+Use:
+
+* TailwindCSS
+* Framer Motion
+* Glassmorphism
+* Soft gradients
+* Rounded corners
+* Premium typography
+* Minimal layouts
+* Vector-based illustrations
+
+Design inspiration:
+
+* Apple Maps
+* Linear
+* Notion
+* Airbnb neighborhood pages
+* Arc Browser
+* Modern Nordic design systems
+
+---
+
+# COLOR PALETTE
+
+LIGHT MODE:
+
+* warm white backgrounds
+* soft green accents
+* muted forest green
+* sage
+* deep gray text
+* subtle earthy tones
+
+DARK MODE:
+
+* deep forest black
+* dark green-blue surfaces
+* emerald accents
+* soft teal glows
+* muted glass effects
+
+The colors should resemble:
+
+* Lithuanian forests,
+* pine trees,
+* moss,
+* nature,
+* Baltic landscapes,
+* fresh air,
+* eco sustainability.
+
+---
+
+# VECTOR GRAPHICS REQUIREMENTS
+
+Create custom vector-style illustrations and UI decorations inspired by Lithuania:
+
+* forests
+* pine trees
+* rivers
+* lakes
+* city skylines
+* public transport
+* bicycles
+* parks
+* modern Baltic architecture
+* topographic map lines
+* minimalist nature graphics
+
+Use vector graphics in:
+
+* landing page hero
+* onboarding
+* empty states
+* AI explanation panels
+* loading screens
+* section dividers
+
+Illustrations must feel:
+
+* modern,
+* geometric,
+* slightly abstract,
+* elegant,
+* scalable,
+* premium.
+
+Avoid cartoon styles.
+
+---
+
+# LANDING PAGE
+
+Create a beautiful animated landing page containing:
+
+* large AI search bar hero section
+* animated Lithuania-inspired vector background
+* live interactive map preview
+* feature showcase cards
+* AI assistant demo
+* statistics preview
+* district comparison previews
+* smooth scrolling sections
+* elegant animations
+
+Hero section headline example:
+“Understand Cities Intelligently.”
+
+Subheadline:
+“Cadmea transforms Lithuanian public data into simple AI-powered urban insights.”
+
+Add CTA buttons:
+
+* Explore Map
+* Ask AI
+* Compare Districts
+
+---
+
+# MAIN DASHBOARD
+
+The dashboard must contain:
+
+* full-screen interactive map
+* AI chat assistant sidebar
+* district insights
+* filters
+* live overlays
+* score panels
+* responsive layout
+
+Map overlays:
+
+* housing prices
+* crime
+* air quality
+* public transport
+* bus stops
+* schools
+* school catchment areas
+* healthcare
+* green spaces
+* pharmacies
+* noise pollution
+* light pollution
+* tourism hotspots
+* bike paths
+* walkability
+* parking
+
+Use smooth animated transitions when toggling overlays.
+
+---
+
+# AI FEATURES
+
+The AI assistant should:
+
+* answer in Lithuanian or English
+* explain WHY recommendations are made
+* compare neighborhoods
+* summarize statistics clearly
+* generate scores dynamically
+* never hallucinate fake data
+* reference data sources
+
+Example:
+“Antakalnis scores highly for families because it combines strong green space access, low noise pollution, quality schools, and lower crime rates than surrounding districts.”
+
+---
+
+# DISTRICT SCORING SYSTEM
+
+Create dynamic scoring categories:
+
+* Safety Score
+* Family Score
+* Affordability Score
+* Environment Score
+* Transport Score
+* Tourism Score
+* Walkability Score
+* Overall Livability Score
+
+Display scores using:
+
+* animated cards
+* gradients
+* charts
+* radar graphs
+* map heatmaps
+
+---
+
+# TOURIST MODE
+
+Add a dedicated tourist mode:
+
+* attractions
+* landmarks
+* safe areas
+* restaurants
+* hotels
+* nightlife
+* public transport routes
+* walking accessibility
+* emergency services
+* multilingual support
+
+Tourists should be able to ask:
+
+* “Best area for nightlife?”
+* “Safest place to stay in Kaunas?”
+* “Best tourist area without a car?”
+
+---
+
+# DATA SOURCES (IMPORTANT)
+
+Use REAL Lithuanian public datasets and APIs whenever possible.
+
+Potential sources:
+
+* Lithuanian Open Data Portal
+* Geoportal.lt
+* Vilnius Open Data
+* Registrų Centras
+* Lietuvos Statistikos Departamentas
+* OpenStreetMap
+* OpenAQ
+* Copernicus environmental data
+* Lithuanian transport APIs
+* Eurostat
+
+The system architecture must allow automatic dataset refreshing.
+
+Do NOT use fake hardcoded city data.
+
+---
+
+# TECH STACK
+
+Frontend:
+
+* Next.js
+* React
+* TailwindCSS
+* Framer Motion
+* Mapbox GL or Leaflet
+
+Backend:
+
+* Node.js or FastAPI
+* PostgreSQL + PostGIS
+* API aggregation layer
+* caching system
+
+AI:
+
+* OpenAI API
+* semantic search
+* embeddings
+* retrieval augmented generation (RAG)
+
+---
+
+# UX REQUIREMENTS
+
+The platform must be:
+
+* intuitive,
+* simple,
+* fast,
+* responsive,
+* accessible for non-technical users,
+* mobile-friendly.
+
+The AI search bar and map must always remain central.
+
+Focus on:
+
+* clarity,
+* elegance,
+* speed,
+* and trust.
+
+---
+
+# EXTRA FEATURES
+
+Add:
+
+* district comparison mode
+* “Best Place For Me” wizard
+* saved places
+* favorites
+* shareable reports
+* environmental alerts
+* future trend predictions if data exists
+* onboarding tutorial
+* smart recommendations
+
+---
+
+# DELIVERABLES
+
+Generate:
+
+1. Production-quality frontend
+2. Responsive layouts
+3. Reusable components
+4. Backend architecture
+5. Database schema
+6. AI integration examples
+7. API structure
+8. Folder structure
+9. Setup instructions
+10. Beautiful UI animations
+11. Light and dark themes
+12. Lithuania-inspired vector graphics
+
+The final result should look like a real funded startup product, not a school project or generic admin dashboard.
