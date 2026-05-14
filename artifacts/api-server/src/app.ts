@@ -59,7 +59,10 @@ app.use(cors(corsOptions));
 app.use(express.json({ limit: "1mb" }));
 app.use(express.urlencoded({ extended: true, limit: "1mb" }));
 
-app.use("/api", router);
+app.use("/api", (_req, res, next) => {
+  res.setHeader("Cache-Control", "no-store");
+  next();
+}, router);
 
 const clientDist = [
   path.resolve(process.cwd(), "..", "cadmea", "dist", "public"),

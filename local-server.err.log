@@ -1,0 +1,22 @@
+$ corepack pnpm run dev
+$ corepack pnpm --filter @workspace/cadmea run build && corepack pnpm --filter @workspace/api-server run build && node artifacts/api-server/dist/index.mjs
+$ vite build --config vite.config.ts
+[33msrc/components/ui/tooltip.tsx (2:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.[39m
+[33msrc/components/ui/progress.tsx (2:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.[39m
+[33msrc/components/ui/dropdown-menu.tsx (2:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.[39m
+[33msrc/components/ui/select.tsx (2:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.[39m
+[33m
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+$ node ./build.mjs
+
+  dist\index.mjs                   2.6mb
+  dist\pino-worker.mjs           153.5kb
+  dist\pino-file.mjs             142.1kb
+  dist\pino-pretty.mjs           114.6kb
+  dist\thread-stream-worker.mjs    7.3kb
+  ...and 5 more output files...
+
+Done in 435ms
