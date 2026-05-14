@@ -18,6 +18,8 @@ import SportsMapPage from "@/pages/sports-map";
 import SportsDisciplinesPage from "@/pages/sports-disciplines";
 import SportsFacilityDetailPage from "@/pages/sports-facility-detail";
 import SportsOperatorPage from "@/pages/sports-operator";
+import BusinessPage from "@/pages/business";
+import AdminPage from "@/pages/admin";
 
 const queryClient = new QueryClient();
 
@@ -41,6 +43,8 @@ function Router() {
       <Route path="/sports/disciplines" component={SportsDisciplinesPage} />
       <Route path="/sports/operator" component={SportsOperatorPage} />
       <Route path="/sports/facility/:id" component={SportsFacilityDetailPage} />
+      <Route path="/business" component={BusinessPage} />
+      <Route path="/admin" component={AdminPage} />
       <Route path="/map" component={MapPage} />
       <Route path="/districts" component={DistrictsPage} />
       <Route path="/districts/:id" component={DistrictDetailPage} />

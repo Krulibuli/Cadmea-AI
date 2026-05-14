@@ -2,6 +2,7 @@ import { Link, useLocation } from "wouter";
 import {
   Activity, Map as MapIcon, BarChart3, Settings2, ChevronDown,
   Building2, GitCompare, Compass, Wand2, Moon, Sun, Languages, Sparkles,
+  Wallet, Shield,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -23,6 +24,11 @@ export function Navbar() {
     { href: "/sports/map", label: t("nav.sports.facilities"), icon: MapIcon },
     { href: "/sports/disciplines", label: t("nav.sports.disciplines"), icon: BarChart3 },
     { href: "/sports/operator", label: t("nav.sports.operator"), icon: Settings2 },
+  ];
+
+  const moreItems = [
+    { href: "/business", label: t("nav.business"), icon: Wallet },
+    { href: "/admin", label: t("nav.admin"), icon: Shield },
   ];
 
   const urbanItems = [
@@ -82,8 +88,21 @@ export function Navbar() {
                 </button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end" className="w-56">
-                <DropdownMenuLabel>{t("nav.urban")}</DropdownMenuLabel>
+                <DropdownMenuLabel>Platform</DropdownMenuLabel>
                 <DropdownMenuSeparator />
+                {moreItems.map((item) => {
+                  const Icon = item.icon;
+                  return (
+                    <DropdownMenuItem key={item.href} asChild>
+                      <Link href={item.href} className="flex items-center gap-2 cursor-pointer">
+                        <Icon className="w-4 h-4" />
+                        {item.label}
+                      </Link>
+                    </DropdownMenuItem>
+                  );
+                })}
+                <DropdownMenuSeparator />
+                <DropdownMenuLabel>{t("nav.urban")}</DropdownMenuLabel>
                 {urbanItems.map((item) => {
                   const Icon = item.icon;
                   return (

@@ -10,6 +10,17 @@ export type Discipline =
   | "tennis" | "fitness" | "ice_skating" | "general" | "play"
   | "running" | "cycling" | "outdoor";
 
+export type AgeGroup = "kids" | "children" | "teens" | "adults" | "seniors";
+
+export type Accessibility =
+  | "wheelchair" | "sensory_friendly" | "beginner_friendly"
+  | "adaptive_sports" | "stroller_access";
+
+export type BookingProvider =
+  | "active_vilnius" | "sporto_rumai" | "operator" | "google_calendar" | "none";
+
+export type EntryType = "free" | "paid" | "membership" | "mixed";
+
 export interface SportsFacility {
   id: string;
   name: string;
@@ -20,6 +31,12 @@ export interface SportsFacility {
   lat: number;
   lng: number;
   disciplines: Discipline[];
+  ageGroups: AgeGroup[];
+  accessibility: Accessibility[];
+  bookingProvider: BookingProvider;
+  bookingUrl?: string;
+  entryType: EntryType;
+  priceFromEur: number;
   utilization: number;
   maintenanceBacklog: number;
   energyIntensity: number;
@@ -89,7 +106,23 @@ export interface SportsMeta {
   districts: string[];
   disciplines: Discipline[];
   facilityTypes: FacilityType[];
+  ageGroups?: AgeGroup[];
+  accessibility?: Accessibility[];
+  bookingProviders?: BookingProvider[];
+  entryTypes?: EntryType[];
   dataSources: { name: string; url: string }[];
+}
+
+export interface OccupancyResponse {
+  facilityId: string;
+  facilityName: string;
+  source: "modelled" | "live";
+  generatedAt: string;
+  current: number;
+  today: number[];
+  week: number[][];
+  hour: number;
+  notes?: string;
 }
 
 async function get<T>(url: string): Promise<T> {
@@ -101,6 +134,8 @@ async function get<T>(url: string): Promise<T> {
 export function useSportsFacilities(params: {
   district?: string; type?: string; discipline?: string;
   source?: string; status?: string; q?: string;
+  ageGroup?: string; accessibility?: string;
+  entryType?: string; bookingProvider?: string;
 } = {}) {
   const sp = new URLSearchParams();
   Object.entries(params).forEach(([k, v]) => { if (v) sp.set(k, v); });
@@ -116,6 +151,15 @@ export function useSportsFacility(id: string | undefined) {
     enabled: !!id,
     queryKey: ["sports/facility", id],
     queryFn: () => get<SportsFacility>(`/api/sports/facilities/${id}`),
+  });
+}
+
+export function useFacilityOccupancy(id: string | undefined) {
+  return useQuery({
+    enabled: !!id,
+    queryKey: ["sports/occupancy", id],
+    queryFn: () => get<OccupancyResponse>(`/api/sports/facilities/${id}/occupancy`),
+    refetchInterval: 5 * 60 * 1000,
   });
 }
 
@@ -176,6 +220,30 @@ export const DISCIPLINE_LABEL: Record<Discipline, string> = {
   running: "Running",
   cycling: "Cycling",
   outdoor: "Outdoor",
+};
+
+export const AGE_GROUP_LABEL: Record<AgeGroup, { en: string; lt: string }> = {
+  kids: { en: "Toddlers (0–5)", lt: "Mažyliai (0–5)" },
+  children: { en: "Children (6–12)", lt: "Vaikai (6–12)" },
+  teens: { en: "Teens (13–17)", lt: "Paaugliai (13–17)" },
+  adults: { en: "Adults (18–64)", lt: "Suaugę (18–64)" },
+  seniors: { en: "Seniors (65+)", lt: "Senjorai (65+)" },
+};
+
+export const ACCESSIBILITY_LABEL: Record<Accessibility, { en: string; lt: string }> = {
+  wheelchair: { en: "Wheelchair access", lt: "Pritaikyta neįgaliųjų vežimėliams" },
+  sensory_friendly: { en: "Sensory-friendly", lt: "Sensorinė ramybė" },
+  beginner_friendly: { en: "Beginner-friendly", lt: "Pradedantiesiems" },
+  adaptive_sports: { en: "Adaptive sports", lt: "Adaptyvusis sportas" },
+  stroller_access: { en: "Stroller access", lt: "Patogu su vežimėliu" },
+};
+
+export const BOOKING_PROVIDER_LABEL: Record<BookingProvider, string> = {
+  active_vilnius: "ActiveVilnius",
+  sporto_rumai: "Sporto Rūmai",
+  operator: "Operator",
+  google_calendar: "Google Calendar",
+  none: "Drop-in",
 };
 
 export function formatEur(n: number): string {

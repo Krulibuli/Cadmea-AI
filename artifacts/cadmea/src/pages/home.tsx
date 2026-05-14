@@ -2,7 +2,7 @@ import { Link } from "wouter";
 import {
   Activity, Map as MapIcon, BarChart3, Settings2, Sparkles, ArrowRight,
   Building2, Trees, Baby, Wallet, Users, Zap, TrendingUp, Wrench,
-  ExternalLink, Lightbulb,
+  ExternalLink, Lightbulb, Database, Accessibility, Handshake, Calendar,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -102,6 +102,35 @@ export default function Home() {
           <Kpi icon={Baby} label={t("kpi.playgrounds")} value={formatInt(s?.playgrounds ?? 0)} />
           <Kpi icon={Users} label={t("kpi.visits")} value={formatInt(s?.totalAnnualVisits ?? 0)} sub={`${s?.avgUtilization ?? 0}% ${t("kpi.utilization").toLowerCase()}`} />
           <Kpi icon={Wallet} label={t("kpi.opsCost")} value={formatEur(s?.totalAnnualOpsCostEur ?? 0)} sub={`${formatEur(s?.estimatedAnnualSavingsEur ?? 0)} ${language === "lt" ? "santaupų" : "savings"}`} />
+        </div>
+      </section>
+
+      {/* Why Vilnius Sports Hub stands out */}
+      <section className="container mx-auto px-4 pb-2">
+        <div className="rounded-2xl border border-border bg-card/60 p-5 md:p-6">
+          <h2 className="text-lg md:text-xl font-extrabold text-foreground mb-4 flex items-center gap-2">
+            <Sparkles className="w-5 h-5 text-primary" />
+            {t("why.title")}
+          </h2>
+          <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-4">
+            {[
+              { icon: Database, title: t("why.openData"), desc: t("why.openDataDesc") },
+              { icon: Accessibility, title: t("why.everyone"), desc: t("why.everyoneDesc") },
+              { icon: Calendar, title: t("why.bookOut"), desc: t("why.bookOutDesc") },
+              { icon: Handshake, title: t("why.twoWay"), desc: t("why.twoWayDesc") },
+            ].map((it) => {
+              const Icon = it.icon;
+              return (
+                <div key={it.title} className="rounded-lg border border-border bg-background p-3 hover-elevate">
+                  <div className="rounded-lg bg-primary/10 text-primary inline-flex p-2">
+                    <Icon className="w-4 h-4" />
+                  </div>
+                  <h3 className="mt-2 text-sm font-extrabold text-foreground leading-snug">{it.title}</h3>
+                  <p className="mt-1 text-xs text-muted-foreground leading-snug">{it.desc}</p>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </section>
 

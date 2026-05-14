@@ -38,6 +38,19 @@ export interface ManagedFacility {
   longitude: number;
 }
 
+export type AgeGroup = "kids" | "children" | "teens" | "adults" | "seniors";
+
+export type Accessibility =
+  | "wheelchair"
+  | "sensory_friendly"
+  | "beginner_friendly"
+  | "adaptive_sports"
+  | "stroller_access";
+
+export type BookingProvider = "active_vilnius" | "sporto_rumai" | "operator" | "google_calendar" | "none";
+
+export type EntryType = "free" | "paid" | "membership" | "mixed";
+
 export interface SportsFacility {
   id: string;
   name: string;
@@ -48,6 +61,18 @@ export interface SportsFacility {
   lat: number;
   lng: number;
   disciplines: Discipline[];
+  /** Target age bands the facility caters to */
+  ageGroups: AgeGroup[];
+  /** Accessibility features supported */
+  accessibility: Accessibility[];
+  /** Where bookings happen */
+  bookingProvider: BookingProvider;
+  /** Deep link to the booking page (provider-specific) */
+  bookingUrl?: string;
+  /** Entry pricing model */
+  entryType: EntryType;
+  /** Indicative single-visit price in EUR (0 = free) */
+  priceFromEur: number;
   /** Estimated current weekly utilization 0-100 */
   utilization: number;
   /** 0-100 maintenance backlog severity (higher = worse) */
@@ -72,6 +97,11 @@ export interface SportsFacility {
   status: "operational" | "planned" | "construction" | "maintenance";
   yearOpened?: number;
 }
+
+export const ALL_AGE_GROUPS: AgeGroup[] = ["kids", "children", "teens", "adults", "seniors"];
+export const ALL_ACCESSIBILITY: Accessibility[] = [
+  "wheelchair", "sensory_friendly", "beginner_friendly", "adaptive_sports", "stroller_access",
+];
 
 const VILNIUS_DISTRICTS = [
   { name: "Senamiestis", lat: 54.6816, lng: 25.2872, population: 21200 },
@@ -125,6 +155,10 @@ function loadManaged(): ManagedFile {
   return managedFacilitiesJson as ManagedFile;
 }
 
+const slug = (s: string) =>
+  s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+
 function classifyManaged(name: string): { type: FacilityType; disciplines: Discipline[] } {
   const n = name.toLowerCase();
   if (n.includes("swimming pool") || n.includes("pool")) return { type: "swimming_pool", disciplines: ["swimming", "fitness"] };
@@ -136,6 +170,147 @@ function classifyManaged(name: string): { type: FacilityType; disciplines: Disci
   if (n.includes("rowing")) return { type: "rowing", disciplines: ["rowing"] };
   if (n.includes("palace of culture")) return { type: "palace_of_sports", disciplines: ["basketball", "general", "fitness"] };
   return { type: "sports_centre", disciplines: ["general"] };
+}
+
+/** Heuristic age-group + accessibility tagging based on facility type & disciplines. */
+function tagAgeAndAccess(type: FacilityType, disciplines: Discipline[]): {
+  ageGroups: AgeGroup[];
+  accessibility: Accessibility[];
+} {
+  const age = new Set<AgeGroup>();
+  const acc = new Set<Accessibility>();
+  if (type === "playground") {
+    ["kids", "children"].forEach((a) => age.add(a as AgeGroup));
+    acc.add("stroller_access");
+    acc.add("beginner_friendly");
+  } else if (type === "park") {
+    ALL_AGE_GROUPS.forEach((a) => age.add(a));
+    acc.add("stroller_access");
+    acc.add("wheelchair");
+  } else if (type === "swimming_pool") {
+    ["children", "teens", "adults", "seniors"].forEach((a) => age.add(a as AgeGroup));
+    acc.add("wheelchair");
+    acc.add("beginner_friendly");
+    if (disciplines.includes("swimming")) acc.add("adaptive_sports");
+  } else if (type === "arena" || type === "stadium" || type === "palace_of_sports") {
+    ["teens", "adults"].forEach((a) => age.add(a as AgeGroup));
+    if (disciplines.includes("basketball") || disciplines.includes("general")) {
+      age.add("children");
+      age.add("seniors");
+    }
+    acc.add("wheelchair");
+  } else if (type === "air_dome") {
+    ["children", "teens", "adults"].forEach((a) => age.add(a as AgeGroup));
+    acc.add("beginner_friendly");
+  } else if (type === "athletics" || type === "rowing") {
+    ["teens", "adults", "seniors"].forEach((a) => age.add(a as AgeGroup));
+    acc.add("beginner_friendly");
+  } else if (type === "fitness_centre" || type === "tennis" || type === "ice_rink") {
+    ["teens", "adults", "seniors"].forEach((a) => age.add(a as AgeGroup));
+  } else {
+    ["children", "teens", "adults"].forEach((a) => age.add(a as AgeGroup));
+  }
+  return { ageGroups: ALL_AGE_GROUPS.filter((a) => age.has(a)), accessibility: Array.from(acc) };
+}
+
+/** Booking provider + indicative price + entry type by facility type/source. */
+function bookingFor(
+  type: FacilityType,
+  source: SportsFacility["source"],
+  name: string,
+): { bookingProvider: BookingProvider; bookingUrl?: string; entryType: EntryType; priceFromEur: number } {
+  const slugged = slug(name);
+  if (type === "park" || type === "playground") {
+    return { bookingProvider: "none", entryType: "free", priceFromEur: 0 };
+  }
+  if (source === "managed" || source === "managed_planned") {
+    return {
+      bookingProvider: "active_vilnius",
+      bookingUrl: `https://www.activevilnius.lt/objektai/${slugged}`,
+      entryType: type === "swimming_pool" || type === "ice_rink" ? "paid" : "mixed",
+      priceFromEur: type === "swimming_pool" ? 6 : type === "ice_rink" ? 7 : type === "arena" ? 12 : 5,
+    };
+  }
+  return { bookingProvider: "operator", entryType: "mixed", priceFromEur: 5 };
+}
+
+/** Hourly typical-week occupancy multiplier (24 hours × 7 days). Used to model live & weekly heatmap. */
+function typicalWeek(seed: string, type: FacilityType, baseUtilization: number): number[][] {
+  const r = seedRand(seed + "-occ");
+  const week: number[][] = [];
+  // Profile per facility family
+  const isOutdoor = type === "park" || type === "playground";
+  const isFitness = type === "fitness_centre" || type === "swimming_pool";
+  const isVenue = type === "arena" || type === "stadium" || type === "palace_of_sports" || type === "air_dome";
+  for (let d = 0; d < 7; d++) {
+    const isWeekend = d === 5 || d === 6;
+    const day: number[] = [];
+    for (let h = 0; h < 24; h++) {
+      let mult = 0;
+      if (h < 6 || h >= 23) mult = 0.05;
+      else if (h >= 6 && h < 9) mult = isFitness ? 0.85 : isOutdoor ? 0.55 : 0.35; // morning peak
+      else if (h >= 9 && h < 16) mult = isOutdoor ? 0.55 : 0.4;
+      else if (h >= 16 && h < 21) mult = isVenue ? 0.95 : isFitness ? 0.9 : 0.8; // evening peak
+      else mult = 0.45;
+      if (isWeekend) {
+        if (h >= 9 && h < 18) mult = Math.min(1, mult + 0.15);
+        else mult = Math.max(0.05, mult - 0.1);
+      }
+      // small deterministic jitter
+      mult = Math.max(0, Math.min(1, mult * (0.85 + r() * 0.3)));
+      day.push(Math.round(mult * baseUtilization));
+    }
+    week.push(day);
+  }
+  return week;
+}
+
+export interface OccupancyResponse {
+  facilityId: string;
+  facilityName: string;
+  source: "modelled" | "live";
+  generatedAt: string;
+  /** 0-100 right now */
+  current: number;
+  /** Today's hourly curve (24 slots, 0-100) */
+  today: number[];
+  /** 7×24 typical-week heatmap (0-100) */
+  week: number[][];
+  /** Local hour used for "current" */
+  hour: number;
+  notes?: string;
+}
+
+export function getOccupancy(id: string): OccupancyResponse | null {
+  const f = getFacility(id);
+  if (!f) return null;
+  const isOperational = f.status === "operational";
+  const week = isOperational
+    ? typicalWeek(f.id, f.type, f.utilization)
+    : Array.from({ length: 7 }, () => Array.from({ length: 24 }, () => 0));
+  // Use Vilnius local time (UTC+2/+3 — approximate via Europe/Vilnius)
+  const now = new Date();
+  const vilniusHour = Number(
+    new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/Vilnius", hour: "2-digit", hour12: false }).format(now),
+  );
+  // Mon-first 0..6 (compute via Vilnius offset of UTC time)
+  const vilniusOffsetMs = 2 * 60 * 60 * 1000; // EET; close enough for modeled data
+  const local = new Date(now.getTime() + vilniusOffsetMs);
+  const vilniusDay = (local.getUTCDay() + 6) % 7;
+  const today = week[vilniusDay] ?? week[0];
+  return {
+    facilityId: f.id,
+    facilityName: f.name,
+    source: "modelled",
+    generatedAt: now.toISOString(),
+    current: today[vilniusHour] ?? 0,
+    today,
+    week,
+    hour: vilniusHour,
+    notes: isOperational
+      ? "Modelled from booking patterns and facility type. Replace with live feed when available."
+      : "Facility is not yet operational — values are zero.",
+  };
 }
 
 // Deterministic pseudo-random for stable mock KPIs
@@ -188,7 +363,13 @@ function buildKpis(id: string, type: FacilityType, status: SportsFacility["statu
 }
 
 // Curated Vilnius parks (open data — names from Vilnius Open Data Portal / OSM)
-const PARKS: Array<Omit<SportsFacility, "id" | "utilization" | "maintenanceBacklog" | "energyIntensity" | "capacity" | "annualVisits" | "annualOpsCostEur" | "automation">> = [
+type SeedFacility = Omit<SportsFacility,
+  | "id" | "utilization" | "maintenanceBacklog" | "energyIntensity" | "capacity"
+  | "annualVisits" | "annualOpsCostEur" | "automation"
+  | "ageGroups" | "accessibility" | "bookingProvider" | "bookingUrl" | "entryType" | "priceFromEur"
+>;
+
+const PARKS: SeedFacility[] = [
   { name: "Vingio parkas", type: "park", source: "open_data", district: "Vilkpėdė", address: "M. K. Čiurlionio g.", lat: 54.6802, lng: 25.2438, disciplines: ["running", "cycling", "outdoor", "general"], status: "operational" },
   { name: "Bernardinų sodas", type: "park", source: "open_data", district: "Senamiestis", address: "B. Radvilaitės g.", lat: 54.6845, lng: 25.2954, disciplines: ["outdoor", "general"], status: "operational" },
   { name: "Sereikiškių parkas", type: "park", source: "open_data", district: "Senamiestis", address: "Maironio g.", lat: 54.6855, lng: 25.2950, disciplines: ["outdoor", "running"], status: "operational" },
@@ -206,7 +387,7 @@ const PARKS: Array<Omit<SportsFacility, "id" | "utilization" | "maintenanceBackl
 ];
 
 // Curated Vilnius playgrounds (open data sample)
-const PLAYGROUNDS: Array<Omit<SportsFacility, "id" | "utilization" | "maintenanceBacklog" | "energyIntensity" | "capacity" | "annualVisits" | "annualOpsCostEur" | "automation">> = [
+const PLAYGROUNDS: SeedFacility[] = [
   { name: "Bernardinų vaikų žaidimų aikštelė", type: "playground", source: "open_data", district: "Senamiestis", address: "Bernardinų sodas", lat: 54.6848, lng: 25.2962, disciplines: ["play"], status: "operational" },
   { name: "Šnipiškių žaidimų aikštelė", type: "playground", source: "open_data", district: "Šnipiškės", address: "Slucko g.", lat: 54.6995, lng: 25.2820, disciplines: ["play"], status: "operational" },
   { name: "Tuskulėnų žaidimų aikštelė", type: "playground", source: "open_data", district: "Žirmūnai", address: "Tuskulėnų g.", lat: 54.7034, lng: 25.2940, disciplines: ["play"], status: "operational" },
@@ -224,8 +405,6 @@ const PLAYGROUNDS: Array<Omit<SportsFacility, "id" | "utilization" | "maintenanc
   { name: "Vilkpėdės vaikų aikštelė", type: "playground", source: "open_data", district: "Vilkpėdė", address: "Vilkpėdės g.", lat: 54.6688, lng: 25.2570, disciplines: ["play"], status: "operational" },
 ];
 
-const slug = (s: string) => s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
-
 function buildAll(): SportsFacility[] {
   const managed = loadManaged();
   const out: SportsFacility[] = [];
@@ -234,6 +413,8 @@ function buildAll(): SportsFacility[] {
     const c = classifyManaged(m.name);
     const district = nearestDistrict(m.latitude, m.longitude);
     const id = `mgd-${slug(m.name)}`;
+    const tags = tagAgeAndAccess(c.type, c.disciplines);
+    const bk = bookingFor(c.type, "managed", m.name);
     out.push({
       id,
       name: titleCaseLt(m.name),
@@ -244,6 +425,12 @@ function buildAll(): SportsFacility[] {
       lat: m.latitude,
       lng: m.longitude,
       disciplines: c.disciplines,
+      ageGroups: tags.ageGroups,
+      accessibility: tags.accessibility,
+      bookingProvider: bk.bookingProvider,
+      bookingUrl: bk.bookingUrl,
+      entryType: bk.entryType,
+      priceFromEur: bk.priceFromEur,
       status: "operational",
       ...buildKpis(id, c.type, "operational"),
     });
@@ -253,6 +440,8 @@ function buildAll(): SportsFacility[] {
     const district = nearestDistrict(m.latitude, m.longitude);
     const id = `pln-${slug(m.name)}`;
     const status: SportsFacility["status"] = m.name.toLowerCase().includes("2028") ? "construction" : "planned";
+    const tags = tagAgeAndAccess(c.type, c.disciplines);
+    const bk = bookingFor(c.type, "managed_planned", m.name);
     out.push({
       id,
       name: titleCaseLt(m.name),
@@ -263,15 +452,29 @@ function buildAll(): SportsFacility[] {
       lat: m.latitude,
       lng: m.longitude,
       disciplines: c.disciplines,
+      ageGroups: tags.ageGroups,
+      accessibility: tags.accessibility,
+      bookingProvider: status === "planned" ? "none" : bk.bookingProvider,
+      bookingUrl: status === "planned" ? undefined : bk.bookingUrl,
+      entryType: bk.entryType,
+      priceFromEur: bk.priceFromEur,
       status,
       ...buildKpis(id, c.type, status),
     });
   }
   for (const p of [...PARKS, ...PLAYGROUNDS]) {
     const id = `od-${slug(p.name)}`;
+    const tags = tagAgeAndAccess(p.type, p.disciplines);
+    const bk = bookingFor(p.type, p.source, p.name);
     out.push({
       id,
       ...p,
+      ageGroups: tags.ageGroups,
+      accessibility: tags.accessibility,
+      bookingProvider: bk.bookingProvider,
+      bookingUrl: bk.bookingUrl,
+      entryType: bk.entryType,
+      priceFromEur: bk.priceFromEur,
       ...buildKpis(id, p.type, p.status),
     });
   }

@@ -12,8 +12,8 @@ import {
 import { useI18n } from "@/lib/i18n";
 import {
   useSportsFacilities, useSportsMeta,
-  FACILITY_TYPE_LABEL, DISCIPLINE_LABEL,
-  type FacilityType, type Discipline,
+  FACILITY_TYPE_LABEL, DISCIPLINE_LABEL, AGE_GROUP_LABEL,
+  type FacilityType, type Discipline, type AgeGroup,
 } from "@/lib/sports-api";
 
 const TYPE_COLOR: Record<string, string> = {
@@ -38,6 +38,7 @@ export default function SportsMap() {
   const [district, setDistrict] = useState<string>("__all");
   const [type, setType] = useState<string>("__all");
   const [discipline, setDiscipline] = useState<string>("__all");
+  const [ageGroup, setAgeGroup] = useState<string>("__all");
   const [q, setQ] = useState("");
 
   const meta = useSportsMeta();
@@ -45,6 +46,7 @@ export default function SportsMap() {
     district: district === "__all" ? undefined : district,
     type: type === "__all" ? undefined : type,
     discipline: discipline === "__all" ? undefined : discipline,
+    ageGroup: ageGroup === "__all" ? undefined : ageGroup,
     q: q || undefined,
   });
 
@@ -82,7 +84,7 @@ export default function SportsMap() {
                   className="pl-9"
                 />
               </div>
-              <div className="md:col-span-3">
+              <div className="md:col-span-2">
                 <Select value={district} onValueChange={setDistrict}>
                   <SelectTrigger><SelectValue placeholder={t("filter.allDistricts")} /></SelectTrigger>
                   <SelectContent>
@@ -93,7 +95,7 @@ export default function SportsMap() {
                   </SelectContent>
                 </Select>
               </div>
-              <div className="md:col-span-3">
+              <div className="md:col-span-2">
                 <Select value={type} onValueChange={setType}>
                   <SelectTrigger><SelectValue placeholder={t("filter.allTypes")} /></SelectTrigger>
                   <SelectContent>
@@ -111,6 +113,17 @@ export default function SportsMap() {
                     <SelectItem value="__all">{t("filter.allDisciplines")}</SelectItem>
                     {(meta.data?.disciplines ?? []).map((d) => (
                       <SelectItem key={d} value={d}>{DISCIPLINE_LABEL[d as Discipline]}</SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
+              <div className="md:col-span-2">
+                <Select value={ageGroup} onValueChange={setAgeGroup}>
+                  <SelectTrigger><SelectValue placeholder={t("filter.allAgeGroups")} /></SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="__all">{t("filter.allAgeGroups")}</SelectItem>
+                    {(meta.data?.ageGroups ?? ["kids","children","teens","adults","seniors"]).map((a) => (
+                      <SelectItem key={a} value={a}>{AGE_GROUP_LABEL[a as AgeGroup][language]}</SelectItem>
                     ))}
                   </SelectContent>
                 </Select>
