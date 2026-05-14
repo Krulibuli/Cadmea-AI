@@ -1,0 +1,715 @@
+{
+  "report_name": "Active Vilnius Sports Demand Radar — Search/Need Proxy Report",
+  "version": "0.2",
+  "generated_at": "2026-05-14T13:22:56Z",
+  "geo": "Vilnius, Lithuania",
+  "important_note": {
+    "exact_google_keyword_planner_volume": "NOT_SCRAPED",
+    "why": "Google Keyword Planner exact search volume requires the user's own configured Google Ads API credentials or manual CSV export. This report uses a transparent proxy model instead of pretending to have exact private Google volumes.",
+    "how_to_upgrade": "Import Google Keyword Planner or Google Trends CSV into the app. Map keyword/query + search_volume + growth_score columns."
+  },
+  "source_types_used": [
+    "Challenge deck facility/planning requirements",
+    "Seed Lithuanian keyword clusters",
+    "Known Active Vilnius facility categories",
+    "Vilnius open-data/GIS availability assumptions",
+    "Urban planning proxy scoring"
+  ],
+  "scoring_explanation": {
+    "demand_index_0_100": "Proxy of search/interest/participation demand; replace with normalized Google keyword volume when available.",
+    "trend_index_0_100": "Proxy of what is likely growing: youth activities, summer/winter seasonality, cheap outdoor activities, shortage-driven queries.",
+    "shortage_index_0_100": "Estimated lack of matching infrastructure relative to demand and existing/planned supply.",
+    "priority_score_0_100": "Weighted recommendation score for where/what to build or upgrade."
+  },
+  "sport_popularity_ranked": [
+    {
+      "rank": 1,
+      "sport": "Basketball / Krepšinis",
+      "demand_index_0_100": 96,
+      "trend_index_0_100": 72,
+      "shortage_index_0_100": 62,
+      "why_popular": [
+        "Lithuanian sport culture",
+        "school/youth clubs",
+        "indoor hall rental demand",
+        "court demand in dense districts"
+      ],
+      "priority_facility_types": [
+        "indoor multi-sport hall",
+        "renovated outdoor courts",
+        "school-accessible basketball courts"
+      ],
+      "best_keywords": [
+        "krepšinio aikštelė vilnius",
+        "krepšinio salė vilnius",
+        "krepšinio treniruotės vaikams vilnius",
+        "krepšinio salės nuoma vilnius"
+      ]
+    },
+    {
+      "rank": 2,
+      "sport": "Football / Futbolas",
+      "demand_index_0_100": 93,
+      "trend_index_0_100": 78,
+      "shortage_index_0_100": 70,
+      "why_popular": [
+        "large youth participation potential",
+        "artificial turf demand",
+        "district-level fields needed",
+        "winter indoor/covered fields matter"
+      ],
+      "priority_facility_types": [
+        "artificial turf field",
+        "covered/inflatable dome",
+        "renovated school stadium"
+      ],
+      "best_keywords": [
+        "futbolo aikštė vilnius",
+        "futbolo treniruotės vaikams vilnius",
+        "dirbtinės dangos stadionas vilnius"
+      ]
+    },
+    {
+      "rank": 3,
+      "sport": "Swimming / Plaukimas",
+      "demand_index_0_100": 91,
+      "trend_index_0_100": 85,
+      "shortage_index_0_100": 88,
+      "why_popular": [
+        "kids swimming lessons",
+        "high access-gap because pools are expensive",
+        "booking pressure likely",
+        "challenge deck explicitly includes several pools and a planned Pilaitė pool"
+      ],
+      "priority_facility_types": [
+        "district swimming pool",
+        "pool expansion",
+        "booking/occupancy optimization"
+      ],
+      "best_keywords": [
+        "baseinas vilnius",
+        "baseinas pilaitė",
+        "plaukimo pamokos vaikams vilnius",
+        "baseinas šalia manęs"
+      ]
+    },
+    {
+      "rank": 4,
+      "sport": "General youth sports / Vaikų sportas",
+      "demand_index_0_100": 89,
+      "trend_index_0_100": 82,
+      "shortage_index_0_100": 73,
+      "why_popular": [
+        "parents search by child activity rather than sport",
+        "works across districts",
+        "strong school and after-school planning use case"
+      ],
+      "priority_facility_types": [
+        "multi-sport halls",
+        "safe school-adjacent courts",
+        "district activity hubs"
+      ],
+      "best_keywords": [
+        "sporto būreliai vaikams vilnius",
+        "sportas vaikams vilnius",
+        "kur nuvesti vaiką į sportą"
+      ]
+    },
+    {
+      "rank": 5,
+      "sport": "Outdoor fitness / Lauko treniruokliai",
+      "demand_index_0_100": 82,
+      "trend_index_0_100": 84,
+      "shortage_index_0_100": 64,
+      "why_popular": [
+        "cheap high-impact infrastructure",
+        "public health angle",
+        "works in parks/courtyards",
+        "low operating cost"
+      ],
+      "priority_facility_types": [
+        "outdoor gyms",
+        "calisthenics zones",
+        "lighting and maintenance upgrades"
+      ],
+      "best_keywords": [
+        "lauko treniruokliai vilnius",
+        "treniruoklių aikštelė vilnius",
+        "nemokamas sportas vilnius"
+      ]
+    },
+    {
+      "rank": 6,
+      "sport": "Running + Athletics / Bėgimas + lengvoji atletika",
+      "demand_index_0_100": 79,
+      "trend_index_0_100": 76,
+      "shortage_index_0_100": 67,
+      "why_popular": [
+        "low barrier participation",
+        "needs safe lit routes/tracks",
+        "challenge deck includes planned indoor athletics arena"
+      ],
+      "priority_facility_types": [
+        "lit running tracks",
+        "renovated stadium tracks",
+        "indoor athletics access"
+      ],
+      "best_keywords": [
+        "bėgimo takas vilnius",
+        "stadionas bėgimui vilnius",
+        "lengvosios atletikos arena vilnius"
+      ]
+    },
+    {
+      "rank": 7,
+      "sport": "Volleyball / Tinklinis",
+      "demand_index_0_100": 67,
+      "trend_index_0_100": 69,
+      "shortage_index_0_100": 55,
+      "why_popular": [
+        "school gym compatible",
+        "summer beach volleyball",
+        "planned handball/volleyball arena in deck"
+      ],
+      "priority_facility_types": [
+        "school/gym scheduling",
+        "beach volleyball courts",
+        "shared handball/volleyball hall"
+      ],
+      "best_keywords": [
+        "tinklinio aikštelė vilnius",
+        "paplūdimio tinklinis vilnius",
+        "tinklinio treniruotės vilnius"
+      ]
+    },
+    {
+      "rank": 8,
+      "sport": "Tennis / Tenisas",
+      "demand_index_0_100": 58,
+      "trend_index_0_100": 61,
+      "shortage_index_0_100": 48,
+      "why_popular": [
+        "booking-based facility demand",
+        "more localized and price-sensitive than basketball/football/swimming"
+      ],
+      "priority_facility_types": [
+        "court booking visibility",
+        "renovation where occupancy is high"
+      ],
+      "best_keywords": [
+        "teniso kortai vilnius",
+        "teniso treniruotės vilnius"
+      ]
+    },
+    {
+      "rank": 9,
+      "sport": "Gymnastics / Gimnastika",
+      "demand_index_0_100": 52,
+      "trend_index_0_100": 57,
+      "shortage_index_0_100": 59,
+      "why_popular": [
+        "specialized facility need",
+        "challenge deck includes planned gymnastics hall at Kauno g. 43"
+      ],
+      "priority_facility_types": [
+        "specialized gymnastics hall",
+        "youth gymnastics sessions"
+      ],
+      "best_keywords": [
+        "gimnastikos salė vilnius",
+        "gimnastika vaikams vilnius"
+      ]
+    },
+    {
+      "rank": 10,
+      "sport": "Handball / Rankinis",
+      "demand_index_0_100": 44,
+      "trend_index_0_100": 45,
+      "shortage_index_0_100": 50,
+      "why_popular": [
+        "niche but included in planned shared arena",
+        "best handled through multi-sport hall scheduling"
+      ],
+      "priority_facility_types": [
+        "shared handball/volleyball arena",
+        "school hall scheduling"
+      ],
+      "best_keywords": [
+        "rankinio salė vilnius",
+        "rankinis vaikams vilnius"
+      ]
+    },
+    {
+      "rank": 11,
+      "sport": "Rowing / Irklavimas",
+      "demand_index_0_100": 31,
+      "trend_index_0_100": 38,
+      "shortage_index_0_100": 44,
+      "why_popular": [
+        "location-specific",
+        "challenge deck includes rowing center project phase"
+      ],
+      "priority_facility_types": [
+        "rowing center",
+        "water-sport access point"
+      ],
+      "best_keywords": [
+        "irklavimo centras vilnius",
+        "irklavimas vilnius"
+      ]
+    }
+  ],
+  "what_is_growing_fastest": [
+    {
+      "sport_or_need": "Swimming for children",
+      "growth_proxy_0_100": 88,
+      "evidence_type": "keyword intent + challenge deck planned pool",
+      "keywords": [
+        "plaukimo pamokos vaikams vilnius",
+        "baseinas vaikams vilnius",
+        "baseinas pilaitė"
+      ],
+      "recommendation": "Treat pools as high-demand, high-shortage, high-cost projects. Add booking/occupancy data before final investment."
+    },
+    {
+      "sport_or_need": "Youth sports in districts",
+      "growth_proxy_0_100": 84,
+      "evidence_type": "parent search intent proxy",
+      "keywords": [
+        "sporto būreliai vaikams vilnius",
+        "sportas vaikams vilnius",
+        "futbolo treniruotės vaikams vilnius",
+        "krepšinio treniruotės vaikams vilnius"
+      ],
+      "recommendation": "Build district-level youth sports access layer using schools, population age, and travel-time data."
+    },
+    {
+      "sport_or_need": "Outdoor fitness / free public sport",
+      "growth_proxy_0_100": 83,
+      "evidence_type": "low-cost public health trend proxy",
+      "keywords": [
+        "lauko treniruokliai vilnius",
+        "treniruoklių aikštelė vilnius",
+        "nemokamas sportas vilnius"
+      ],
+      "recommendation": "Fast-win infrastructure: add/repair outdoor gyms and lighting in districts with weaker access."
+    },
+    {
+      "sport_or_need": "Football fields / artificial turf",
+      "growth_proxy_0_100": 80,
+      "evidence_type": "youth + artificial turf keyword proxy",
+      "keywords": [
+        "futbolo aikštė vilnius",
+        "dirbtinės dangos stadionas vilnius",
+        "futbolas vaikams vilnius"
+      ],
+      "recommendation": "Upgrade school/district stadiums before building entirely new sites where land is limited."
+    },
+    {
+      "sport_or_need": "Indoor multi-sport hall rental",
+      "growth_proxy_0_100": 75,
+      "evidence_type": "rental and winter-access proxy",
+      "keywords": [
+        "sporto salės nuoma vilnius",
+        "aikštelės nuoma vilnius",
+        "krepšinio salė vilnius"
+      ],
+      "recommendation": "Use occupancy optimization and dynamic scheduling before new construction."
+    }
+  ],
+  "biggest_shortages": [
+    {
+      "shortage": "Swimming pool access",
+      "shortage_index_0_100": 90,
+      "affected_districts": [
+        "Pilaitė",
+        "Pašilaičiai",
+        "Naujoji Vilnia",
+        "Naujininkai",
+        "Grigiškės"
+      ],
+      "why": [
+        "pools are expensive and sparse",
+        "high kids lesson demand",
+        "deck lists planned Pilaitė pool, which confirms recognized need"
+      ],
+      "action": "Prioritize Pilaitė pool, then validate next access gaps with travel-time + booking pressure."
+    },
+    {
+      "shortage": "Indoor winter sports halls",
+      "shortage_index_0_100": 78,
+      "affected_districts": [
+        "Pašilaičiai",
+        "Šeškinė",
+        "Justiniškės",
+        "Naujamiestis",
+        "Naujininkai"
+      ],
+      "why": [
+        "basketball/football/youth sports need indoor fallback",
+        "rental demand likely high",
+        "multi-sport halls serve several disciplines"
+      ],
+      "action": "Optimize school hall booking first; build/expand only where occupancy is proven high."
+    },
+    {
+      "shortage": "Safe outdoor courts + lighting",
+      "shortage_index_0_100": 72,
+      "affected_districts": [
+        "Naujininkai",
+        "Karoliniškės",
+        "Viršuliškės",
+        "Justiniškės",
+        "Grigiškės"
+      ],
+      "why": [
+        "cheap high-impact upgrades",
+        "maintenance complaints can be linked to lighting/condition",
+        "supports basketball, football, volleyball, outdoor fitness"
+      ],
+      "action": "Upgrade surfaces, lighting, and signage; add maintenance reporting QR codes."
+    },
+    {
+      "shortage": "District-level youth sport access",
+      "shortage_index_0_100": 74,
+      "affected_districts": [
+        "Pilaitė",
+        "Pašilaičiai",
+        "Naujoji Vilnia",
+        "Grigiškės",
+        "Santariškės"
+      ],
+      "why": [
+        "families search for child activities by district",
+        "travel time blocks participation",
+        "schools are key demand anchors"
+      ],
+      "action": "Rank by children aged 5-17, school density, and nearest sport facility travel time."
+    }
+  ],
+  "top_district_recommendations": [
+    {
+      "rank": 1,
+      "district": "Pilaitė",
+      "sport": "Swimming / Plaukimas",
+      "action": "BUILD NEW FACILITY",
+      "priority_score_0_100": 93,
+      "confidence": "High",
+      "reasons": [
+        "planned Pilaitė swimming pool appears in challenge deck",
+        "high pool/kids swimming search-intent proxy",
+        "large residential access-gap hypothesis"
+      ],
+      "data_needed_to_confirm": [
+        "real Google Keyword Planner volume",
+        "pool booking waitlist",
+        "travel time to existing pools",
+        "children population"
+      ]
+    },
+    {
+      "rank": 2,
+      "district": "Pašilaičiai",
+      "sport": "Football + Basketball youth access",
+      "action": "UPGRADE / EXPAND EXISTING",
+      "priority_score_0_100": 86,
+      "confidence": "Medium",
+      "reasons": [
+        "dense residential district proxy",
+        "youth sports keyword clusters",
+        "likely shortage of flexible district-level sport spaces"
+      ],
+      "data_needed_to_confirm": [
+        "existing fields/courts condition",
+        "school facility availability",
+        "Google volume by district keyword"
+      ]
+    },
+    {
+      "rank": 3,
+      "district": "Naujoji Vilnia",
+      "sport": "Multi-sport hall / youth sports",
+      "action": "BUILD OR UPGRADE HUB",
+      "priority_score_0_100": 84,
+      "confidence": "Medium",
+      "reasons": [
+        "peripheral access-gap candidate",
+        "travel-time likely important",
+        "multi-sport hall solves several sports at once"
+      ],
+      "data_needed_to_confirm": [
+        "public transport access",
+        "existing halls",
+        "youth population",
+        "rental/occupancy data"
+      ]
+    },
+    {
+      "rank": 4,
+      "district": "Naujininkai",
+      "sport": "Outdoor fitness + safe courts",
+      "action": "UPGRADE / EXPAND EXISTING",
+      "priority_score_0_100": 81,
+      "confidence": "Medium",
+      "reasons": [
+        "equity/access candidate",
+        "outdoor infrastructure has low cost and high visibility",
+        "maintenance/safety upgrades likely high ROI"
+      ],
+      "data_needed_to_confirm": [
+        "court condition reports",
+        "lighting complaints",
+        "nearby schools",
+        "crime/safety perception layer"
+      ]
+    },
+    {
+      "rank": 5,
+      "district": "Šeškinė",
+      "sport": "Basketball / indoor multi-sport",
+      "action": "OPTIMIZE + UPGRADE",
+      "priority_score_0_100": 78,
+      "confidence": "Medium",
+      "reasons": [
+        "dense mixed/residential area",
+        "basketball/rental demand proxy",
+        "indoor hall access valuable in winter"
+      ],
+      "data_needed_to_confirm": [
+        "booking pressure",
+        "school gym utilization",
+        "nearest public halls"
+      ]
+    },
+    {
+      "rank": 6,
+      "district": "Žirmūnai",
+      "sport": "Swimming + football",
+      "action": "MAINTAIN / OPTIMIZE SCHEDULES",
+      "priority_score_0_100": 74,
+      "confidence": "High",
+      "reasons": [
+        "existing swimming pool and inflatable stadium in challenge deck",
+        "more likely scheduling/maintenance issue than total absence"
+      ],
+      "data_needed_to_confirm": [
+        "occupancy rate",
+        "maintenance reports",
+        "waitlist duration"
+      ]
+    },
+    {
+      "rank": 7,
+      "district": "Lazdynai",
+      "sport": "Swimming",
+      "action": "MAINTAIN / OPTIMIZE SCHEDULES",
+      "priority_score_0_100": 71,
+      "confidence": "High",
+      "reasons": [
+        "existing Lazdynai swimming pool in challenge deck",
+        "priority should be capacity and condition before new build"
+      ],
+      "data_needed_to_confirm": [
+        "monthly visitors",
+        "lane availability",
+        "maintenance cost"
+      ]
+    },
+    {
+      "rank": 8,
+      "district": "Karoliniškės",
+      "sport": "Running + outdoor fitness",
+      "action": "UPGRADE / EXPAND EXISTING",
+      "priority_score_0_100": 69,
+      "confidence": "Medium",
+      "reasons": [
+        "good fit for lit tracks and outdoor gyms",
+        "lower cost than indoor builds",
+        "district-level active recreation demand"
+      ],
+      "data_needed_to_confirm": [
+        "park/path lighting",
+        "existing outdoor gym inventory",
+        "resident density"
+      ]
+    },
+    {
+      "rank": 9,
+      "district": "Fabijoniškės",
+      "sport": "Swimming + fitness",
+      "action": "MAINTAIN / OPTIMIZE",
+      "priority_score_0_100": 68,
+      "confidence": "High",
+      "reasons": [
+        "existing Fabijoniškės pool in challenge deck",
+        "monitor usage/condition rather than immediate new build"
+      ],
+      "data_needed_to_confirm": [
+        "booking pressure",
+        "spa/gym usage",
+        "maintenance incidents"
+      ]
+    },
+    {
+      "rank": 10,
+      "district": "Grigiškės",
+      "sport": "Multi-sport + outdoor fitness",
+      "action": "UPGRADE ACCESS",
+      "priority_score_0_100": 66,
+      "confidence": "Low-Medium",
+      "reasons": [
+        "peripheral access-gap candidate",
+        "small multi-use interventions may beat large specialized projects"
+      ],
+      "data_needed_to_confirm": [
+        "facility inventory",
+        "travel time to nearest pool/hall",
+        "school sports access"
+      ]
+    }
+  ],
+  "keyword_clusters_to_import_or_scrape_legally": {
+    "swimming": [
+      "baseinas vilnius",
+      "baseinas pilaitė",
+      "baseinas pašilaičiai",
+      "baseinas vaikams vilnius",
+      "plaukimo pamokos vaikams vilnius",
+      "baseinas šalia manęs",
+      "nėra laisvų laikų baseine"
+    ],
+    "basketball": [
+      "krepšinio aikštelė vilnius",
+      "krepšinio salė vilnius",
+      "krepšinio treniruotės vaikams vilnius",
+      "krepšinio salės nuoma vilnius",
+      "krepšinio aikštelė žirmūnai",
+      "krepšinio aikštelė šeškinė"
+    ],
+    "football": [
+      "futbolo aikštė vilnius",
+      "futbolo treniruotės vaikams vilnius",
+      "dirbtinės dangos stadionas vilnius",
+      "futbolo aikštė naujininkai",
+      "futbolo aikštė pašilaičiai"
+    ],
+    "outdoor_fitness": [
+      "lauko treniruokliai vilnius",
+      "treniruoklių aikštelė vilnius",
+      "nemokamas sportas vilnius",
+      "sugedę lauko treniruokliai",
+      "neveikia aikštelės apšvietimas"
+    ],
+    "running_athletics": [
+      "bėgimo takas vilnius",
+      "stadionas bėgimui vilnius",
+      "lengvosios atletikos arena vilnius",
+      "bėgimo takas karoliniškės"
+    ],
+    "volleyball": [
+      "tinklinio aikštelė vilnius",
+      "paplūdimio tinklinis vilnius",
+      "tinklinio treniruotės vilnius"
+    ],
+    "youth_sports": [
+      "sporto būreliai vaikams vilnius",
+      "sportas vaikams vilnius",
+      "kur nuvesti vaiką į sportą",
+      "būreliai vaikams vilnius sportas"
+    ],
+    "pain_queries": [
+      "trūksta sporto aikštelių",
+      "nėra baseino rajone",
+      "sporto aikštelė uždaryta",
+      "sporto salė užimta",
+      "blogas stadionas",
+      "reikia atnaujinti stadioną"
+    ]
+  },
+  "district_keyword_matrix_sample": [
+    {
+      "district": "Pilaitė",
+      "top_sports": [
+        "Swimming",
+        "Football",
+        "Outdoor fitness"
+      ],
+      "must_test_keywords": [
+        "baseinas pilaitė",
+        "futbolo aikštė pilaitė",
+        "lauko treniruokliai pilaitė"
+      ]
+    },
+    {
+      "district": "Pašilaičiai",
+      "top_sports": [
+        "Football",
+        "Basketball",
+        "Swimming"
+      ],
+      "must_test_keywords": [
+        "futbolo aikštė pašilaičiai",
+        "krepšinio aikštelė pašilaičiai",
+        "baseinas pašilaičiai"
+      ]
+    },
+    {
+      "district": "Žirmūnai",
+      "top_sports": [
+        "Swimming",
+        "Football",
+        "Basketball"
+      ],
+      "must_test_keywords": [
+        "baseinas žirmūnai",
+        "stadionas žirmūnai",
+        "krepšinio aikštelė žirmūnai"
+      ]
+    },
+    {
+      "district": "Naujininkai",
+      "top_sports": [
+        "Outdoor fitness",
+        "Football",
+        "Youth sports"
+      ],
+      "must_test_keywords": [
+        "lauko treniruokliai naujininkai",
+        "futbolo aikštė naujininkai",
+        "sportas vaikams naujininkai"
+      ]
+    },
+    {
+      "district": "Naujoji Vilnia",
+      "top_sports": [
+        "Multi-sport halls",
+        "Football",
+        "Swimming"
+      ],
+      "must_test_keywords": [
+        "sporto salė naujoji vilnia",
+        "futbolo aikštė naujoji vilnia",
+        "baseinas naujoji vilnia"
+      ]
+    }
+  ],
+  "app_integration": {
+    "recommended_json_import_name": "active_vilnius_demand_report.json",
+    "ui_cards_to_show": [
+      "What is growing fastest",
+      "Biggest shortages",
+      "Top district recommendations",
+      "Sport popularity ranking",
+      "Keyword clusters to import"
+    ],
+    "exportable_decision_fields": [
+      "district",
+      "sport",
+      "action",
+      "priority_score_0_100",
+      "confidence",
+      "reasons",
+      "data_needed_to_confirm"
+    ]
+  }
+}
