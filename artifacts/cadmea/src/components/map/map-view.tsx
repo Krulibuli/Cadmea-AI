@@ -8,7 +8,7 @@ import markerIcon from "leaflet/dist/images/marker-icon.png";
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
 import "leaflet/dist/leaflet.css";
 
-const LITHUANIA_BOUNDS: L.LatLngBoundsExpression = [[53.8, 20.7], [56.6, 26.9]];
+const LITHUANIA_BOUNDS = [[53.8, 20.7], [56.6, 26.9]] satisfies L.LatLngBoundsLiteral;
 const LITHUANIA_CENTER: [number, number] = [55.1694, 23.8813];
 const MAX_RENDERED_OVERLAY_FEATURES = 450;
 const MAX_RENDERED_POIS = 350;
