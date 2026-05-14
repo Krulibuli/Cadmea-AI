@@ -9,6 +9,10 @@ import openaiConversationsRouter from "./openai-conversations";
 import ingestionRouter from "./ingestion";
 import sportsRouter from "./sports";
 import activeVilniusRouter from "./active-vilnius";
+import demandRouter from "./demand";
+import requestsRouter from "./requests";
+import reviewsRouter from "./reviews";
+import recommendationsRouter from "./recommendations";
 
 const router: IRouter = Router();
 
@@ -22,5 +26,9 @@ router.use(openaiConversationsRouter);
 router.use(ingestionRouter);
 router.use(sportsRouter);
 router.use(activeVilniusRouter);
+router.use(demandRouter);
+router.use(requestsRouter);
+router.use(reviewsRouter);
+router.use(recommendationsRouter);
 
 export default router;

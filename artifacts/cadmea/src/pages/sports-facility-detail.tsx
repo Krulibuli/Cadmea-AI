@@ -17,6 +17,7 @@ import {
   BOOKING_PROVIDER_LABEL,
   formatEur, formatInt,
 } from "@/lib/sports-api";
+import { FacilityReviews } from "@/components/facility-reviews";
 
 function Stat({ label, value, sub }: { label: string; value: string; sub?: string }) {
   return (
@@ -382,6 +383,10 @@ export default function SportsFacilityDetail() {
               )}
             </CardContent>
           </Card>
+        </div>
+
+        <div className="mt-4">
+          <FacilityReviews facilityId={f.id} />
         </div>
 
         <p className="mt-4 text-xs text-muted-foreground italic">{t("label.estimate")}.</p>

@@ -1,0 +1,13 @@
+{
+  "items": [
+    {
+      "id": "d3607bd0-2921-45f5-b83b-2197fe7726e8",
+      "facilityId": "mgd-lazdynai-swimming-pool",
+      "rating": 5,
+      "comment": "Great pool!",
+      "alias": "Test",
+      "authorFingerprint": "test2",
+      "createdAt": "2026-05-14T13:40:50.614Z"
+    }
+  ]
+}

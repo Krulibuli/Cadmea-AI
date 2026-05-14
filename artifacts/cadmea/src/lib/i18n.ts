@@ -15,6 +15,8 @@ const translations = {
     "nav.sports.facilities": "Facilities Map",
     "nav.sports.disciplines": "Districts & Disciplines",
     "nav.sports.operator": "Operator Tools",
+    "nav.sports.demand": "Demand Radar",
+    "nav.sports.requests": "Requests",
     // Old urban context
     "nav.urban": "Urban Context",
     "nav.map": "City Map",
@@ -113,6 +115,8 @@ const translations = {
     "nav.sports.facilities": "Objektų žemėlapis",
     "nav.sports.disciplines": "Rajonai ir sporto šakos",
     "nav.sports.operator": "Operatoriaus įrankiai",
+    "nav.sports.demand": "Paklausos radaras",
+    "nav.sports.requests": "Prašymai",
     "nav.urban": "Miesto kontekstas",
     "nav.map": "Miesto žemėlapis",
     "nav.districts": "Vietovės",

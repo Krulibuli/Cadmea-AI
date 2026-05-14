@@ -2,7 +2,7 @@ import { Link, useLocation } from "wouter";
 import {
   Activity, Map as MapIcon, BarChart3, Settings2, ChevronDown,
   Building2, GitCompare, Compass, Wand2, Moon, Sun, Languages, Sparkles,
-  Wallet, Shield,
+  Wallet, Shield, Radar, MessageSquare,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -22,11 +22,13 @@ export function Navbar() {
   const sportsItems = [
     { href: "/", label: t("nav.sports.dashboard"), icon: Activity },
     { href: "/sports/map", label: t("nav.sports.facilities"), icon: MapIcon },
-    { href: "/sports/disciplines", label: t("nav.sports.disciplines"), icon: BarChart3 },
-    { href: "/sports/operator", label: t("nav.sports.operator"), icon: Settings2 },
+    { href: "/sports/demand", label: t("nav.sports.demand"), icon: Radar },
+    { href: "/sports/requests", label: t("nav.sports.requests"), icon: MessageSquare },
   ];
 
   const moreItems = [
+    { href: "/sports/disciplines", label: t("nav.sports.disciplines"), icon: BarChart3 },
+    { href: "/sports/operator", label: t("nav.sports.operator"), icon: Settings2 },
     { href: "/business", label: t("nav.business"), icon: Wallet },
     { href: "/admin", label: t("nav.admin"), icon: Shield },
   ];

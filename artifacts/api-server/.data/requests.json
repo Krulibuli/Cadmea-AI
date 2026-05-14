@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "id": "1d10fea1-716a-4410-92f8-6518f7b07086",
+      "kind": "petition",
+      "title": "Pilaitė pool now",
+      "description": "We need a swimming pool",
+      "district": "Pilaitė",
+      "facilityId": null,
+      "discipline": null,
+      "createdAt": "2026-05-14T13:40:38.347Z",
+      "updatedAt": "2026-05-14T13:40:38.347Z",
+      "authorFingerprint": "test1",
+      "authorAlias": "Tester",
+      "status": "open",
+      "supporters": [
+        "test1"
+      ],
+      "forwardedToCity": false
+    }
+  ]
+}
