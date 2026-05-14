@@ -1,0 +1,4522 @@
+[
+  {
+    "district": "Naujamiestis",
+    "type": "gym",
+    "name": "UAB Gym Plius",
+    "address": "Žemaitės g. 22, Vilnius",
+    "lat": 54.6720024,
+    "lng": 25.2574019,
+    "rating": 4.1,
+    "reviews": 681
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "gym",
+    "name": "UAB Gym Plius",
+    "address": "Savanorių pr. 1, Vilnius",
+    "lat": 54.679286,
+    "lng": 25.2579443,
+    "rating": 3.8,
+    "reviews": 82
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "gym",
+    "name": "UAB Gym Plius",
+    "address": "Gedimino pr. 9, Vilnius",
+    "lat": 54.6872407,
+    "lng": 25.2818468,
+    "rating": 3.9,
+    "reviews": 297
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "gym",
+    "name": "Lemon Gym Vienuolio g.",
+    "address": "A. Vienuolio g. 4, Vilnius",
+    "lat": 54.6884259,
+    "lng": 25.2767762,
+    "rating": 4.1,
+    "reviews": 358
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "gym",
+    "name": "UAB Gym Plius",
+    "address": "Dariaus ir Girėno g. 2, Vilnius",
+    "lat": 54.6651687,
+    "lng": 25.2735691,
+    "rating": 4.3,
+    "reviews": 460
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "gym",
+    "name": "Lemon Gym Europa",
+    "address": "Konstitucijos pr. 7a, Vilnius",
+    "lat": 54.6960665,
+    "lng": 25.2762283,
+    "rating": 4,
+    "reviews": 626
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "gym",
+    "name": "NESPORTAS",
+    "address": "Statybininkų g. 1A 103-B, Vilnius",
+    "lat": 54.67416129999999,
+    "lng": 25.2601305,
+    "rating": 5,
+    "reviews": 40
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "gym",
+    "name": "Lemon Gym Skraja",
+    "address": "Naugarduko g. 55A, Vilnius",
+    "lat": 54.67070589999999,
+    "lng": 25.2592998,
+    "rating": 3.9,
+    "reviews": 87
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "gym",
+    "name": "Sportgates24/7 Mindaugo g. 14B, Vilnius",
+    "address": "Mindaugo g. 14B, Vilnius",
+    "lat": 54.6783572,
+    "lng": 25.2743982,
+    "rating": 3.8,
+    "reviews": 74
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "gym",
+    "name": "Fitty, EMS treniruotės",
+    "address": "Sporto g. 5, Vilnius",
+    "lat": 54.69435069999999,
+    "lng": 25.2979861,
+    "rating": 5,
+    "reviews": 26
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "gym",
+    "name": "Vilnius Barbell Gym",
+    "address": "Slucko g. 3, Vilnius",
+    "lat": 54.6936212,
+    "lng": 25.2848527,
+    "rating": 4.9,
+    "reviews": 34
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "gym",
+    "name": "TripleB Sporto Studija",
+    "address": "Lvivo g. 9, Vilnius",
+    "lat": 54.6946936,
+    "lng": 25.2842975,
+    "rating": 5,
+    "reviews": 40
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "gym",
+    "name": "The Royal Athletic Club",
+    "address": "M. K. Čiurlionio g. 84A, Vilnius",
+    "lat": 54.6819725,
+    "lng": 25.249588,
+    "rating": 4.4,
+    "reviews": 160
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "gym",
+    "name": "ELEMENT Strength & Conditioning",
+    "address": "Mindaugo g. 14b, Vilnius",
+    "lat": 54.6783161,
+    "lng": 25.2741801,
+    "rating": 5,
+    "reviews": 35
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "gym",
+    "name": "The One",
+    "address": "M. Daukšos g. 3, Vilnius",
+    "lat": 54.6739488,
+    "lng": 25.2903987,
+    "rating": 5,
+    "reviews": 12
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "gym",
+    "name": "My Pilates Naujamiestis",
+    "address": "Kauno g. 22, Vilnius",
+    "lat": 54.671807,
+    "lng": 25.271612,
+    "rating": 4.9,
+    "reviews": 83
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "gym",
+    "name": "Sport Room",
+    "address": "Mindaugo g. 27, Vilnius",
+    "lat": 54.67163739999999,
+    "lng": 25.2757665,
+    "rating": 5,
+    "reviews": 1
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "gym",
+    "name": "Fitlife",
+    "address": "Raugyklos g. 15, Vilnius",
+    "lat": 54.6746292,
+    "lng": 25.2811066,
+    "rating": 4.5,
+    "reviews": 76
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "gym",
+    "name": "Impuls Savanorių pr., Vilnius",
+    "address": "Savanorių pr. 28, Vilnius",
+    "lat": 54.6748945,
+    "lng": 25.2529098,
+    "rating": 4.2,
+    "reviews": 807
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "gym",
+    "name": "Salė",
+    "address": "Smolensko g. 10A, Vilnius",
+    "lat": 54.6724324,
+    "lng": 25.2588102,
+    "rating": 4.9,
+    "reviews": 49
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "stadium",
+    "name": "Brussels Mussels",
+    "address": "Rinktinės g. 5, Vilnius",
+    "lat": 54.6934603,
+    "lng": 25.2890409,
+    "rating": 4.6,
+    "reviews": 1946
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "stadium",
+    "name": "Business Stadium West",
+    "address": "Rinktinės g. 3, Vilnius",
+    "lat": 54.6943267,
+    "lng": 25.2887341,
+    "rating": 4.6,
+    "reviews": 45
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "stadium",
+    "name": "FK Žalgiris Stadium",
+    "address": "Stadiono g. 2, Vilnius",
+    "lat": 54.6682856,
+    "lng": 25.2941886,
+    "rating": 4,
+    "reviews": 1833
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "stadium",
+    "name": "Mountain Park and Lithuanian Police Stadium",
+    "address": "T. Kosciuškos g. 5, Vilnius",
+    "lat": 54.68986659999999,
+    "lng": 25.2997005,
+    "rating": 4.1,
+    "reviews": 247
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "stadium",
+    "name": "Good Hope football pitch",
+    "address": "Skroblų g. 03137, Vilnius",
+    "lat": 54.6717759,
+    "lng": 25.2509615,
+    "rating": 4.6,
+    "reviews": 179
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "stadium",
+    "name": "Business Stadium Central by Hanner & Zaha Hadid Architects",
+    "address": "Rinktinės g. 3, Vilnius",
+    "lat": 54.6940146,
+    "lng": 25.2899537,
+    "rating": 5,
+    "reviews": 32
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "stadium",
+    "name": "Youdėk Veiksmo Centras - Business Stadium Central",
+    "address": "Šeimyniškių g. 19C, Vilnius",
+    "lat": 54.69426,
+    "lng": 25.28938,
+    "rating": 4.1,
+    "reviews": 13
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "stadium",
+    "name": "Brussels Mussels Centrum",
+    "address": "Vilniaus g. 17, Vilnius",
+    "lat": 54.6863307,
+    "lng": 25.2792256,
+    "rating": 4.6,
+    "reviews": 1380
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "stadium",
+    "name": "Lietuvos sporto centro stadionas",
+    "address": "J. I. Kraševskio g. 2, Vilnius",
+    "lat": 54.68635339999999,
+    "lng": 25.2544886,
+    "rating": 4.5,
+    "reviews": 77
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "stadium",
+    "name": "UNIPARK - UP067 - Rinktinės g. 3A mokama zona",
+    "address": "Rinktinės g. 3A, Vilnius",
+    "lat": 54.6925344,
+    "lng": 25.2906613,
+    "rating": 1,
+    "reviews": 3
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "stadium",
+    "name": "Crustum",
+    "address": "Business Stadium, Rinktinės g. 5, Vilnius",
+    "lat": 54.6942787,
+    "lng": 25.2888412,
+    "rating": 4.4,
+    "reviews": 167
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "stadium",
+    "name": "Business Stadium North East",
+    "address": "Šeimyniškių g. 19b, Vilnius",
+    "lat": 54.694865,
+    "lng": 25.2911419,
+    "rating": 3.3,
+    "reviews": 3
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "stadium",
+    "name": "Lietuvos zoles riedulio federacija",
+    "address": "Lengvosios atletikos maniežas, Žemaitės g. 6, Vilnius",
+    "lat": 54.6747782,
+    "lng": 25.2541308,
+    "rating": 3.8,
+    "reviews": 5
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "stadium",
+    "name": "Vilnius Ski Sports Center",
+    "address": "Žygimantų g. 8, Vilnius",
+    "lat": 54.6901205,
+    "lng": 25.2840453,
+    "rating": 0,
+    "reviews": 0
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "stadium",
+    "name": "Lietuvos sporto federaciju sajunga",
+    "address": "Lengvosios atletikos maniežas, Žemaitės g. 6, Vilnius",
+    "lat": 54.67411329999999,
+    "lng": 25.25385,
+    "rating": 4,
+    "reviews": 1
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "stadium",
+    "name": "Amicorp Baltic UAB",
+    "address": "Rinktinės gatvė 5, Business Stadium West, LT-09234, Kęstučio g. 47, Vilnius",
+    "lat": 54.6958463,
+    "lng": 25.250554,
+    "rating": 3,
+    "reviews": 1
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "stadium",
+    "name": "Simono Daukanto progimnazijos stadionas",
+    "address": "Naugarduko g. 7, Vilnius",
+    "lat": 54.6779074,
+    "lng": 25.2749582,
+    "rating": 5,
+    "reviews": 2
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "stadium",
+    "name": "Business Stadium West",
+    "address": "Rinktinės g. 5, Vilnius",
+    "lat": 54.6939559,
+    "lng": 25.2889121,
+    "rating": 5,
+    "reviews": 2
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "stadium",
+    "name": "UNIPARK - UP071 - Stadium VC",
+    "address": "Rinktinės g. 3, Vilnius",
+    "lat": 54.693501,
+    "lng": 25.2891348,
+    "rating": 0,
+    "reviews": 0
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "stadium",
+    "name": "Lietuvos kurciuju sporto federacija",
+    "address": "Šv. Kazimiero g. 3, Vilnius",
+    "lat": 54.6770467,
+    "lng": 25.2888672,
+    "rating": 5,
+    "reviews": 1
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "park",
+    "name": "Reformators Park",
+    "address": "Reformatų skv. 1, Vilnius",
+    "lat": 54.68127519999999,
+    "lng": 25.2761931,
+    "rating": 4.7,
+    "reviews": 983
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "park",
+    "name": "Kūdrų Park",
+    "address": "Aukštaičių g. 1, Vilnius",
+    "lat": 54.67839009999999,
+    "lng": 25.2975116,
+    "rating": 4.7,
+    "reviews": 403
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "park",
+    "name": "Children playground",
+    "address": "Mindaugo g. 1, Vilnius",
+    "lat": 54.6820518,
+    "lng": 25.2726437,
+    "rating": 4.4,
+    "reviews": 43
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "park",
+    "name": "Marriage Palace Park",
+    "address": "K. Kalinausko g. 21, Vilnius",
+    "lat": 54.6832644,
+    "lng": 25.2683109,
+    "rating": 4.4,
+    "reviews": 340
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "park",
+    "name": "Hill Park",
+    "address": "Vilnius",
+    "lat": 54.68620379999999,
+    "lng": 25.2984329,
+    "rating": 4.7,
+    "reviews": 134
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "park",
+    "name": "Bernardine Garden",
+    "address": "Barboros Radvilaitės g. 8A, Vilnius",
+    "lat": 54.684397,
+    "lng": 25.295447,
+    "rating": 4.8,
+    "reviews": 18045
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "park",
+    "name": "Lukiškės Square",
+    "address": "Gedimino pr., Vilnius",
+    "lat": 54.6896084,
+    "lng": 25.2708029,
+    "rating": 4.6,
+    "reviews": 7305
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "park",
+    "name": "MO skveras",
+    "address": "Trakų g., Vilnius",
+    "lat": 54.6795857,
+    "lng": 25.2772972,
+    "rating": 4.8,
+    "reviews": 13
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "park",
+    "name": "Chiune Sugihara Sakura Park",
+    "address": "Upės g., Vilnius",
+    "lat": 54.6956952,
+    "lng": 25.2725867,
+    "rating": 4.7,
+    "reviews": 1138
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "park",
+    "name": "Jurgos Square",
+    "address": "Aguonų g., Vilnius",
+    "lat": 54.6737305,
+    "lng": 25.2774661,
+    "rating": 4.5,
+    "reviews": 163
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "park",
+    "name": "Vincas Kudirka Square",
+    "address": "Gedimino pr., Vilnius",
+    "lat": 54.6875721,
+    "lng": 25.2805981,
+    "rating": 4.6,
+    "reviews": 6959
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "park",
+    "name": "Presidential Park",
+    "address": "Liejyklos g. 10, Vilnius",
+    "lat": 54.68336499999999,
+    "lng": 25.2839509,
+    "rating": 4.8,
+    "reviews": 26
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "park",
+    "name": "Eduardas Balsys Square",
+    "address": "A. Mickevičiaus g., Vilnius",
+    "lat": 54.69004100000001,
+    "lng": 25.2571815,
+    "rating": 4.5,
+    "reviews": 74
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "park",
+    "name": "Algirdo skveras",
+    "address": "Vilnius",
+    "lat": 54.6710716,
+    "lng": 25.2738611,
+    "rating": 4.6,
+    "reviews": 49
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "park",
+    "name": "Bernardinų parkas",
+    "address": "Unnamed Road, Vilnius",
+    "lat": 54.6862532,
+    "lng": 25.293226,
+    "rating": 4.8,
+    "reviews": 93
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "park",
+    "name": "Bernardine Park children's playground",
+    "address": "Vilnius",
+    "lat": 54.6822813,
+    "lng": 25.2973701,
+    "rating": 4.7,
+    "reviews": 583
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "park",
+    "name": "Liuteronų sodas",
+    "address": "V. Mykolaičio-Putino g., Vilnius",
+    "lat": 54.6840984,
+    "lng": 25.2684353,
+    "rating": 4.7,
+    "reviews": 26
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "park",
+    "name": "Arsenal's Oak Tree",
+    "address": "Vilnius",
+    "lat": 54.6878283,
+    "lng": 25.2890032,
+    "rating": 4.9,
+    "reviews": 14
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "park",
+    "name": "Odminių skveras",
+    "address": "Vilnius",
+    "lat": 54.6855905,
+    "lng": 25.2853976,
+    "rating": 4.6,
+    "reviews": 8
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "park",
+    "name": "Vingriai Square",
+    "address": "Vingrių skveras, Vilnius",
+    "lat": 54.6791098,
+    "lng": 25.2776457,
+    "rating": 4.8,
+    "reviews": 22
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "sports club",
+    "name": "Bronx",
+    "address": "Konstitucijos pr. 12, Vilnius",
+    "lat": 54.6948622,
+    "lng": 25.2782562,
+    "rating": 5,
+    "reviews": 1476
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "sports club",
+    "name": "JC SPORT",
+    "address": "Traku 9, Pranciškonų g. 1, Vilnius",
+    "lat": 54.679194,
+    "lng": 25.281562,
+    "rating": 4.8,
+    "reviews": 4
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "sports club",
+    "name": "Move Zone",
+    "address": "Baltasis skg. 12, Vilnius",
+    "lat": 54.6822901,
+    "lng": 25.3018504,
+    "rating": 5,
+    "reviews": 24
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "sports club",
+    "name": "FØRMA longevity & wellness",
+    "address": "Vilniaus g. 10, Vilnius",
+    "lat": 54.6863926,
+    "lng": 25.2797671,
+    "rating": 4.8,
+    "reviews": 11
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "sports club",
+    "name": "Raminta Moves",
+    "address": "Slucko g. 3, Vilnius",
+    "lat": 54.6938007,
+    "lng": 25.2847095,
+    "rating": 5,
+    "reviews": 16
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "sports club",
+    "name": "Movement LAB",
+    "address": "Vytenio g. 51, Vilnius",
+    "lat": 54.6729624,
+    "lng": 25.2654004,
+    "rating": 5,
+    "reviews": 37
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "sports club",
+    "name": "Alfa Steps",
+    "address": "J. Jasinskio g. 14A, Vilnius",
+    "lat": 54.6876916,
+    "lng": 25.2635986,
+    "rating": 4.9,
+    "reviews": 32
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "sports club",
+    "name": "UPTOWN BILLIARDS - žaidimų ir renginių erdvė",
+    "address": "Vytenio g. 42A, Vilnius",
+    "lat": 54.6729609,
+    "lng": 25.266036,
+    "rating": 4.7,
+    "reviews": 97
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "sports club",
+    "name": "Fitboksas",
+    "address": "Švitrigailos g., Vilnius",
+    "lat": 54.6702463,
+    "lng": 25.2704601,
+    "rating": 5,
+    "reviews": 81
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "swimming pool",
+    "name": "Pool \"Olimpo pradžia\"",
+    "address": "Skroblų g. 3A, Vilnius",
+    "lat": 54.6698014,
+    "lng": 25.2500836,
+    "rating": 4.6,
+    "reviews": 215
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "swimming pool",
+    "name": "Bokšto SPA",
+    "address": "Bokšto g. 6, Vilnius",
+    "lat": 54.6805607,
+    "lng": 25.2906306,
+    "rating": 4.4,
+    "reviews": 306
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "swimming pool",
+    "name": "Sanilux - FOR HOME & SPA",
+    "address": "Vytenio g. 48, Vilnius",
+    "lat": 54.6706909,
+    "lng": 25.2668781,
+    "rating": 4.9,
+    "reviews": 11
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "swimming pool",
+    "name": "Žemaitė's Hotel",
+    "address": "Žemaitės g. 15, Vilnius",
+    "lat": 54.671927,
+    "lng": 25.2557661,
+    "rating": 4.2,
+    "reviews": 1121
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "swimming pool",
+    "name": "UAB Poolservice.lt \"",
+    "address": "Švitrigailos g. 3, Vilnius",
+    "lat": 54.68020540000001,
+    "lng": 25.2659113,
+    "rating": 3.9,
+    "reviews": 7
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "basketball court",
+    "name": "Outdoor Basketball Court",
+    "address": "Upės g. 6, Vilnius",
+    "lat": 54.6932998,
+    "lng": 25.2745407,
+    "rating": 4.9,
+    "reviews": 9
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "basketball court",
+    "name": "Basketball court",
+    "address": "Gervėčių g., Vilnius",
+    "lat": 54.6735409,
+    "lng": 25.2995945,
+    "rating": 4.5,
+    "reviews": 4
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "basketball court",
+    "name": "Basketball court",
+    "address": "Pelesos g. 33, Vilnius",
+    "lat": 54.6674994,
+    "lng": 25.283173,
+    "rating": 5,
+    "reviews": 3
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "basketball court",
+    "name": "Krepšinio aikštelė",
+    "address": "Klevų g. 3A, Vilnius",
+    "lat": 54.66999629999999,
+    "lng": 25.2516802,
+    "rating": 3.5,
+    "reviews": 2
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "basketball court",
+    "name": "Basketball court",
+    "address": "Vilnius",
+    "lat": 54.6803862,
+    "lng": 25.2556434,
+    "rating": 3,
+    "reviews": 2
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "basketball court",
+    "name": "Basketball Court",
+    "address": "T. Ševčenkos g., Vilnius",
+    "lat": 54.6782945,
+    "lng": 25.2712585,
+    "rating": 2.5,
+    "reviews": 2
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "basketball court",
+    "name": "Naujamiesčio krepšinio aikštelė",
+    "address": "Naugarduko g. 43, Vilnius",
+    "lat": 54.6734654,
+    "lng": 25.2634098,
+    "rating": 4.4,
+    "reviews": 7
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "basketball court",
+    "name": "Basketball Court",
+    "address": "M. Antokolskio g. 12, Vilnius",
+    "lat": 54.6795762,
+    "lng": 25.2850033,
+    "rating": 0,
+    "reviews": 0
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "basketball court",
+    "name": "Vilnius Bernardine Garden Tennis Court",
+    "address": "Barboros Radvilaitės g. 6C, Vilnius",
+    "lat": 54.6857183,
+    "lng": 25.2945108,
+    "rating": 4.6,
+    "reviews": 96
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "basketball court",
+    "name": "Outdoor exercise equipment",
+    "address": "Upės g. 6, Vilnius",
+    "lat": 54.692803,
+    "lng": 25.2746976,
+    "rating": 4.9,
+    "reviews": 7
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "basketball court",
+    "name": "White Bridge Sport Field",
+    "address": "Upės g. 6, Vilnius",
+    "lat": 54.693001,
+    "lng": 25.2748313,
+    "rating": 4.9,
+    "reviews": 15
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "tennis court",
+    "name": "Žvėryno teniso kortai",
+    "address": "J. I. Kraševskio g. 2, Vilnius",
+    "lat": 54.6870987,
+    "lng": 25.2559793,
+    "rating": 4.8,
+    "reviews": 23
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "tennis court",
+    "name": "OKsportas",
+    "address": "Barboros Radvilaitės g. 6C, Vilnius",
+    "lat": 54.6857726,
+    "lng": 25.2952571,
+    "rating": 5,
+    "reviews": 33
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "tennis court",
+    "name": "Table tennis court",
+    "address": "Vilnius",
+    "lat": 54.6818766,
+    "lng": 25.2642708,
+    "rating": 0,
+    "reviews": 0
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "football field",
+    "name": "Team sport",
+    "address": "Šeimyniškių g. 3, Vilnius",
+    "lat": 54.6943555,
+    "lng": 25.2835344,
+    "rating": 4.2,
+    "reviews": 37
+  },
+  {
+    "district": "Naujamiestis",
+    "type": "football field",
+    "name": "DONATAS DROMANTAS futbolo treneris",
+    "address": "Vilniaus g. 9-20, Vilnius",
+    "lat": 54.6881681,
+    "lng": 25.2796102,
+    "rating": 0,
+    "reviews": 0
+  },
+  {
+    "district": "Senamestis",
+    "type": "gym",
+    "name": "Re.Formatas",
+    "address": "Aukštaičių g. 7, Vilnius",
+    "lat": 54.6790959,
+    "lng": 25.3032545,
+    "rating": 4,
+    "reviews": 83
+  },
+  {
+    "district": "Senamestis",
+    "type": "gym",
+    "name": "Power Fitness Studio",
+    "address": "Lvivo g. 21, Vilnius",
+    "lat": 54.69669,
+    "lng": 25.28041,
+    "rating": 4.8,
+    "reviews": 22
+  },
+  {
+    "district": "Senamestis",
+    "type": "gym",
+    "name": "Cyclepath",
+    "address": "Aukštaičių g. 14, Vilnius",
+    "lat": 54.67929119999999,
+    "lng": 25.304149,
+    "rating": 5,
+    "reviews": 8
+  },
+  {
+    "district": "Senamestis",
+    "type": "gym",
+    "name": "Forum Palace",
+    "address": "Konstitucijos pr. 26, Vilnius",
+    "lat": 54.6974585,
+    "lng": 25.2668351,
+    "rating": 4.5,
+    "reviews": 1451
+  },
+  {
+    "district": "Senamestis",
+    "type": "gym",
+    "name": "Gym Plius Europa",
+    "address": "Konstitucijos pr. 7A, Vilnius",
+    "lat": 54.69616449999999,
+    "lng": 25.2771714,
+    "rating": 3.8,
+    "reviews": 11
+  },
+  {
+    "district": "Senamestis",
+    "type": "gym",
+    "name": "My Pilates Antakalnis",
+    "address": "T. Kosciuškos g. 34, Vilnius",
+    "lat": 54.69298029999999,
+    "lng": 25.3025928,
+    "rating": 4.9,
+    "reviews": 44
+  },
+  {
+    "district": "Senamestis",
+    "type": "stadium",
+    "name": "Stadium",
+    "address": "Filaretų g. 17E, Vilnius",
+    "lat": 54.6831985,
+    "lng": 25.3063913,
+    "rating": 0,
+    "reviews": 0
+  },
+  {
+    "district": "Senamestis",
+    "type": "stadium",
+    "name": "Business Stadium North",
+    "address": "Šeimyniškių g. 19, Vilnius",
+    "lat": 54.694706,
+    "lng": 25.2895306,
+    "rating": 0,
+    "reviews": 0
+  },
+  {
+    "district": "Senamestis",
+    "type": "stadium",
+    "name": "Lietuvos akluju sporto federacija",
+    "address": "Vilnius",
+    "lat": 54.6849572,
+    "lng": 25.2819481,
+    "rating": 0,
+    "reviews": 0
+  },
+  {
+    "district": "Senamestis",
+    "type": "stadium",
+    "name": "Žalgiris Vilnius Football Club",
+    "address": "Stadiono g. 2, Vilnius",
+    "lat": 54.66913659999999,
+    "lng": 25.2928925,
+    "rating": 4.5,
+    "reviews": 20
+  },
+  {
+    "district": "Senamestis",
+    "type": "park",
+    "name": "Sapieha Palace Park",
+    "address": "Antakalnio g. 17, Vilnius",
+    "lat": 54.6990871,
+    "lng": 25.310504,
+    "rating": 4.7,
+    "reviews": 1050
+  },
+  {
+    "district": "Senamestis",
+    "type": "park",
+    "name": "Paupio aikštė",
+    "address": "Aukštaičių g. 12, Vilnius",
+    "lat": 54.6792075,
+    "lng": 25.3028553,
+    "rating": 4.9,
+    "reviews": 11
+  },
+  {
+    "district": "Senamestis",
+    "type": "park",
+    "name": "Danger Park",
+    "address": "Konstitucijos pr. 7, Vilnius",
+    "lat": 54.6961381,
+    "lng": 25.2768239,
+    "rating": 4.5,
+    "reviews": 145
+  },
+  {
+    "district": "Senamestis",
+    "type": "park",
+    "name": "Vilnius old town panoramic view",
+    "address": "Krivių g., Vilnius",
+    "lat": 54.6838013,
+    "lng": 25.3007135,
+    "rating": 4.9,
+    "reviews": 7
+  },
+  {
+    "district": "Senamestis",
+    "type": "sports club",
+    "name": "Bronx Billiards Club",
+    "address": "Žirmūnų g. 2, Vilnius",
+    "lat": 54.6973773,
+    "lng": 25.2989158,
+    "rating": 4.8,
+    "reviews": 771
+  },
+  {
+    "district": "Senamestis",
+    "type": "sports club",
+    "name": "Šokių studija \"Boogie dance\"",
+    "address": "Žirmūnų g. 1e, Vilnius",
+    "lat": 54.69671109999999,
+    "lng": 25.3006601,
+    "rating": 5,
+    "reviews": 1
+  },
+  {
+    "district": "Senamestis",
+    "type": "sports club",
+    "name": "DSR sporto klubas",
+    "address": "Gedimino pr. 27, Vilnius",
+    "lat": 54.6882931,
+    "lng": 25.2748535,
+    "rating": 5,
+    "reviews": 5
+  },
+  {
+    "district": "Senamestis",
+    "type": "swimming pool",
+    "name": "Capital Children and Youth Center",
+    "address": "Konstitucijos pr. 25, Vilnius",
+    "lat": 54.69939780000001,
+    "lng": 25.2675537,
+    "rating": 4.6,
+    "reviews": 1662
+  },
+  {
+    "district": "Senamestis",
+    "type": "swimming pool",
+    "name": "East island",
+    "address": "Forum, Konstitucijos pr. 26, Vilnius",
+    "lat": 54.6974372,
+    "lng": 25.2669944,
+    "rating": 4.7,
+    "reviews": 513
+  },
+  {
+    "district": "Senamestis",
+    "type": "basketball court",
+    "name": "Basketball Court",
+    "address": "Kalvarijų g. 09318, Vilnius",
+    "lat": 54.6989059,
+    "lng": 25.2856443,
+    "rating": 5,
+    "reviews": 1
+  },
+  {
+    "district": "Senamestis",
+    "type": "basketball court",
+    "name": "Basketball Court",
+    "address": "Tuskulėnų g., Vilnius",
+    "lat": 54.6974142,
+    "lng": 25.294732,
+    "rating": 5,
+    "reviews": 1
+  },
+  {
+    "district": "Senamestis",
+    "type": "basketball court",
+    "name": "Dragon's meadow",
+    "address": "Krokuvos g. 31, Vilnius",
+    "lat": 54.6978446,
+    "lng": 25.2785517,
+    "rating": 4.5,
+    "reviews": 68
+  },
+  {
+    "district": "Senamestis",
+    "type": "basketball court",
+    "name": "Krepšinio aikštelė",
+    "address": "Vilnius",
+    "lat": 54.6979151,
+    "lng": 25.2791326,
+    "rating": 0,
+    "reviews": 0
+  },
+  {
+    "district": "Senamestis",
+    "type": "tennis court",
+    "name": "Badminton Virus. Badmintonas. Badmintono klubas",
+    "address": "Kazliškių g. 4, Vilnius",
+    "lat": 54.6992302,
+    "lng": 25.2889499,
+    "rating": 4.9,
+    "reviews": 25
+  },
+  {
+    "district": "Žvėrynas",
+    "type": "gym",
+    "name": "Omnigym outdoor gym",
+    "address": "Vilnius",
+    "lat": 54.682403,
+    "lng": 25.2434572,
+    "rating": 4.9,
+    "reviews": 24
+  },
+  {
+    "district": "Žvėrynas",
+    "type": "gym",
+    "name": "E-FIT Lietuva, EMS treniruotės",
+    "address": "Birželio 23-iosios g. 10A, Vilnius",
+    "lat": 54.6740526,
+    "lng": 25.2614511,
+    "rating": 4.7,
+    "reviews": 14
+  },
+  {
+    "district": "Žvėrynas",
+    "type": "gym",
+    "name": "Lauko treniruokliai",
+    "address": "Vilnius",
+    "lat": 54.6747239,
+    "lng": 25.2201408,
+    "rating": 5,
+    "reviews": 6
+  },
+  {
+    "district": "Žvėrynas",
+    "type": "gym",
+    "name": "Amber CrossFit",
+    "address": "Smolensko g. 10, Vilnius",
+    "lat": 54.6718989,
+    "lng": 25.2582187,
+    "rating": 4.9,
+    "reviews": 236
+  },
+  {
+    "district": "Žvėrynas",
+    "type": "gym",
+    "name": "JV sporto studija",
+    "address": "M. K. Čiurlionio g. 100, Vilnius",
+    "lat": 54.6826725,
+    "lng": 25.2361837,
+    "rating": 5,
+    "reviews": 1
+  },
+  {
+    "district": "Žvėrynas",
+    "type": "gym",
+    "name": "Šokliukai, všį.Vilniaus vaikų gimnastikos studija",
+    "address": "Savanorių pr. 28, Vilnius",
+    "lat": 54.6752094,
+    "lng": 25.2526524,
+    "rating": 4.7,
+    "reviews": 13
+  },
+  {
+    "district": "Žvėrynas",
+    "type": "gym",
+    "name": "Studija ENSO",
+    "address": "Švitrigailos g. 11K, Vilnius",
+    "lat": 54.674679,
+    "lng": 25.2669893,
+    "rating": 4.8,
+    "reviews": 26
+  },
+  {
+    "district": "Žvėrynas",
+    "type": "gym",
+    "name": "Barre Pilates Ballet",
+    "address": "Vytenio g. 9, Vilnius",
+    "lat": 54.6789111,
+    "lng": 25.263415,
+    "rating": 5,
+    "reviews": 11
+  },
+  {
+    "district": "Žvėrynas",
+    "type": "gym",
+    "name": "Studija M",
+    "address": "J. Basanavičiaus g. 29A, Vilnius",
+    "lat": 54.6821369,
+    "lng": 25.2678519,
+    "rating": 5,
+    "reviews": 5
+  },
+  {
+    "district": "Žvėrynas",
+    "type": "gym",
+    "name": "Judesys",
+    "address": "Žemaitės g. 26, Vilnius",
+    "lat": 54.6711904,
+    "lng": 25.2583482,
+    "rating": 4.4,
+    "reviews": 89
+  },
+  {
+    "district": "Žvėrynas",
+    "type": "gym",
+    "name": "BONOBO climbing",
+    "address": "Panerių g. 35, Vilnius",
+    "lat": 54.6697915,
+    "lng": 25.2690891,
+    "rating": 4.9,
+    "reviews": 640
+  },
+  {
+    "district": "Žvėrynas",
+    "type": "stadium",
+    "name": "Lithuanian Wrestling Federation",
+    "address": "Žemaitės g. 6, Vilnius",
+    "lat": 54.674367,
+    "lng": 25.253814,
+    "rating": 5,
+    "reviews": 5
+  },
+  {
+    "district": "Žvėrynas",
+    "type": "stadium",
+    "name": "Lietuvos sportines zukles federacija",
+    "address": "Lengvosios atletikos maniežas, Žemaitės g. 6, Vilnius",
+    "lat": 54.6747782,
+    "lng": 25.2541308,
+    "rating": 0,
+    "reviews": 0
+  },
+  {
+    "district": "Žvėrynas",
+    "type": "stadium",
+    "name": "Lietuvos gimnastikos federacija",
+    "address": "Žemaitės g. 6, Vilnius",
+    "lat": 54.6747782,
+    "lng": 25.2541308,
+    "rating": 0,
+    "reviews": 0
+  },
+  {
+    "district": "Žvėrynas",
+    "type": "park",
+    "name": "Vingis Park",
+    "address": "M. K. Čiurlionio g. 100, Vilnius",
+    "lat": 54.6832551,
+    "lng": 25.2393612,
+    "rating": 4.7,
+    "reviews": 15458
+  },
+  {
+    "district": "Žvėrynas",
+    "type": "park",
+    "name": "Amatų (Craft) square",
+    "address": "Naugarduko g. 50b, Vilnius",
+    "lat": 54.6736544,
+    "lng": 25.2670885,
+    "rating": 4.6,
+    "reviews": 42
+  },
+  {
+    "district": "Žvėrynas",
+    "type": "park",
+    "name": "Uptown Park",
+    "address": "Švitrigailos g. 13, Vilnius",
+    "lat": 54.6737653,
+    "lng": 25.2685552,
+    "rating": 4.8,
+    "reviews": 29
+  },
+  {
+    "district": "Žvėrynas",
+    "type": "park",
+    "name": "Vingis Park Stage",
+    "address": "M. K. Čiurlionio g. 100, Vilnius",
+    "lat": 54.6831783,
+    "lng": 25.2360267,
+    "rating": 4.8,
+    "reviews": 1201
+  },
+  {
+    "district": "Žvėrynas",
+    "type": "park",
+    "name": "Lakštingala",
+    "address": "S. Konarskio g., Vilnius",
+    "lat": 54.6798047,
+    "lng": 25.2590463,
+    "rating": 4.5,
+    "reviews": 18
+  },
+  {
+    "district": "Žvėrynas",
+    "type": "park",
+    "name": "Viešoji poilsio erdvė \"Pas Sanioka\"",
+    "address": "Gerosios Vilties g. 42, Vilnius",
+    "lat": 54.66807499999999,
+    "lng": 25.2503227,
+    "rating": 0,
+    "reviews": 0
+  },
+  {
+    "district": "Žvėrynas",
+    "type": "park",
+    "name": "Sofijos Kymantaitės - Čiurlionienės skveras",
+    "address": "Vilnius",
+    "lat": 54.6821204,
+    "lng": 25.2645949,
+    "rating": 5,
+    "reviews": 4
+  },
+  {
+    "district": "Žvėrynas",
+    "type": "park",
+    "name": "Calisthenics park",
+    "address": "Vilnius",
+    "lat": 54.6842609,
+    "lng": 25.2353029,
+    "rating": 5,
+    "reviews": 1
+  },
+  {
+    "district": "Žvėrynas",
+    "type": "park",
+    "name": "Šunų vedžiojimo aikštelė",
+    "address": "Žemaitės g. 5, Vilnius",
+    "lat": 54.6713649,
+    "lng": 25.2523048,
+    "rating": 5,
+    "reviews": 1
+  },
+  {
+    "district": "Žvėrynas",
+    "type": "sports club",
+    "name": "FØRMA BGV treniruočių studija",
+    "address": "Laisvės pr. 10A, Vilnius",
+    "lat": 54.6737356,
+    "lng": 25.2215781,
+    "rating": 4.5,
+    "reviews": 64
+  },
+  {
+    "district": "Žvėrynas",
+    "type": "sports club",
+    "name": "Sportuoju lauke",
+    "address": "Vilnius",
+    "lat": 54.6828031,
+    "lng": 25.2433533,
+    "rating": 5,
+    "reviews": 1
+  },
+  {
+    "district": "Žvėrynas",
+    "type": "sports club",
+    "name": "LR Kineziterapijos Klinika",
+    "address": "M. K. Čiurlionio g. 82A, Vilnius",
+    "lat": 54.6822052,
+    "lng": 25.2539749,
+    "rating": 4.9,
+    "reviews": 43
+  },
+  {
+    "district": "Žvėrynas",
+    "type": "sports club",
+    "name": "Fitness club EGO FORTE",
+    "address": "Savanorių pr. 124A, Vilnius",
+    "lat": 54.65878170000001,
+    "lng": 25.2391343,
+    "rating": 4.3,
+    "reviews": 403
+  },
+  {
+    "district": "Žvėrynas",
+    "type": "sports club",
+    "name": "Block Sports",
+    "address": "Vytenio g. 52, Vilnius",
+    "lat": 54.6705738,
+    "lng": 25.2678915,
+    "rating": 5,
+    "reviews": 28
+  },
+  {
+    "district": "Žvėrynas",
+    "type": "swimming pool",
+    "name": "Lazdynų (Miškinių) ežeras",
+    "address": "Miškinių g. 1, Vilnius",
+    "lat": 54.6744294,
+    "lng": 25.2297716,
+    "rating": 4.2,
+    "reviews": 6
+  },
+  {
+    "district": "Žvėrynas",
+    "type": "basketball court",
+    "name": "Basketball Court",
+    "address": "Savanorių pr., Vilnius",
+    "lat": 54.6714965,
+    "lng": 25.2474273,
+    "rating": 5,
+    "reviews": 1
+  },
+  {
+    "district": "Žvėrynas",
+    "type": "basketball court",
+    "name": "Basketball court",
+    "address": "Vilnius",
+    "lat": 54.67345169999999,
+    "lng": 25.2426719,
+    "rating": 0,
+    "reviews": 0
+  },
+  {
+    "district": "Žvėrynas",
+    "type": "basketball court",
+    "name": "Basketball court",
+    "address": "Vilnius",
+    "lat": 54.6739572,
+    "lng": 25.2173107,
+    "rating": 0,
+    "reviews": 0
+  },
+  {
+    "district": "Žvėrynas",
+    "type": "basketball court",
+    "name": "Basketball court",
+    "address": "Vilnius",
+    "lat": 54.66909090000001,
+    "lng": 25.2179645,
+    "rating": 0,
+    "reviews": 0
+  },
+  {
+    "district": "Žvėrynas",
+    "type": "basketball court",
+    "name": "Ignitis grupės paslaugų centras",
+    "address": "Laisvės pr. 10, Vilnius",
+    "lat": 54.6729411,
+    "lng": 25.2216512,
+    "rating": 4,
+    "reviews": 51
+  },
+  {
+    "district": "Žvėrynas",
+    "type": "basketball court",
+    "name": "Business Garden",
+    "address": "Laisvės pr. 10, Vilnius",
+    "lat": 54.67269659999999,
+    "lng": 25.2213146,
+    "rating": 4.7,
+    "reviews": 179
+  },
+  {
+    "district": "Žvėrynas",
+    "type": "basketball court",
+    "name": "vingio teniso kortai",
+    "address": "M. K. Čiurlionio g. 112, Vilnius",
+    "lat": 54.6846269,
+    "lng": 25.230247,
+    "rating": 4.8,
+    "reviews": 22
+  },
+  {
+    "district": "Žvėrynas",
+    "type": "basketball court",
+    "name": "Lietuvos krepsinio federacija",
+    "address": "Žemaitės g. 6, Vilnius",
+    "lat": 54.6742052,
+    "lng": 25.2541208,
+    "rating": 5,
+    "reviews": 4
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "gym",
+    "name": "LEMON GYM Vilniaus Akropolis",
+    "address": "Ozo g. 25-2 aukštas, Vilnius",
+    "lat": 54.7110877,
+    "lng": 25.2642491,
+    "rating": 4.7,
+    "reviews": 122
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "gym",
+    "name": "Lemon Gym Pikas",
+    "address": "Ukmergės g. 221, Vilnius",
+    "lat": 54.7144396,
+    "lng": 25.2491593,
+    "rating": 5,
+    "reviews": 123
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "gym",
+    "name": "Newton Gym",
+    "address": "Daugėliškio g. 32a, Vilnius",
+    "lat": 54.70052039999999,
+    "lng": 25.2744131,
+    "rating": 4.9,
+    "reviews": 16
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "gym",
+    "name": "UAB Gym Plius",
+    "address": "Saltoniškių g. 9, Vilnius",
+    "lat": 54.6995205,
+    "lng": 25.2582806,
+    "rating": 4.1,
+    "reviews": 571
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "gym",
+    "name": "UAB Gym Plius",
+    "address": "Kalvarijų g. 88, Vilnius",
+    "lat": 54.7035071,
+    "lng": 25.2828046,
+    "rating": 3.9,
+    "reviews": 744
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "gym",
+    "name": "Lemon Gym Banginis",
+    "address": "P. Lukšio g. 34, Vilnius",
+    "lat": 54.7102246,
+    "lng": 25.2991955,
+    "rating": 4.3,
+    "reviews": 718
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "gym",
+    "name": "UAB Gym Plius",
+    "address": "Ozo g. 18, Vilnius",
+    "lat": 54.7147788,
+    "lng": 25.2755489,
+    "rating": 3.9,
+    "reviews": 67
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "gym",
+    "name": "Vilnius Sigma Sports Center",
+    "address": "P. Lukšio g. 2, Vilnius",
+    "lat": 54.7130699,
+    "lng": 25.2878398,
+    "rating": 4.2,
+    "reviews": 140
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "gym",
+    "name": "Laisvalaikio terasa",
+    "address": "Verkių g. 31C, Vilnius",
+    "lat": 54.7139757,
+    "lng": 25.2977992,
+    "rating": 4.6,
+    "reviews": 85
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "gym",
+    "name": "LEMON GYM Žalgirio g.",
+    "address": "Žalgirio g. 92, Vilnius",
+    "lat": 54.7035987,
+    "lng": 25.2766017,
+    "rating": 4.7,
+    "reviews": 110
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "gym",
+    "name": "Sportgates24/7 Verkiu g. 1C, Vilnius",
+    "address": "2 aukštas, Verkių g. 31C, Vilnius",
+    "lat": 54.7141767,
+    "lng": 25.297084,
+    "rating": 3.5,
+    "reviews": 103
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "stadium",
+    "name": "Senvagė Football Field",
+    "address": "Širvintų g. 82, Vilnius",
+    "lat": 54.7118783,
+    "lng": 25.2803099,
+    "rating": 4.5,
+    "reviews": 170
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "stadium",
+    "name": "Fans stadium",
+    "address": "Linkmenų g. 8, Vilnius",
+    "lat": 54.70293849999999,
+    "lng": 25.2691012,
+    "rating": 4.3,
+    "reviews": 551
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "stadium",
+    "name": "Active Vilnius arena",
+    "address": "Ozo g. 14a, Vilnius",
+    "lat": 54.71607820000001,
+    "lng": 25.2786938,
+    "rating": 4.6,
+    "reviews": 193
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "stadium",
+    "name": "Rytas Vilnius",
+    "address": "Ozo g. 14a, Vilnius",
+    "lat": 54.7161761,
+    "lng": 25.278866,
+    "rating": 4.6,
+    "reviews": 500
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "stadium",
+    "name": "Football pitch",
+    "address": "Minties g. 3, Vilnius",
+    "lat": 54.7057665,
+    "lng": 25.2970069,
+    "rating": 4.1,
+    "reviews": 9
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "park",
+    "name": "Neries senvagės slėnis",
+    "address": "Linkmenų g. 28, Vilnius",
+    "lat": 54.7072976,
+    "lng": 25.270915,
+    "rating": 4.8,
+    "reviews": 384
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "park",
+    "name": "Brinko Park Vilnius",
+    "address": "Kalvarijų g. 125, Vilnius",
+    "lat": 54.7109985,
+    "lng": 25.2868284,
+    "rating": 5,
+    "reviews": 25
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "park",
+    "name": "Šnipiškės square",
+    "address": "Kintų g. 8, Vilnius",
+    "lat": 54.699783,
+    "lng": 25.277111,
+    "rating": 4.6,
+    "reviews": 73
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "park",
+    "name": "Outlet Park",
+    "address": "Verkių g. 31C, Vilnius",
+    "lat": 54.71449810000001,
+    "lng": 25.2978116,
+    "rating": 4.4,
+    "reviews": 9226
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "park",
+    "name": "Vilnius Japanese Garden",
+    "address": "Linkmenų g. 2a, Vilnius",
+    "lat": 54.70185499999999,
+    "lng": 25.2677765,
+    "rating": 4.6,
+    "reviews": 945
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "park",
+    "name": "Tbilisi Square",
+    "address": "Kęstučio g. 11, Vilnius",
+    "lat": 54.6897408,
+    "lng": 25.2522311,
+    "rating": 4.4,
+    "reviews": 102
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "park",
+    "name": "Europe's square",
+    "address": "Konstitucijos pr. 2, Vilnius",
+    "lat": 54.6959461,
+    "lng": 25.2783287,
+    "rating": 4.8,
+    "reviews": 12
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "park",
+    "name": "Senosios Šeškinės pušynėlis",
+    "address": "Vilnius",
+    "lat": 54.7039093,
+    "lng": 25.253764,
+    "rating": 5,
+    "reviews": 3
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "park",
+    "name": "Bronius Laurinavičius Square",
+    "address": "Kalvarijų g. 81, Vilnius",
+    "lat": 54.7040519,
+    "lng": 25.2841863,
+    "rating": 4.1,
+    "reviews": 113
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "park",
+    "name": "Opera Park",
+    "address": "A. Vienuolio g., Vilnius",
+    "lat": 54.6892315,
+    "lng": 25.2792293,
+    "rating": 4.8,
+    "reviews": 16
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "sports club",
+    "name": "Stretching Vilnius",
+    "address": "Šeškinės g. 22, Vilnius",
+    "lat": 54.71489949999999,
+    "lng": 25.2499043,
+    "rating": 5,
+    "reviews": 1
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "sports club",
+    "name": "GoLocal Šnipiškės sporto klubas",
+    "address": "Kalvarijų gatvė 105, Apkasų g. 1, Vilnius",
+    "lat": 54.7081986,
+    "lng": 25.2859175,
+    "rating": 5,
+    "reviews": 15
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "sports club",
+    "name": "Delfi Sports Center",
+    "address": "Ozo g. 14C, Vilnius",
+    "lat": 54.71633740000001,
+    "lng": 25.2752048,
+    "rating": 4.7,
+    "reviews": 624
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "sports club",
+    "name": "BC421",
+    "address": "Verkių g. 29, Vilnius",
+    "lat": 54.7137154,
+    "lng": 25.2944095,
+    "rating": 4.8,
+    "reviews": 75
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "sports club",
+    "name": "O'Learys Vilnius",
+    "address": "Ozo g. 25, Vilnius",
+    "lat": 54.7104547,
+    "lng": 25.2646961,
+    "rating": 4.1,
+    "reviews": 1113
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "swimming pool",
+    "name": "Plaukimo šeima",
+    "address": "Ozo g. 18, Vilnius",
+    "lat": 54.7136255,
+    "lng": 25.2730439,
+    "rating": 4.4,
+    "reviews": 200
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "swimming pool",
+    "name": "Šeimos Gerovės Centras Vilnius",
+    "address": "Kernavės g. 88-147, Vilnius",
+    "lat": 54.7116509,
+    "lng": 25.2747254,
+    "rating": 4.4,
+    "reviews": 158
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "swimming pool",
+    "name": "Maxima",
+    "address": "Ozo g. 25, Vilnius",
+    "lat": 54.70968509999999,
+    "lng": 25.2605228,
+    "rating": 4.5,
+    "reviews": 9729
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "swimming pool",
+    "name": "Vichy Water Park",
+    "address": "Ozo g. 14C, Vilnius",
+    "lat": 54.716278,
+    "lng": 25.276664,
+    "rating": 3.9,
+    "reviews": 6379
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "basketball court",
+    "name": "Basketball court",
+    "address": "Vilnius",
+    "lat": 54.7006501,
+    "lng": 25.2943712,
+    "rating": 5,
+    "reviews": 3
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "basketball court",
+    "name": "Krepšinio aikštelė",
+    "address": "Kalvarijų g. 188A, Vilnius",
+    "lat": 54.7124282,
+    "lng": 25.2803349,
+    "rating": 4.5,
+    "reviews": 4
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "basketball court",
+    "name": "Krepšinio aikštelė",
+    "address": "Minties g. 3a, Vilnius",
+    "lat": 54.705902,
+    "lng": 25.2971534,
+    "rating": 4.8,
+    "reviews": 10
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "basketball court",
+    "name": "Krepšinio aikštelė",
+    "address": "Vilnius",
+    "lat": 54.7098238,
+    "lng": 25.2832969,
+    "rating": 5,
+    "reviews": 1
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "basketball court",
+    "name": "Basketball court",
+    "address": "Linkmenų g. 36, Vilnius",
+    "lat": 54.7079519,
+    "lng": 25.2714924,
+    "rating": 0,
+    "reviews": 0
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "basketball court",
+    "name": "Krepšinio aikštelė",
+    "address": "Ozo g. 24, Vilnius",
+    "lat": 54.7111586,
+    "lng": 25.2526753,
+    "rating": 5,
+    "reviews": 1
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "tennis court",
+    "name": "Padelio arena",
+    "address": "J. Kubiliaus g. 21, Vilnius",
+    "lat": 54.7131616,
+    "lng": 25.3027754,
+    "rating": 4.6,
+    "reviews": 65
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "tennis court",
+    "name": "Teniso aikštelė",
+    "address": "Danielių g. 9, Vilnius",
+    "lat": 54.69944040000001,
+    "lng": 25.2499579,
+    "rating": 0,
+    "reviews": 0
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "tennis court",
+    "name": "TenisoNamai.lt",
+    "address": "P. Lukšio g. 1, Vilnius",
+    "lat": 54.71366459999999,
+    "lng": 25.2885373,
+    "rating": 3,
+    "reviews": 2
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "tennis court",
+    "name": "Tauro sporto mokykla",
+    "address": "Žygio g. 46, Vilnius",
+    "lat": 54.7053221,
+    "lng": 25.295574,
+    "rating": 4.6,
+    "reviews": 104
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "football field",
+    "name": "Football pitch",
+    "address": "Vilnius",
+    "lat": 54.7154135,
+    "lng": 25.2541901,
+    "rating": 3,
+    "reviews": 1
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "football field",
+    "name": "Futbolo aikštė",
+    "address": "Kazliškių g. 6, Vilnius",
+    "lat": 54.700149,
+    "lng": 25.2891094,
+    "rating": 3,
+    "reviews": 3
+  },
+  {
+    "district": "Žirmūnai",
+    "type": "football field",
+    "name": "Basketball court",
+    "address": "Šeškinės g. 25, Vilnius",
+    "lat": 54.7157069,
+    "lng": 25.2542328,
+    "rating": 5,
+    "reviews": 1
+  },
+  {
+    "district": "Antakalnis",
+    "type": "gym",
+    "name": "UAB Gym Plius",
+    "address": "Žirmūnų g. 68A, Vilnius",
+    "lat": 54.717556,
+    "lng": 25.3032855,
+    "rating": 4,
+    "reviews": 330
+  },
+  {
+    "district": "Antakalnis",
+    "type": "gym",
+    "name": "Lemon Gym Antakalnis",
+    "address": "Antakalnio g. 37, Vilnius",
+    "lat": 54.7037887,
+    "lng": 25.3107509,
+    "rating": 4,
+    "reviews": 559
+  },
+  {
+    "district": "Antakalnis",
+    "type": "gym",
+    "name": "Trenerė Martyna Barzinskaitė",
+    "address": "Verkių g. 31C, Vilnius",
+    "lat": 54.7143087,
+    "lng": 25.2954321,
+    "rating": 5,
+    "reviews": 11
+  },
+  {
+    "district": "Antakalnis",
+    "type": "gym",
+    "name": "Sparta Fight Gym",
+    "address": "Verkių g. 5, Vilnius",
+    "lat": 54.7051688,
+    "lng": 25.2866877,
+    "rating": 5,
+    "reviews": 9
+  },
+  {
+    "district": "Antakalnis",
+    "type": "gym",
+    "name": "Sveikatingumo ir sporto klubas Vilniuje - G7",
+    "address": "V. Grybo g. 7, Vilnius",
+    "lat": 54.701756,
+    "lng": 25.3151599,
+    "rating": 4.6,
+    "reviews": 111
+  },
+  {
+    "district": "Antakalnis",
+    "type": "gym",
+    "name": "Unity Fitness",
+    "address": "Olimpiečių g. 1a, Vilnius",
+    "lat": 54.6900422,
+    "lng": 25.2899553,
+    "rating": 5,
+    "reviews": 63
+  },
+  {
+    "district": "Antakalnis",
+    "type": "gym",
+    "name": "Outdoor Gym / climbing wall",
+    "address": "Olimpiečių g. 17, Vilnius",
+    "lat": 54.693555,
+    "lng": 25.2991607,
+    "rating": 5,
+    "reviews": 5
+  },
+  {
+    "district": "Antakalnis",
+    "type": "gym",
+    "name": "Atletų kalvė",
+    "address": "S. Žukausko g. 20, Vilnius",
+    "lat": 54.707973,
+    "lng": 25.2958141,
+    "rating": 5,
+    "reviews": 32
+  },
+  {
+    "district": "Antakalnis",
+    "type": "stadium",
+    "name": "Mini football field",
+    "address": "Vilnius",
+    "lat": 54.7180465,
+    "lng": 25.3137912,
+    "rating": 4.7,
+    "reviews": 15
+  },
+  {
+    "district": "Antakalnis",
+    "type": "stadium",
+    "name": "Amicorp Vilnus",
+    "address": "Business Stadium West, Rinktinės g. 5, Vilnius",
+    "lat": 54.6934603,
+    "lng": 25.2890409,
+    "rating": 0,
+    "reviews": 0
+  },
+  {
+    "district": "Antakalnis",
+    "type": "park",
+    "name": "Pavilniai Regional Park",
+    "address": "Pragiedrulių g. 3, Vilnius",
+    "lat": 54.7126555,
+    "lng": 25.3303032,
+    "rating": 4.8,
+    "reviews": 130
+  },
+  {
+    "district": "Antakalnis",
+    "type": "park",
+    "name": "Vilnius Tech Park",
+    "address": "Antakalnio g. 17, Vilnius",
+    "lat": 54.6984085,
+    "lng": 25.3106407,
+    "rating": 4.7,
+    "reviews": 979
+  },
+  {
+    "district": "Antakalnis",
+    "type": "park",
+    "name": "Sun Valley",
+    "address": "Šilo g., Vilnius",
+    "lat": 54.7029995,
+    "lng": 25.3277857,
+    "rating": 4.8,
+    "reviews": 221
+  },
+  {
+    "district": "Antakalnis",
+    "type": "park",
+    "name": "Obelų laukymė",
+    "address": "P84M+8M, Vilnius",
+    "lat": 54.7058475,
+    "lng": 25.3342159,
+    "rating": 4.7,
+    "reviews": 10
+  },
+  {
+    "district": "Antakalnis",
+    "type": "park",
+    "name": "TUSKULĖNAI Memorial complex of Soviet NKGB victims",
+    "address": "Žirmūnų g. 1F, Vilnius",
+    "lat": 54.698146,
+    "lng": 25.3026104,
+    "rating": 4.6,
+    "reviews": 19
+  },
+  {
+    "district": "Antakalnis",
+    "type": "park",
+    "name": "Tuskulėnai manor",
+    "address": "Žirmūnų g. 1F, Vilnius",
+    "lat": 54.6988949,
+    "lng": 25.3033564,
+    "rating": 4.6,
+    "reviews": 1213
+  },
+  {
+    "district": "Antakalnis",
+    "type": "park",
+    "name": "RoyalSmoke | OUTLET PARK, VILNIUS",
+    "address": "Verkių g. 31C, Vilnius",
+    "lat": 54.7143358,
+    "lng": 25.2980537,
+    "rating": 4.1,
+    "reviews": 16
+  },
+  {
+    "district": "Antakalnis",
+    "type": "park",
+    "name": "P. Vileišio g. skveras",
+    "address": "P. Vileišio g. 27, Vilnius",
+    "lat": 54.7123643,
+    "lng": 25.3120339,
+    "rating": 4,
+    "reviews": 7
+  },
+  {
+    "district": "Antakalnis",
+    "type": "park",
+    "name": "Zoopark",
+    "address": "Verkių g. 27, Vilnius",
+    "lat": 54.7132012,
+    "lng": 25.2942785,
+    "rating": 4.7,
+    "reviews": 4097
+  },
+  {
+    "district": "Antakalnis",
+    "type": "park",
+    "name": "Mountain Park Stage",
+    "address": "T. Kosciuškos g. 1B, Vilnius",
+    "lat": 54.6880321,
+    "lng": 25.2987728,
+    "rating": 4.7,
+    "reviews": 141
+  },
+  {
+    "district": "Antakalnis",
+    "type": "sports club",
+    "name": "Vija Pinavija",
+    "address": "Žygio g. 92, Vilnius",
+    "lat": 54.7101965,
+    "lng": 25.2935046,
+    "rating": 4.9,
+    "reviews": 38
+  },
+  {
+    "district": "Antakalnis",
+    "type": "sports club",
+    "name": "\"BARRE treniruočių ir jogos studija\"",
+    "address": "S. Žukausko g. 41-78, Vilnius",
+    "lat": 54.70896639999999,
+    "lng": 25.3029275,
+    "rating": 5,
+    "reviews": 3
+  },
+  {
+    "district": "Antakalnis",
+    "type": "sports club",
+    "name": "Vilniaus Legionas",
+    "address": "Verkių g. 29, Vilnius",
+    "lat": 54.7140053,
+    "lng": 25.2942382,
+    "rating": 0,
+    "reviews": 0
+  },
+  {
+    "district": "Antakalnis",
+    "type": "sports club",
+    "name": "UAB Sporto sala",
+    "address": "Lakūnų g. 51, Vilnius",
+    "lat": 54.7143747,
+    "lng": 25.3046006,
+    "rating": 4.9,
+    "reviews": 14
+  },
+  {
+    "district": "Antakalnis",
+    "type": "sports club",
+    "name": "Brasa CrossFit",
+    "address": "Žirmūnų g. 68, Vilnius",
+    "lat": 54.71664,
+    "lng": 25.304119,
+    "rating": 5,
+    "reviews": 218
+  },
+  {
+    "district": "Antakalnis",
+    "type": "sports club",
+    "name": "Gelezinis vilkas, Vilniaus vaiku ir jaunimo regbio sporto klubas",
+    "address": "P. Vileišio g. 9, Vilnius",
+    "lat": 54.697,
+    "lng": 25.3052294,
+    "rating": 4.8,
+    "reviews": 4
+  },
+  {
+    "district": "Antakalnis",
+    "type": "swimming pool",
+    "name": "Žirmunų baseinas",
+    "address": "Žirmūnų g. 37, Vilnius",
+    "lat": 54.71446299999999,
+    "lng": 25.307864,
+    "rating": 4.4,
+    "reviews": 259
+  },
+  {
+    "district": "Antakalnis",
+    "type": "swimming pool",
+    "name": "Pool House",
+    "address": "Žirmūnų g. 68A, Vilnius",
+    "lat": 54.71759119999999,
+    "lng": 25.3030899,
+    "rating": 4.4,
+    "reviews": 510
+  },
+  {
+    "district": "Antakalnis",
+    "type": "swimming pool",
+    "name": "Gemma",
+    "address": "Bistryčios g. 13, Vilnius",
+    "lat": 54.70597799999999,
+    "lng": 25.320696,
+    "rating": 3.9,
+    "reviews": 123
+  },
+  {
+    "district": "Antakalnis",
+    "type": "basketball court",
+    "name": "Basketball court",
+    "address": "Vilnius",
+    "lat": 54.7046014,
+    "lng": 25.303264,
+    "rating": 5,
+    "reviews": 1
+  },
+  {
+    "district": "Antakalnis",
+    "type": "basketball court",
+    "name": "Basketball Court",
+    "address": "P. Vileišio g. 24, Vilnius",
+    "lat": 54.71119299999999,
+    "lng": 25.3124905,
+    "rating": 4.3,
+    "reviews": 4
+  },
+  {
+    "district": "Antakalnis",
+    "type": "basketball court",
+    "name": "Krepšinio aikštelė",
+    "address": "Žirmūnų g. 7, Vilnius",
+    "lat": 54.7098038,
+    "lng": 25.3065637,
+    "rating": 4,
+    "reviews": 1
+  },
+  {
+    "district": "Antakalnis",
+    "type": "basketball court",
+    "name": "Basketball court",
+    "address": "Vilnius",
+    "lat": 54.7173485,
+    "lng": 25.3083725,
+    "rating": 0,
+    "reviews": 0
+  },
+  {
+    "district": "Antakalnis",
+    "type": "basketball court",
+    "name": "Basketball court",
+    "address": "Vilnius",
+    "lat": 54.7017116,
+    "lng": 25.311226,
+    "rating": 0,
+    "reviews": 0
+  },
+  {
+    "district": "Antakalnis",
+    "type": "basketball court",
+    "name": "Daugiafunkcinė sporto aikštelė",
+    "address": "Žirmūnų g. 18, Vilnius",
+    "lat": 54.699409,
+    "lng": 25.2992009,
+    "rating": 5,
+    "reviews": 4
+  },
+  {
+    "district": "Antakalnis",
+    "type": "football field",
+    "name": "Futbolo aikštelė",
+    "address": "Vilnius",
+    "lat": 54.714968,
+    "lng": 25.3087204,
+    "rating": 3.7,
+    "reviews": 3
+  },
+  {
+    "district": "Lazdynai",
+    "type": "gym",
+    "name": "GymPlius",
+    "address": "Ukmergės g. 256, Vilnius",
+    "lat": 54.7267385,
+    "lng": 25.2397411,
+    "rating": 4.3,
+    "reviews": 652
+  },
+  {
+    "district": "Lazdynai",
+    "type": "gym",
+    "name": "Fitus sporto klubas",
+    "address": "Ukmergės g. 308, Vilnius",
+    "lat": 54.7393138,
+    "lng": 25.2254855,
+    "rating": 4.7,
+    "reviews": 518
+  },
+  {
+    "district": "Lazdynai",
+    "type": "gym",
+    "name": "GoLocal Visoriai Sporto Klubas",
+    "address": "Mokslininkų g. 6a, Vilnius",
+    "lat": 54.7518658,
+    "lng": 25.2644647,
+    "rating": 4.9,
+    "reviews": 75
+  },
+  {
+    "district": "Lazdynai",
+    "type": "gym",
+    "name": "SkyGym",
+    "address": "Ateities g. 10, Vilnius",
+    "lat": 54.7369551,
+    "lng": 25.2679336,
+    "rating": 4.7,
+    "reviews": 202
+  },
+  {
+    "district": "Lazdynai",
+    "type": "gym",
+    "name": "Lemon Gym Fabijoniškės",
+    "address": "Ateities g. 31b, Vilnius",
+    "lat": 54.7341077,
+    "lng": 25.2533822,
+    "rating": 4.1,
+    "reviews": 603
+  },
+  {
+    "district": "Lazdynai",
+    "type": "gym",
+    "name": "HOBBY FITNESS",
+    "address": "Žemynos g. 18, Vilnius",
+    "lat": 54.726448,
+    "lng": 25.232769,
+    "rating": 4.4,
+    "reviews": 347
+  },
+  {
+    "district": "Lazdynai",
+    "type": "gym",
+    "name": "Sportgates24/7, S.Stanevičiaus g. 23, Vilnius",
+    "address": "S. Stanevičiaus g. 23, Vilnius",
+    "lat": 54.72418889999999,
+    "lng": 25.2547185,
+    "rating": 4.7,
+    "reviews": 180
+  },
+  {
+    "district": "Lazdynai",
+    "type": "gym",
+    "name": "Moterų sporto klubas \"MyGym\"",
+    "address": "Laisvės pr. 125, Vilnius",
+    "lat": 54.7274742,
+    "lng": 25.2368431,
+    "rating": 4.6,
+    "reviews": 37
+  },
+  {
+    "district": "Lazdynai",
+    "type": "gym",
+    "name": "Lemon Gym Perkunkiemis",
+    "address": "Perkūnkiemio g. 4, Vilnius",
+    "lat": 54.74147499999999,
+    "lng": 25.2234523,
+    "rating": 4.2,
+    "reviews": 637
+  },
+  {
+    "district": "Lazdynai",
+    "type": "gym",
+    "name": "FAMILY GYM",
+    "address": "Leičių g. 9-106, Vilnius",
+    "lat": 54.738104,
+    "lng": 25.2222648,
+    "rating": 5,
+    "reviews": 23
+  },
+  {
+    "district": "Lazdynai",
+    "type": "gym",
+    "name": "Lux Fit",
+    "address": "Leičių g. 9, Vilnius",
+    "lat": 54.73802010000001,
+    "lng": 25.2224072,
+    "rating": 4.9,
+    "reviews": 59
+  },
+  {
+    "district": "Lazdynai",
+    "type": "gym",
+    "name": "K GYM",
+    "address": "Ateities g. 31, Vilnius",
+    "lat": 54.73480439999999,
+    "lng": 25.2537485,
+    "rating": 4.1,
+    "reviews": 48
+  },
+  {
+    "district": "Lazdynai",
+    "type": "gym",
+    "name": "Gym+",
+    "address": "Mokslininkų g. 6A, Vilnius",
+    "lat": 54.751105,
+    "lng": 25.2648988,
+    "rating": 4.1,
+    "reviews": 20
+  },
+  {
+    "district": "Lazdynai",
+    "type": "gym",
+    "name": "IntravertaStudija",
+    "address": "Ateities g. 10-6 aukštas, Vilnius",
+    "lat": 54.73677739999999,
+    "lng": 25.2674163,
+    "rating": 5,
+    "reviews": 5
+  },
+  {
+    "district": "Lazdynai",
+    "type": "gym",
+    "name": "Impuls",
+    "address": "Fabijoniškių g. 97A, Vilnius",
+    "lat": 54.7300601,
+    "lng": 25.2459736,
+    "rating": 4.1,
+    "reviews": 612
+  },
+  {
+    "district": "Lazdynai",
+    "type": "gym",
+    "name": "Gym Plius",
+    "address": "Mokslininkų g. 6A-2nd floor, Vilnius",
+    "lat": 54.75105929999999,
+    "lng": 25.264871,
+    "rating": 3.8,
+    "reviews": 4
+  },
+  {
+    "district": "Lazdynai",
+    "type": "gym",
+    "name": "Asorti Studija",
+    "address": "Gabijos g. 38-3, Vilnius",
+    "lat": 54.7362368,
+    "lng": 25.2250204,
+    "rating": 5,
+    "reviews": 31
+  },
+  {
+    "district": "Lazdynai",
+    "type": "gym",
+    "name": "\"Pavel massages, beauty and wellness center",
+    "address": "Žemynos g. 2B, Vilnius",
+    "lat": 54.7275693,
+    "lng": 25.2266163,
+    "rating": 4.5,
+    "reviews": 42
+  },
+  {
+    "district": "Lazdynai",
+    "type": "gym",
+    "name": "7 Muzos",
+    "address": "Laisvės pr. 125, Vilnius",
+    "lat": 54.7283144,
+    "lng": 25.2364453,
+    "rating": 4.5,
+    "reviews": 96
+  },
+  {
+    "district": "Lazdynai",
+    "type": "gym",
+    "name": "Fabijoniškių Swimming Pool",
+    "address": "Vėtrungių g. 45a, Vilnius",
+    "lat": 54.7370157,
+    "lng": 25.2343809,
+    "rating": 4.5,
+    "reviews": 1119
+  },
+  {
+    "district": "Lazdynai",
+    "type": "stadium",
+    "name": "Fabijoniškių gimnazijos stadionas",
+    "address": "P. Žadeikos g. 2, Vilnius",
+    "lat": 54.732415,
+    "lng": 25.2393424,
+    "rating": 3.8,
+    "reviews": 11
+  },
+  {
+    "district": "Lazdynai",
+    "type": "stadium",
+    "name": "FK Vilnius",
+    "address": "P. Žadeikos g. 2, Vilnius",
+    "lat": 54.73210880000001,
+    "lng": 25.2396879,
+    "rating": 3.5,
+    "reviews": 2
+  },
+  {
+    "district": "Lazdynai",
+    "type": "stadium",
+    "name": "Jeruzalės Stadionas krc",
+    "address": "Vilnius",
+    "lat": 54.74583879999999,
+    "lng": 25.2757616,
+    "rating": 5,
+    "reviews": 1
+  },
+  {
+    "district": "Lazdynai",
+    "type": "stadium",
+    "name": "Jomantas park",
+    "address": "Kalvarijų g. 292A, Vilnius",
+    "lat": 54.73364890000001,
+    "lng": 25.2715748,
+    "rating": 4.3,
+    "reviews": 422
+  },
+  {
+    "district": "Lazdynai",
+    "type": "stadium",
+    "name": "Football pitch",
+    "address": "Gedvydžių g. 8, Vilnius",
+    "lat": 54.7385771,
+    "lng": 25.2374337,
+    "rating": 4.7,
+    "reviews": 46
+  },
+  {
+    "district": "Lazdynai",
+    "type": "stadium",
+    "name": "Futbolo aikštė",
+    "address": "Vilnius",
+    "lat": 54.72962649999999,
+    "lng": 25.2538241,
+    "rating": 4.9,
+    "reviews": 10
+  },
+  {
+    "district": "Lazdynai",
+    "type": "stadium",
+    "name": "Stadionas",
+    "address": "Vilnius",
+    "lat": 54.73470889999999,
+    "lng": 25.2290302,
+    "rating": 5,
+    "reviews": 3
+  },
+  {
+    "district": "Lazdynai",
+    "type": "stadium",
+    "name": "Vilnius Baseball Stadium",
+    "address": "Baltupio g., Vilnius",
+    "lat": 54.734843,
+    "lng": 25.2679186,
+    "rating": 0,
+    "reviews": 0
+  },
+  {
+    "district": "Lazdynai",
+    "type": "stadium",
+    "name": "Football field",
+    "address": "Didlaukio g., Vilnius",
+    "lat": 54.7312662,
+    "lng": 25.2724362,
+    "rating": 5,
+    "reviews": 7
+  },
+  {
+    "district": "Lazdynai",
+    "type": "stadium",
+    "name": "Futbolo mokykla Audra",
+    "address": "Mokyklos g. 9, Vilnius",
+    "lat": 54.74555369999999,
+    "lng": 25.2739029,
+    "rating": 0,
+    "reviews": 0
+  },
+  {
+    "district": "Lazdynai",
+    "type": "park",
+    "name": "Parkas",
+    "address": "Vėtrungių g. 301, Vilnius",
+    "lat": 54.734827,
+    "lng": 25.2404515,
+    "rating": 4.7,
+    "reviews": 86
+  },
+  {
+    "district": "Lazdynai",
+    "type": "park",
+    "name": "Visoriai Forest Park",
+    "address": "Vilnius",
+    "lat": 54.7389537,
+    "lng": 25.2433554,
+    "rating": 4.6,
+    "reviews": 117
+  },
+  {
+    "district": "Lazdynai",
+    "type": "park",
+    "name": "Dog Park",
+    "address": "Ateities g., Vilnius",
+    "lat": 54.7382895,
+    "lng": 25.2699987,
+    "rating": 3,
+    "reviews": 2
+  },
+  {
+    "district": "Lazdynai",
+    "type": "park",
+    "name": "Žemynos skveras",
+    "address": "Unnamed Road, Vilnius",
+    "lat": 54.7259273,
+    "lng": 25.2295061,
+    "rating": 4.5,
+    "reviews": 39
+  },
+  {
+    "district": "Lazdynai",
+    "type": "park",
+    "name": "Fabijoniškių Forest Park",
+    "address": "Vilnius",
+    "lat": 54.7243795,
+    "lng": 25.2643604,
+    "rating": 4.5,
+    "reviews": 70
+  },
+  {
+    "district": "Lazdynai",
+    "type": "park",
+    "name": "Didlaukio gatvės sakurų parkas",
+    "address": "Didlaukio g. 55, Vilnius",
+    "lat": 54.730497,
+    "lng": 25.2611892,
+    "rating": 4.8,
+    "reviews": 5
+  },
+  {
+    "district": "Lazdynai",
+    "type": "park",
+    "name": "Jaunųjų miško bičiulių ąžuolų parkas",
+    "address": "Vilnius",
+    "lat": 54.75268519999999,
+    "lng": 25.2746177,
+    "rating": 3.5,
+    "reviews": 2
+  },
+  {
+    "district": "Lazdynai",
+    "type": "park",
+    "name": "Fabijoniškių miškas parkas",
+    "address": "Vilnius",
+    "lat": 54.7367286,
+    "lng": 25.2563433,
+    "rating": 5,
+    "reviews": 1
+  },
+  {
+    "district": "Lazdynai",
+    "type": "park",
+    "name": "KIA / Škoda išsaugotas klevas",
+    "address": "Ukmergės g. 286, Vilnius",
+    "lat": 54.733674,
+    "lng": 25.2343403,
+    "rating": 5,
+    "reviews": 2
+  },
+  {
+    "district": "Lazdynai",
+    "type": "park",
+    "name": "Jeruzalės tvenkinio parkas",
+    "address": "M. Marcinkevičiaus g., Vilnius",
+    "lat": 54.7483286,
+    "lng": 25.2725914,
+    "rating": 4.7,
+    "reviews": 3
+  },
+  {
+    "district": "Lazdynai",
+    "type": "park",
+    "name": "Skulptūrų parkas",
+    "address": "Lobio g. 8, Vilnius",
+    "lat": 54.7471775,
+    "lng": 25.2657856,
+    "rating": 3,
+    "reviews": 4
+  },
+  {
+    "district": "Lazdynai",
+    "type": "park",
+    "name": "Cedrono (Baltupio) upelio ištakos",
+    "address": "Vilnius",
+    "lat": 54.72599469999999,
+    "lng": 25.2593795,
+    "rating": 5,
+    "reviews": 14
+  },
+  {
+    "district": "Lazdynai",
+    "type": "park",
+    "name": "Šunų vedžiojimo aikštelė",
+    "address": "Didlaukio g. 98, Vilnius",
+    "lat": 54.72692079999999,
+    "lng": 25.2674465,
+    "rating": 4.5,
+    "reviews": 21
+  },
+  {
+    "district": "Lazdynai",
+    "type": "park",
+    "name": "Visorių sodų skveras",
+    "address": "Baltelio g. 4, Vilnius",
+    "lat": 54.7474767,
+    "lng": 25.2552694,
+    "rating": 5,
+    "reviews": 1
+  },
+  {
+    "district": "Lazdynai",
+    "type": "park",
+    "name": "Autonominis šviestuvas",
+    "address": "Laisvės pr. 109, Vilnius",
+    "lat": 54.7253069,
+    "lng": 25.2392163,
+    "rating": 5,
+    "reviews": 1
+  },
+  {
+    "district": "Lazdynai",
+    "type": "park",
+    "name": "Senasis vaisių sodelis",
+    "address": "S. Stanevičiaus g. 96, Vilnius",
+    "lat": 54.7286164,
+    "lng": 25.2490309,
+    "rating": 4,
+    "reviews": 1
+  },
+  {
+    "district": "Lazdynai",
+    "type": "park",
+    "name": "Ąžuolų parkas",
+    "address": "Molėtų pl. 14, Vilnius",
+    "lat": 54.7541035,
+    "lng": 25.2738753,
+    "rating": 5,
+    "reviews": 2
+  },
+  {
+    "district": "Lazdynai",
+    "type": "sports club",
+    "name": "BUDORA sporto salė",
+    "address": "Pašilaičių g. 13, Vilnius",
+    "lat": 54.7328999,
+    "lng": 25.2311887,
+    "rating": 5,
+    "reviews": 1
+  },
+  {
+    "district": "Lazdynai",
+    "type": "sports club",
+    "name": "\"Budora\" treniruočių salė",
+    "address": "Didlaukio g. 23, Vilnius",
+    "lat": 54.7299991,
+    "lng": 25.2729631,
+    "rating": 4.5,
+    "reviews": 15
+  },
+  {
+    "district": "Lazdynai",
+    "type": "sports club",
+    "name": "Stars Gimnastikos Klubas",
+    "address": "Laisvės pr. 82, Vilnius",
+    "lat": 54.72400580000001,
+    "lng": 25.2328447,
+    "rating": 4.3,
+    "reviews": 29
+  },
+  {
+    "district": "Lazdynai",
+    "type": "sports club",
+    "name": "CrossFit Laisve",
+    "address": "Laisvės pr. 125A, Vilnius",
+    "lat": 54.72796469999999,
+    "lng": 25.2360607,
+    "rating": 4.9,
+    "reviews": 121
+  },
+  {
+    "district": "Lazdynai",
+    "type": "sports club",
+    "name": "KN Biliardo Klubas",
+    "address": "Ateities g. 48, Vilnius",
+    "lat": 54.7303377,
+    "lng": 25.2469425,
+    "rating": 4.5,
+    "reviews": 285
+  },
+  {
+    "district": "Lazdynai",
+    "type": "sports club",
+    "name": "LeoDance",
+    "address": "Ateities g. 10, Vilnius",
+    "lat": 54.736879,
+    "lng": 25.2668791,
+    "rating": 5,
+    "reviews": 5
+  },
+  {
+    "district": "Lazdynai",
+    "type": "sports club",
+    "name": "CFV - Crossfit Vilnius",
+    "address": "Baltupio g. 71, Vilnius",
+    "lat": 54.7367565,
+    "lng": 25.2669297,
+    "rating": 5,
+    "reviews": 6
+  },
+  {
+    "district": "Lazdynai",
+    "type": "swimming pool",
+    "name": "UAB Okeana",
+    "address": "M. Sleževičiaus g. 7, Vilnius",
+    "lat": 54.737001,
+    "lng": 25.2526088,
+    "rating": 4.4,
+    "reviews": 57
+  },
+  {
+    "district": "Lazdynai",
+    "type": "basketball court",
+    "name": "NBA Basketball School",
+    "address": "Žemynos g. 14, Vilnius",
+    "lat": 54.7281819,
+    "lng": 25.2319873,
+    "rating": 4.8,
+    "reviews": 122
+  },
+  {
+    "district": "Lazdynai",
+    "type": "basketball court",
+    "name": "Krepšinio aikštelė",
+    "address": "Vilnius",
+    "lat": 54.74371960000001,
+    "lng": 25.269949,
+    "rating": 3.6,
+    "reviews": 5
+  },
+  {
+    "district": "Lazdynai",
+    "type": "basketball court",
+    "name": "Basketball court",
+    "address": "Vilnius",
+    "lat": 54.7293579,
+    "lng": 25.2531232,
+    "rating": 4.5,
+    "reviews": 2
+  },
+  {
+    "district": "Lazdynai",
+    "type": "basketball court",
+    "name": "Krepšinio aikštelė",
+    "address": "Vilnius",
+    "lat": 54.726003,
+    "lng": 25.2695699,
+    "rating": 4.5,
+    "reviews": 2
+  },
+  {
+    "district": "Lazdynai",
+    "type": "basketball court",
+    "name": "Basketball court",
+    "address": "Vilnius",
+    "lat": 54.7280692,
+    "lng": 25.2334825,
+    "rating": 5,
+    "reviews": 1
+  },
+  {
+    "district": "Lazdynai",
+    "type": "basketball court",
+    "name": "Basketball court",
+    "address": "Vilnius",
+    "lat": 54.7404934,
+    "lng": 25.2365888,
+    "rating": 5,
+    "reviews": 1
+  },
+  {
+    "district": "Lazdynai",
+    "type": "basketball court",
+    "name": "Krepšinio aikštelė",
+    "address": "Mokyklos g. 9, Vilnius",
+    "lat": 54.7455066,
+    "lng": 25.2758692,
+    "rating": 4.5,
+    "reviews": 6
+  },
+  {
+    "district": "Lazdynai",
+    "type": "basketball court",
+    "name": "Basketball Court",
+    "address": "Visorių g. 74, Vilnius",
+    "lat": 54.74607349999999,
+    "lng": 25.2501138,
+    "rating": 4.8,
+    "reviews": 8
+  },
+  {
+    "district": "Lazdynai",
+    "type": "basketball court",
+    "name": "Basketball court",
+    "address": "Gedvydžių g. 8, Vilnius",
+    "lat": 54.7382547,
+    "lng": 25.2377676,
+    "rating": 5,
+    "reviews": 1
+  },
+  {
+    "district": "Lazdynai",
+    "type": "basketball court",
+    "name": "Krepšinio aikštelė",
+    "address": "S. Stanevičiaus g. 81, Vilnius",
+    "lat": 54.7280755,
+    "lng": 25.2557324,
+    "rating": 5,
+    "reviews": 2
+  },
+  {
+    "district": "Lazdynai",
+    "type": "basketball court",
+    "name": "Basketball - Tennis court",
+    "address": "Tautų vienybės parkas, Gabijos g. 3, Vilnius",
+    "lat": 54.7308754,
+    "lng": 25.2249895,
+    "rating": 4.8,
+    "reviews": 18
+  },
+  {
+    "district": "Lazdynai",
+    "type": "basketball court",
+    "name": "Krepšinio aikštelė",
+    "address": "Vilnius",
+    "lat": 54.73872919999999,
+    "lng": 25.2667243,
+    "rating": 4.5,
+    "reviews": 4
+  },
+  {
+    "district": "Lazdynai",
+    "type": "basketball court",
+    "name": "Basketball court",
+    "address": "Vilnius",
+    "lat": 54.733649,
+    "lng": 25.2604582,
+    "rating": 0,
+    "reviews": 0
+  },
+  {
+    "district": "Lazdynai",
+    "type": "basketball court",
+    "name": "Basketball court",
+    "address": "Vilnius",
+    "lat": 54.734764,
+    "lng": 25.2426831,
+    "rating": 0,
+    "reviews": 0
+  },
+  {
+    "district": "Lazdynai",
+    "type": "basketball court",
+    "name": "Basketball court",
+    "address": "Vilnius",
+    "lat": 54.7307617,
+    "lng": 25.2433037,
+    "rating": 0,
+    "reviews": 0
+  },
+  {
+    "district": "Lazdynai",
+    "type": "basketball court",
+    "name": "Basketball Court",
+    "address": "Gedvydžių g., Vilnius",
+    "lat": 54.7346605,
+    "lng": 25.235709,
+    "rating": 0,
+    "reviews": 0
+  },
+  {
+    "district": "Lazdynai",
+    "type": "basketball court",
+    "name": "Basketball court",
+    "address": "Medeinos g., Vilnius",
+    "lat": 54.7284782,
+    "lng": 25.2268296,
+    "rating": 0,
+    "reviews": 0
+  },
+  {
+    "district": "Lazdynai",
+    "type": "basketball court",
+    "name": "Krepšinio aikštelė",
+    "address": "Vilnius",
+    "lat": 54.73365039999999,
+    "lng": 25.2604705,
+    "rating": 4,
+    "reviews": 3
+  },
+  {
+    "district": "Lazdynai",
+    "type": "basketball court",
+    "name": "Mykolas Basketball Court",
+    "address": "Didlaukio g., Vilnius",
+    "lat": 54.7308709,
+    "lng": 25.2726779,
+    "rating": 2.5,
+    "reviews": 2
+  },
+  {
+    "district": "Lazdynai",
+    "type": "tennis court",
+    "name": "Tennis court",
+    "address": "Didlaukio g., Vilnius",
+    "lat": 54.7312644,
+    "lng": 25.271828,
+    "rating": 5,
+    "reviews": 1
+  },
+  {
+    "district": "Lazdynai",
+    "type": "tennis court",
+    "name": "Teniso kortas",
+    "address": "Žemynos g. 14, Vilnius",
+    "lat": 54.7278007,
+    "lng": 25.2323291,
+    "rating": 4.8,
+    "reviews": 4
+  },
+  {
+    "district": "Lazdynai",
+    "type": "tennis court",
+    "name": "Teniso kortas Visoriuose",
+    "address": "Visorių g. 74, Vilnius",
+    "lat": 54.7459825,
+    "lng": 25.2505269,
+    "rating": 4.5,
+    "reviews": 2
+  },
+  {
+    "district": "Lazdynai",
+    "type": "football field",
+    "name": "Football pitch",
+    "address": "Vilnius",
+    "lat": 54.72791609999999,
+    "lng": 25.2328342,
+    "rating": 5,
+    "reviews": 4
+  },
+  {
+    "district": "Lazdynai",
+    "type": "football field",
+    "name": "Futbolo aikštė",
+    "address": "Ateities g. 44, Vilnius",
+    "lat": 54.7289891,
+    "lng": 25.250256,
+    "rating": 4,
+    "reviews": 3
+  },
+  {
+    "district": "Pilaitė",
+    "type": "gym",
+    "name": "Sport outdoor place",
+    "address": "Svajonių g. 5G, Vilnius",
+    "lat": 54.7397634,
+    "lng": 25.3081126,
+    "rating": 4.7,
+    "reviews": 111
+  },
+  {
+    "district": "Pilaitė",
+    "type": "gym",
+    "name": "outdoor gym",
+    "address": "Santariškių g. 113, Vilnius",
+    "lat": 54.7657289,
+    "lng": 25.2848829,
+    "rating": 5,
+    "reviews": 1
+  },
+  {
+    "district": "Pilaitė",
+    "type": "gym",
+    "name": "Lauko treniruokliai",
+    "address": "Vilnius",
+    "lat": 54.7427603,
+    "lng": 25.2934007,
+    "rating": 0,
+    "reviews": 0
+  },
+  {
+    "district": "Pilaitė",
+    "type": "gym",
+    "name": "Mankšta iš miško",
+    "address": "Vaidilutės g. 71, Vilnius",
+    "lat": 54.7381689,
+    "lng": 25.2926119,
+    "rating": 5,
+    "reviews": 7
+  },
+  {
+    "district": "Pilaitė",
+    "type": "stadium",
+    "name": "KASP Didziosios kovos apygardos 8-oji rinktine",
+    "address": "J. Kairiūkščio g. 14, Vilnius",
+    "lat": 54.75854589999999,
+    "lng": 25.2646839,
+    "rating": 4.8,
+    "reviews": 28
+  },
+  {
+    "district": "Pilaitė",
+    "type": "park",
+    "name": "Antano Vinskaus parkas",
+    "address": "Vilnius",
+    "lat": 54.7511762,
+    "lng": 25.278783,
+    "rating": 5,
+    "reviews": 1
+  },
+  {
+    "district": "Pilaitė",
+    "type": "park",
+    "name": "Christmas tree park",
+    "address": "Žaliųjų Ežerų g. 29, Vilnius",
+    "lat": 54.751722,
+    "lng": 25.290583,
+    "rating": 5,
+    "reviews": 1
+  },
+  {
+    "district": "Pilaitė",
+    "type": "park",
+    "name": "Krioklys",
+    "address": "Žaliųjų Ežerų g. 35, Vilnius",
+    "lat": 54.7509289,
+    "lng": 25.292366,
+    "rating": 4.4,
+    "reviews": 21
+  },
+  {
+    "district": "Pilaitė",
+    "type": "park",
+    "name": "Verkiai Palace Observation Deck",
+    "address": "Žaliųjų Ežerų g., Vilnius",
+    "lat": 54.746995,
+    "lng": 25.2923824,
+    "rating": 4.7,
+    "reviews": 264
+  },
+  {
+    "district": "Pilaitė",
+    "type": "park",
+    "name": "Verkiu Park Waterfall",
+    "address": "Verkių g. 98A, Vilnius",
+    "lat": 54.74708,
+    "lng": 25.2898435,
+    "rating": 4.7,
+    "reviews": 127
+  },
+  {
+    "district": "Pilaitė",
+    "type": "park",
+    "name": "UNIPARK - P1 - santarosparkavimas.lt",
+    "address": "Santariškių g. 1, Vilnius",
+    "lat": 54.7507946,
+    "lng": 25.280579,
+    "rating": 2.2,
+    "reviews": 15
+  },
+  {
+    "district": "Pilaitė",
+    "type": "park",
+    "name": "Šunų aikštelė",
+    "address": "Žaliųjų Ežerų g. 5, Vilnius",
+    "lat": 54.7488816,
+    "lng": 25.2832492,
+    "rating": 4,
+    "reviews": 3
+  },
+  {
+    "district": "Pilaitė",
+    "type": "park",
+    "name": "UNIPARK - P5 - santarosparkavimas.lt",
+    "address": "Santariškių g. 5, Vilnius",
+    "lat": 54.7542254,
+    "lng": 25.2809382,
+    "rating": 3.9,
+    "reviews": 32
+  },
+  {
+    "district": "Pilaitė",
+    "type": "park",
+    "name": "Directorate of the Pavilniai and Verkiai Regional Park",
+    "address": "Žaliųjų Ežerų g. 53, Vilnius",
+    "lat": 54.75052160000001,
+    "lng": 25.2948155,
+    "rating": 4.6,
+    "reviews": 18
+  },
+  {
+    "district": "Pilaitė",
+    "type": "park",
+    "name": "UNIPARK - P7 - santarosparkavimas.lt",
+    "address": "J. Tallat-Kelpšos g. 19, Vilnius",
+    "lat": 54.75623479999999,
+    "lng": 25.2864896,
+    "rating": 2.7,
+    "reviews": 10
+  },
+  {
+    "district": "Pilaitė",
+    "type": "basketball court",
+    "name": "Basketball court",
+    "address": "Vilnius",
+    "lat": 54.757455,
+    "lng": 25.2674894,
+    "rating": 5,
+    "reviews": 1
+  },
+  {
+    "district": "Pilaitė",
+    "type": "basketball court",
+    "name": "Basketball court",
+    "address": "Žaliųjų Ežerų g., Vilnius",
+    "lat": 54.74984079999999,
+    "lng": 25.285639,
+    "rating": 4.7,
+    "reviews": 6
+  },
+  {
+    "district": "Pilaitė",
+    "type": "tennis court",
+    "name": "Verkiu tennis courts",
+    "address": "Žaliųjų Ežerų g. 49, Vilnius",
+    "lat": 54.75078569999999,
+    "lng": 25.293939,
+    "rating": 4.3,
+    "reviews": 27
+  },
+  {
+    "district": "Pilaitė",
+    "type": "tennis court",
+    "name": "Teniso kortas",
+    "address": "Žaliųjų Ežerų g. 11, Vilnius",
+    "lat": 54.7497052,
+    "lng": 25.2855951,
+    "rating": 0,
+    "reviews": 0
+  },
+  {
+    "district": "Karoliniškės",
+    "type": "gym",
+    "name": "dot. Bajorai",
+    "address": "Bajorų kl. 8, Vilnius",
+    "lat": 54.75572529999999,
+    "lng": 25.259854,
+    "rating": 4.9,
+    "reviews": 36
+  },
+  {
+    "district": "Karoliniškės",
+    "type": "gym",
+    "name": "Street Workout",
+    "address": "103, Vilnius",
+    "lat": 54.7427816,
+    "lng": 25.2287752,
+    "rating": 3.8,
+    "reviews": 4
+  },
+  {
+    "district": "Karoliniškės",
+    "type": "stadium",
+    "name": "Bukiškio mažasis stadionas",
+    "address": "Liepų g., Bukiškis",
+    "lat": 54.7630795,
+    "lng": 25.2099202,
+    "rating": 3.7,
+    "reviews": 3
+  },
+  {
+    "district": "Karoliniškės",
+    "type": "stadium",
+    "name": "Bukiškio pagrindinės mokyklos didysis stadionas",
+    "address": "Bukiškis",
+    "lat": 54.7646847,
+    "lng": 25.2103323,
+    "rating": 4.7,
+    "reviews": 7
+  },
+  {
+    "district": "Karoliniškės",
+    "type": "park",
+    "name": "Bukiškio pasakų parkas",
+    "address": "Mokyklos g., Bukiškis",
+    "lat": 54.7636519,
+    "lng": 25.2102218,
+    "rating": 4,
+    "reviews": 5
+  },
+  {
+    "district": "Karoliniškės",
+    "type": "park",
+    "name": "Bajorų Park",
+    "address": "Bajorų kl. 64, Vilnius",
+    "lat": 54.7646284,
+    "lng": 25.2505359,
+    "rating": 4.3,
+    "reviews": 18
+  },
+  {
+    "district": "Karoliniškės",
+    "type": "park",
+    "name": "NordSpace Vilnius | Tarandė",
+    "address": "Tarandės g. 2, Vilnius, Lithuania",
+    "lat": 54.74965640000001,
+    "lng": 25.212848,
+    "rating": 4,
+    "reviews": 3
+  },
+  {
+    "district": "Karoliniškės",
+    "type": "park",
+    "name": "UP170 - PC LIDL, Bajorų kl. 6",
+    "address": "Bajorų kl. 6, Vilnius",
+    "lat": 54.755191,
+    "lng": 25.260662,
+    "rating": 0,
+    "reviews": 0
+  },
+  {
+    "district": "Panerai",
+    "type": "gym",
+    "name": "Gimnastikos centras International Gym",
+    "address": "Buivydiškių g. 12A, Vilnius",
+    "lat": 54.711769,
+    "lng": 25.2365947,
+    "rating": 4.6,
+    "reviews": 277
+  },
+  {
+    "district": "Panerai",
+    "type": "gym",
+    "name": "Re.Formatas",
+    "address": "Ąžuolyno g. 7, Vilnius",
+    "lat": 54.7069912,
+    "lng": 25.2347765,
+    "rating": 3.5,
+    "reviews": 28
+  },
+  {
+    "district": "Panerai",
+    "type": "gym",
+    "name": "RGA Brazilian Jiu-Jitsu Vilnius",
+    "address": "Buivydiškių g. 12a, Vilnius",
+    "lat": 54.711769,
+    "lng": 25.2365947,
+    "rating": 5,
+    "reviews": 10
+  },
+  {
+    "district": "Panerai",
+    "type": "gym",
+    "name": "Slimming and Health Center",
+    "address": "Buivydiškių g. 12A, Vilnius",
+    "lat": 54.7116945,
+    "lng": 25.2366782,
+    "rating": 5,
+    "reviews": 6
+  },
+  {
+    "district": "Panerai",
+    "type": "gym",
+    "name": "Sporto startas",
+    "address": "Ukmergės g. 292, Vilnius",
+    "lat": 54.7349894,
+    "lng": 25.2327449,
+    "rating": 4.6,
+    "reviews": 35
+  },
+  {
+    "district": "Panerai",
+    "type": "stadium",
+    "name": "Mokyklos stadionas",
+    "address": "Vilnius",
+    "lat": 54.71628519999999,
+    "lng": 25.2118967,
+    "rating": 4.4,
+    "reviews": 37
+  },
+  {
+    "district": "Panerai",
+    "type": "stadium",
+    "name": "Sportima Arena",
+    "address": "Ąžuolyno g. 5, Vilnius",
+    "lat": 54.7078997,
+    "lng": 25.2370346,
+    "rating": 4.5,
+    "reviews": 1370
+  },
+  {
+    "district": "Panerai",
+    "type": "stadium",
+    "name": "Football pitch",
+    "address": "Rygos g. 10, Vilnius",
+    "lat": 54.7155494,
+    "lng": 25.2235143,
+    "rating": 2.3,
+    "reviews": 3
+  },
+  {
+    "district": "Panerai",
+    "type": "stadium",
+    "name": "Lūžių stadionas",
+    "address": "Justiniškių g., Vilnius",
+    "lat": 54.7125837,
+    "lng": 25.2203114,
+    "rating": 4.8,
+    "reviews": 5
+  },
+  {
+    "district": "Panerai",
+    "type": "stadium",
+    "name": "Football pitch",
+    "address": "J. Matulaičio a., Vilnius",
+    "lat": 54.7130179,
+    "lng": 25.2298752,
+    "rating": 0,
+    "reviews": 0
+  },
+  {
+    "district": "Panerai",
+    "type": "stadium",
+    "name": "Sports and Recreation",
+    "address": "Ąžuolyno g. 5, Vilnius",
+    "lat": 54.7079599,
+    "lng": 25.2361292,
+    "rating": 4.2,
+    "reviews": 6
+  },
+  {
+    "district": "Panerai",
+    "type": "stadium",
+    "name": "Football pitch",
+    "address": "Taikos g., Vilnius",
+    "lat": 54.7235285,
+    "lng": 25.2145303,
+    "rating": 4.5,
+    "reviews": 8
+  },
+  {
+    "district": "Panerai",
+    "type": "stadium",
+    "name": "Buivydiškės football pitch",
+    "address": "Beržų g., Buivydiškės",
+    "lat": 54.7183225,
+    "lng": 25.1935813,
+    "rating": 4.3,
+    "reviews": 55
+  },
+  {
+    "district": "Panerai",
+    "type": "stadium",
+    "name": "Zemyna Gymnasium stadium",
+    "address": "Čiobiškio g. 16A, Vilnius",
+    "lat": 54.7198837,
+    "lng": 25.2365657,
+    "rating": 5,
+    "reviews": 1
+  },
+  {
+    "district": "Panerai",
+    "type": "stadium",
+    "name": "Basketball Court",
+    "address": "Rygos g. 10, Vilnius",
+    "lat": 54.7153252,
+    "lng": 25.223342,
+    "rating": 5,
+    "reviews": 4
+  },
+  {
+    "district": "Panerai",
+    "type": "stadium",
+    "name": "Football pitch",
+    "address": "Taikos g. 47, Vilnius",
+    "lat": 54.7217488,
+    "lng": 25.2262205,
+    "rating": 4.6,
+    "reviews": 11
+  },
+  {
+    "district": "Panerai",
+    "type": "park",
+    "name": "Viršuliškės Forest Park",
+    "address": "Laisvės pr., Vilnius",
+    "lat": 54.7158782,
+    "lng": 25.2347819,
+    "rating": 4.2,
+    "reviews": 358
+  },
+  {
+    "district": "Panerai",
+    "type": "park",
+    "name": "Lūžių Park",
+    "address": "Justiniškių g., Vilnius",
+    "lat": 54.7142376,
+    "lng": 25.2219324,
+    "rating": 4.4,
+    "reviews": 123
+  },
+  {
+    "district": "Panerai",
+    "type": "park",
+    "name": "Park",
+    "address": "Vilnius",
+    "lat": 54.7151108,
+    "lng": 25.2280742,
+    "rating": 5,
+    "reviews": 1
+  },
+  {
+    "district": "Panerai",
+    "type": "park",
+    "name": "Lūžių iconic pelkė",
+    "address": "Vilnius",
+    "lat": 54.71120370000001,
+    "lng": 25.2182566,
+    "rating": 5,
+    "reviews": 3
+  },
+  {
+    "district": "Panerai",
+    "type": "park",
+    "name": "Buivydiškių tvenkinių parkas",
+    "address": "Klinikų g., Buivydiškės",
+    "lat": 54.7153711,
+    "lng": 25.2027866,
+    "rating": 5,
+    "reviews": 2
+  },
+  {
+    "district": "Panerai",
+    "type": "park",
+    "name": "Suoliukas",
+    "address": "Mozūriškių g., Vilnius",
+    "lat": 54.7178873,
+    "lng": 25.2065688,
+    "rating": 5,
+    "reviews": 1
+  },
+  {
+    "district": "Panerai",
+    "type": "park",
+    "name": "Šešuolių g. skveras",
+    "address": "Šešuolių g. 3, Vilnius",
+    "lat": 54.7059897,
+    "lng": 25.2182104,
+    "rating": 4.6,
+    "reviews": 5
+  },
+  {
+    "district": "Panerai",
+    "type": "park",
+    "name": "Park and ride (P + R) site",
+    "address": "Ukmergės g. 246, Vilnius",
+    "lat": 54.7232424,
+    "lng": 25.2426627,
+    "rating": 3.8,
+    "reviews": 12
+  },
+  {
+    "district": "Panerai",
+    "type": "park",
+    "name": "Dog Park",
+    "address": "Justiniškių g., Vilnius",
+    "lat": 54.7115684,
+    "lng": 25.2185218,
+    "rating": 4.3,
+    "reviews": 58
+  },
+  {
+    "district": "Panerai",
+    "type": "park",
+    "name": "Pavilnionių parkas",
+    "address": "Justiniškių g. 152, Vilnius",
+    "lat": 54.733585,
+    "lng": 25.2141093,
+    "rating": 4,
+    "reviews": 2
+  },
+  {
+    "district": "Panerai",
+    "type": "park",
+    "name": "Žalioji salelė",
+    "address": "Vilnius",
+    "lat": 54.7105985,
+    "lng": 25.2213143,
+    "rating": 0,
+    "reviews": 0
+  },
+  {
+    "district": "Panerai",
+    "type": "sports club",
+    "name": "Sport and Basketball Place",
+    "address": "Taikos g., Vilnius",
+    "lat": 54.7159013,
+    "lng": 25.2171813,
+    "rating": 4.9,
+    "reviews": 9
+  },
+  {
+    "district": "Panerai",
+    "type": "sports club",
+    "name": "Sportimore Boxing & Judo",
+    "address": "Ąžuolyno g. 5, Vilnius",
+    "lat": 54.7080514,
+    "lng": 25.2371676,
+    "rating": 4.8,
+    "reviews": 29
+  },
+  {
+    "district": "Panerai",
+    "type": "sports club",
+    "name": "SEB Arena",
+    "address": "Ąžuolyno g. 7, Vilnius",
+    "lat": 54.7069811,
+    "lng": 25.2344142,
+    "rating": 4.7,
+    "reviews": 1185
+  },
+  {
+    "district": "Panerai",
+    "type": "swimming pool",
+    "name": "Tvarkdarys",
+    "address": "Fabijoniškių g. 99, Vilnius",
+    "lat": 54.7300421,
+    "lng": 25.2463132,
+    "rating": 5,
+    "reviews": 5
+  },
+  {
+    "district": "Panerai",
+    "type": "basketball court",
+    "name": "Sport Place",
+    "address": "Vilnius",
+    "lat": 54.7198095,
+    "lng": 25.2192366,
+    "rating": 4.4,
+    "reviews": 18
+  },
+  {
+    "district": "Panerai",
+    "type": "basketball court",
+    "name": "NBA krepšinio aikštelė",
+    "address": "Čiobiškio g. 1, Vilnius",
+    "lat": 54.7150188,
+    "lng": 25.2372316,
+    "rating": 4.5,
+    "reviews": 33
+  },
+  {
+    "district": "Panerai",
+    "type": "basketball court",
+    "name": "Basketball court",
+    "address": "Vilnius",
+    "lat": 54.7103094,
+    "lng": 25.2189105,
+    "rating": 5,
+    "reviews": 3
+  },
+  {
+    "district": "Panerai",
+    "type": "basketball court",
+    "name": "Basketball court",
+    "address": "Siesikų g., Vilnius",
+    "lat": 54.70995629999999,
+    "lng": 25.2435806,
+    "rating": 4.4,
+    "reviews": 5
+  },
+  {
+    "district": "Panerai",
+    "type": "basketball court",
+    "name": "Krepšinio aikštelė",
+    "address": "Taikos g., Vilnius",
+    "lat": 54.7165262,
+    "lng": 25.2123927,
+    "rating": 4.5,
+    "reviews": 10
+  },
+  {
+    "district": "Panerai",
+    "type": "basketball court",
+    "name": "Basketball Court",
+    "address": "Vilnius",
+    "lat": 54.7225036,
+    "lng": 25.22389,
+    "rating": 4.5,
+    "reviews": 2
+  },
+  {
+    "district": "Panerai",
+    "type": "basketball court",
+    "name": "Basketball court",
+    "address": "Vilnius",
+    "lat": 54.706216,
+    "lng": 25.229895,
+    "rating": 4,
+    "reviews": 1
+  },
+  {
+    "district": "Panerai",
+    "type": "basketball court",
+    "name": "Basketball Court",
+    "address": "Vilnius",
+    "lat": 54.716224,
+    "lng": 25.2172977,
+    "rating": 4,
+    "reviews": 1
+  },
+  {
+    "district": "Panerai",
+    "type": "basketball court",
+    "name": "Basketball court",
+    "address": "Vilnius",
+    "lat": 54.7065888,
+    "lng": 25.2239734,
+    "rating": 5,
+    "reviews": 1
+  },
+  {
+    "district": "Panerai",
+    "type": "basketball court",
+    "name": "Basketball court",
+    "address": "Čiobiškio g. 16, Vilnius",
+    "lat": 54.7191037,
+    "lng": 25.2357015,
+    "rating": 4.5,
+    "reviews": 2
+  },
+  {
+    "district": "Panerai",
+    "type": "basketball court",
+    "name": "Basketball court",
+    "address": "Vilnius",
+    "lat": 54.7119669,
+    "lng": 25.2109698,
+    "rating": 5,
+    "reviews": 1
+  },
+  {
+    "district": "Panerai",
+    "type": "basketball court",
+    "name": "Krepšinio aikštelė",
+    "address": "Taikos g., Vilnius",
+    "lat": 54.7184662,
+    "lng": 25.2268235,
+    "rating": 3.5,
+    "reviews": 2
+  },
+  {
+    "district": "Panerai",
+    "type": "basketball court",
+    "name": "Krepšinio aikštelė",
+    "address": "Justiniškių g., Vilnius",
+    "lat": 54.7140699,
+    "lng": 25.2173803,
+    "rating": 5,
+    "reviews": 1
+  },
+  {
+    "district": "Panerai",
+    "type": "basketball court",
+    "name": "Krepšinio aikštelė",
+    "address": "Taikos g., Vilnius",
+    "lat": 54.7197392,
+    "lng": 25.2120609,
+    "rating": 3.4,
+    "reviews": 7
+  },
+  {
+    "district": "Panerai",
+    "type": "tennis court",
+    "name": "Vilniaus Teniso Akademija",
+    "address": "Ąžuolyno g. 7, Vilnius",
+    "lat": 54.7069912,
+    "lng": 25.2347765,
+    "rating": 4.6,
+    "reviews": 16
+  },
+  {
+    "district": "Panerai",
+    "type": "tennis court",
+    "name": "Teniso kortai",
+    "address": "Dūkštų g. 30A, Vilnius",
+    "lat": 54.7102436,
+    "lng": 25.243128,
+    "rating": 5,
+    "reviews": 4
+  },
+  {
+    "district": "Panerai",
+    "type": "tennis court",
+    "name": "Table tennis",
+    "address": "Taikos g., Vilnius",
+    "lat": 54.7199234,
+    "lng": 25.2187538,
+    "rating": 5,
+    "reviews": 2
+  },
+  {
+    "district": "Panerai",
+    "type": "tennis court",
+    "name": "Aleś Smirnou | Tennis coach in Vilnius (English)",
+    "address": "Ąžuolyno g. 7, Vilnius",
+    "lat": 54.7069912,
+    "lng": 25.2347765,
+    "rating": 5,
+    "reviews": 8
+  },
+  {
+    "district": "Panerai",
+    "type": "tennis court",
+    "name": "Mtennis",
+    "address": "Azuolyno str. 7, Vilnius",
+    "lat": 54.7067383,
+    "lng": 25.2348417,
+    "rating": 0,
+    "reviews": 0
+  },
+  {
+    "district": "Panerai",
+    "type": "football field",
+    "name": "Perkūno maniežas",
+    "address": "Justiniškių g. 126, D",
+    "lat": 54.7280927,
+    "lng": 25.2139901,
+    "rating": 4.2,
+    "reviews": 17
+  },
+  {
+    "district": "Panerai",
+    "type": "football field",
+    "name": "Stadionas",
+    "address": "Čiobiškio g. 1, Vilnius",
+    "lat": 54.7155341,
+    "lng": 25.2373822,
+    "rating": 5,
+    "reviews": 1
+  },
+  {
+    "district": "Panerai",
+    "type": "football field",
+    "name": "Futbolo aikštelė",
+    "address": "Vilnius",
+    "lat": 54.731223,
+    "lng": 25.2208335,
+    "rating": 5,
+    "reviews": 3
+  },
+  {
+    "district": "Snipiškės",
+    "type": "gym",
+    "name": "Optimself Vilnius",
+    "address": "Danielių g. 4, Vilnius",
+    "lat": 54.6986388,
+    "lng": 25.2484998,
+    "rating": 5,
+    "reviews": 5
+  },
+  {
+    "district": "Snipiškės",
+    "type": "stadium",
+    "name": "Žvėryno gimnazijos stadionas",
+    "address": "Žalioji g. 4, Vilnius",
+    "lat": 54.697737,
+    "lng": 25.2467102,
+    "rating": 4.4,
+    "reviews": 25
+  },
+  {
+    "district": "Snipiškės",
+    "type": "park",
+    "name": "Gyvybes sodas",
+    "address": "Birutės g. 2C, Vilnius",
+    "lat": 54.685395,
+    "lng": 25.2517067,
+    "rating": 5,
+    "reviews": 1
+  },
+  {
+    "district": "Snipiškės",
+    "type": "park",
+    "name": "Vingis Park Bridge",
+    "address": "Vingio parko tiltas, Vilnius",
+    "lat": 54.6913249,
+    "lng": 25.2423627,
+    "rating": 4.7,
+    "reviews": 693
+  },
+  {
+    "district": "Snipiškės",
+    "type": "park",
+    "name": "Tauras Hill",
+    "address": "V. Mykolaičio-Putino g., Vilnius",
+    "lat": 54.6857726,
+    "lng": 25.2692735,
+    "rating": 4.6,
+    "reviews": 1476
+  },
+  {
+    "district": "Snipiškės",
+    "type": "park",
+    "name": "Žvėryno parkas",
+    "address": "Miglos g. 49, Vilnius",
+    "lat": 54.7024436,
+    "lng": 25.2440643,
+    "rating": 4.4,
+    "reviews": 25
+  },
+  {
+    "district": "Snipiškės",
+    "type": "park",
+    "name": "Migdolų parkas",
+    "address": "Birutės g., Vilnius",
+    "lat": 54.686434,
+    "lng": 25.2484826,
+    "rating": 4.8,
+    "reviews": 5
+  },
+  {
+    "district": "Snipiškės",
+    "type": "sports club",
+    "name": "IZFITNESS",
+    "address": "Kernavės g. 14, Vilnius",
+    "lat": 54.70278,
+    "lng": 25.2754901,
+    "rating": 5,
+    "reviews": 13
+  },
+  {
+    "district": "Snipiškės",
+    "type": "sports club",
+    "name": "s’nail it runners",
+    "address": "Pylimo g. 1a, Vilnius",
+    "lat": 54.6842583,
+    "lng": 25.2765009,
+    "rating": 5,
+    "reviews": 10
+  },
+  {
+    "district": "Snipiškės",
+    "type": "basketball court",
+    "name": "Šiaurinis Žvėrynas basketball court",
+    "address": "Vilnius",
+    "lat": 54.7013376,
+    "lng": 25.2449625,
+    "rating": 5,
+    "reviews": 3
+  },
+  {
+    "district": "Snipiškės",
+    "type": "basketball court",
+    "name": "Basketball court",
+    "address": "Vilnius",
+    "lat": 54.6978635,
+    "lng": 25.2471842,
+    "rating": 0,
+    "reviews": 0
+  },
+  {
+    "district": "Užupis",
+    "type": "stadium",
+    "name": "Kaukysos sports complex",
+    "address": "Kaukysos g. 18, Vilnius",
+    "lat": 54.6782086,
+    "lng": 25.3198844,
+    "rating": 4.8,
+    "reviews": 146
+  },
+  {
+    "district": "Užupis",
+    "type": "basketball court",
+    "name": "Basketball Court",
+    "address": "Vilnius",
+    "lat": 54.6784098,
+    "lng": 25.3195901,
+    "rating": 4.3,
+    "reviews": 3
+  },
+  {
+    "district": "Užupis",
+    "type": "basketball court",
+    "name": "Swedbank AB, Lietuvos filialas",
+    "address": "Giedraičių g. 3, Vilnius",
+    "lat": 54.6974843,
+    "lng": 25.2785837,
+    "rating": 4,
+    "reviews": 4
+  },
+  {
+    "district": "Užupis",
+    "type": "tennis court",
+    "name": "Padelio kortai",
+    "address": "Vilnius",
+    "lat": 54.67854879999999,
+    "lng": 25.3185454,
+    "rating": 5,
+    "reviews": 7
+  },
+  {
+    "district": "Užupis",
+    "type": "tennis court",
+    "name": "Kaukysos paplūdimio teniso kortai",
+    "address": "Vilnius",
+    "lat": 54.6784931,
+    "lng": 25.3193763,
+    "rating": 0,
+    "reviews": 0
+  },
+  {
+    "district": "Justinava",
+    "type": "gym",
+    "name": "“Fontanų namai” Sporto salė (GYM) 24/7",
+    "address": "Eišiškių pl. 47, Vilnius",
+    "lat": 54.6426165,
+    "lng": 25.2615951,
+    "rating": 4.8,
+    "reviews": 4
+  },
+  {
+    "district": "Justinava",
+    "type": "gym",
+    "name": "inertia studio",
+    "address": "B. Karvelio gatvė 14, Vilnius",
+    "lat": 54.6506076,
+    "lng": 25.2687897,
+    "rating": 5,
+    "reviews": 1
+  },
+  {
+    "district": "Justinava",
+    "type": "gym",
+    "name": "Fanų padelio arena (metalo g.)",
+    "address": "Metalo g. 2, Vilnius",
+    "lat": 54.6444229,
+    "lng": 25.2676458,
+    "rating": 4.6,
+    "reviews": 78
+  },
+  {
+    "district": "Justinava",
+    "type": "gym",
+    "name": "Mayhem house studio",
+    "address": "Dariaus ir Girėno g. 41, Vilnius",
+    "lat": 54.6476542,
+    "lng": 25.2720902,
+    "rating": 5,
+    "reviews": 37
+  },
+  {
+    "district": "Justinava",
+    "type": "gym",
+    "name": "Omnigym treniruoklių aikštelė",
+    "address": "B. Karvelio gatvė 14, Vilnius",
+    "lat": 54.65102049999999,
+    "lng": 25.2692565,
+    "rating": 5,
+    "reviews": 1
+  },
+  {
+    "district": "Justinava",
+    "type": "stadium",
+    "name": "Užusienis football stadium",
+    "address": "Užusienio g. 19, Vilnius",
+    "lat": 54.6340781,
+    "lng": 25.2447589,
+    "rating": 4.6,
+    "reviews": 14
+  },
+  {
+    "district": "Justinava",
+    "type": "park",
+    "name": "Parkas",
+    "address": "Burbiškių g. 46, Vilnius",
+    "lat": 54.6464617,
+    "lng": 25.2589,
+    "rating": 4,
+    "reviews": 20
+  },
+  {
+    "district": "Justinava",
+    "type": "park",
+    "name": "Aviatorių skveras",
+    "address": "Dariaus ir Girėno g. 21a, Vilnius",
+    "lat": 54.6510423,
+    "lng": 25.271632,
+    "rating": 4.6,
+    "reviews": 8
+  },
+  {
+    "district": "Justinava",
+    "type": "park",
+    "name": "UP010 - P10 - Dariaus ir Girėno g. 81A, Vilnius",
+    "address": "Dariaus ir Girėno g. 81A, Vilnius",
+    "lat": 54.646535,
+    "lng": 25.273332,
+    "rating": 4,
+    "reviews": 1
+  },
+  {
+    "district": "Justinava",
+    "type": "park",
+    "name": "UNIPARK - P4 - Vilniaus oro uostas (VNO)",
+    "address": "Rodūnios kl. 1, Vilnius",
+    "lat": 54.6420839,
+    "lng": 25.27755,
+    "rating": 4,
+    "reviews": 49
+  },
+  {
+    "district": "Justinava",
+    "type": "park",
+    "name": "FlyParking",
+    "address": "Dariaus ir Girėno g. 71, Vilnius",
+    "lat": 54.6439905,
+    "lng": 25.2734762,
+    "rating": 4,
+    "reviews": 74
+  },
+  {
+    "district": "Justinava",
+    "type": "park",
+    "name": "Rackevičių miškas",
+    "address": "Vilnius",
+    "lat": 54.628253,
+    "lng": 25.2507253,
+    "rating": 0,
+    "reviews": 0
+  },
+  {
+    "district": "Justinava",
+    "type": "park",
+    "name": "UNIPARK - P9 - Vilniaus oro uostas (VNO)",
+    "address": "A. Gustaičio g. 8A, Vilnius",
+    "lat": 54.644906,
+    "lng": 25.2782552,
+    "rating": 4,
+    "reviews": 55
+  },
+  {
+    "district": "Justinava",
+    "type": "park",
+    "name": "Panerių erozinio kalvyno kraštovaizdžio draustinis",
+    "address": "Burbiškių g. 22, Vilnius",
+    "lat": 54.64808,
+    "lng": 25.254119,
+    "rating": 4.7,
+    "reviews": 40
+  },
+  {
+    "district": "Justinava",
+    "type": "swimming pool",
+    "name": "Masažiniai lauko ir vidaus baseinai, spa baseinai, jacuzzi",
+    "address": "Dariaus ir Girėno g. 113a, Vilnius",
+    "lat": 54.637862,
+    "lng": 25.2744869,
+    "rating": 4.7,
+    "reviews": 3
+  },
+  {
+    "district": "Justinava",
+    "type": "basketball court",
+    "name": "Aerottoria Arena",
+    "address": "Dariaus ir Girėno g. 38A, Vilnius",
+    "lat": 54.6496076,
+    "lng": 25.2728147,
+    "rating": 4.6,
+    "reviews": 13
+  },
+  {
+    "district": "Justinava",
+    "type": "basketball court",
+    "name": "Krepšinio aikštelė",
+    "address": "Vilnius",
+    "lat": 54.64977150000001,
+    "lng": 25.2800259,
+    "rating": 5,
+    "reviews": 1
+  },
+  {
+    "district": "Grigiškės",
+    "type": "gym",
+    "name": "Diva Namai Gym",
+    "address": "Ribiškių tak. 16, Vilnius",
+    "lat": 54.65775989999999,
+    "lng": 25.3293189,
+    "rating": 4.8,
+    "reviews": 51
+  },
+  {
+    "district": "Grigiškės",
+    "type": "park",
+    "name": "Vilko kalnas",
+    "address": "Vilnius",
+    "lat": 54.6539548,
+    "lng": 25.3371908,
+    "rating": 5,
+    "reviews": 1
+  },
+  {
+    "district": "Grigiškės",
+    "type": "park",
+    "name": "Pigus Parkavimas prie Vilniaus Oro Uosto",
+    "address": "Birbynių g. 3A, Vilnius",
+    "lat": 54.6611196,
+    "lng": 25.3051759,
+    "rating": 4.7,
+    "reviews": 66
+  },
+  {
+    "district": "Grigiškės",
+    "type": "park",
+    "name": "Ptir parking",
+    "address": "Minsko pl. 11, Vilnius",
+    "lat": 54.6510073,
+    "lng": 25.3115742,
+    "rating": 3.5,
+    "reviews": 57
+  },
+  {
+    "district": "Grigiškės",
+    "type": "park",
+    "name": "Ribiškių kraštovaizdžio draustinis",
+    "address": "Vilnius",
+    "lat": 54.6596072,
+    "lng": 25.3230542,
+    "rating": 4.7,
+    "reviews": 32
+  },
+  {
+    "district": "Grigiškės",
+    "type": "sports club",
+    "name": "Vilniaus Kalnėnų Aidas",
+    "address": "Gurių g. 111, Vilnius",
+    "lat": 54.6524705,
+    "lng": 25.3302584,
+    "rating": 5,
+    "reviews": 2
+  },
+  {
+    "district": "Grigiškės",
+    "type": "tennis court",
+    "name": "M7 Sport Balzekas Tennis Academy",
+    "address": "Ąžuolyno g., Nemėžis",
+    "lat": 54.64134869999999,
+    "lng": 25.3352571,
+    "rating": 4.8,
+    "reviews": 171
+  },
+  {
+    "district": "Varėnai",
+    "type": "gym",
+    "name": "Sporto aikštelė",
+    "address": "Kapsų g. 32, Vilnius",
+    "lat": 54.6615137,
+    "lng": 25.2796314,
+    "rating": 5,
+    "reviews": 2
+  },
+  {
+    "district": "Varėnai",
+    "type": "gym",
+    "name": "Sporto aikštelė",
+    "address": "Darbininkų g. 16, Vilnius",
+    "lat": 54.6613689,
+    "lng": 25.271632,
+    "rating": 5,
+    "reviews": 1
+  },
+  {
+    "district": "Varėnai",
+    "type": "gym",
+    "name": "Liepkalnis Outdoor Gym",
+    "address": "Liepkalnio g. 28, Vilnius",
+    "lat": 54.6670855,
+    "lng": 25.301398,
+    "rating": 3.8,
+    "reviews": 5
+  },
+  {
+    "district": "Varėnai",
+    "type": "gym",
+    "name": "Viksoras Bokso Klubas",
+    "address": "Liepkalnio mokykla, Liepkalnio g. 18, Vilnius",
+    "lat": 54.66794600000001,
+    "lng": 25.297588,
+    "rating": 4.7,
+    "reviews": 47
+  },
+  {
+    "district": "Varėnai",
+    "type": "stadium",
+    "name": "Juventos futbolo aikštė",
+    "address": "Vilnius",
+    "lat": 54.6620664,
+    "lng": 25.2744472,
+    "rating": 5,
+    "reviews": 1
+  },
+  {
+    "district": "Varėnai",
+    "type": "park",
+    "name": "Šimtmečių girių parkas",
+    "address": "Vilnius",
+    "lat": 54.6536725,
+    "lng": 25.2807494,
+    "rating": 3.7,
+    "reviews": 15
+  },
+  {
+    "district": "Varėnai",
+    "type": "park",
+    "name": "Telšių gatvės skveras",
+    "address": "Vilnius",
+    "lat": 54.6625124,
+    "lng": 25.2763304,
+    "rating": 4.6,
+    "reviews": 25
+  },
+  {
+    "district": "Varėnai",
+    "type": "park",
+    "name": "Pavilnys Regional Park Viewpoint",
+    "address": "Birbynių g. 20, Vilnius",
+    "lat": 54.6628884,
+    "lng": 25.308262,
+    "rating": 4.8,
+    "reviews": 192
+  },
+  {
+    "district": "Varėnai",
+    "type": "park",
+    "name": "Naujininkų parkas",
+    "address": "Kaminkelio g. 19, Vilnius",
+    "lat": 54.65674319999999,
+    "lng": 25.2790709,
+    "rating": 4.2,
+    "reviews": 6
+  },
+  {
+    "district": "Varėnai",
+    "type": "park",
+    "name": "Aviator's square",
+    "address": "Dariaus ir Girėno g. 21a, Vilnius",
+    "lat": 54.6516481,
+    "lng": 25.2713526,
+    "rating": 0,
+    "reviews": 0
+  },
+  {
+    "district": "Varėnai",
+    "type": "park",
+    "name": "Parkas",
+    "address": "Unnamed Road, Vilnius",
+    "lat": 54.654448,
+    "lng": 25.2778167,
+    "rating": 2,
+    "reviews": 2
+  },
+  {
+    "district": "Varėnai",
+    "type": "park",
+    "name": "Priešgaisrinė vandens saugykla",
+    "address": "Žirnių g. 62, Vilnius",
+    "lat": 54.6545461,
+    "lng": 25.2769604,
+    "rating": 0,
+    "reviews": 0
+  },
+  {
+    "district": "Varėnai",
+    "type": "basketball court",
+    "name": "Krepšinio aikštelė",
+    "address": "Vilnius",
+    "lat": 54.6613617,
+    "lng": 25.2791173,
+    "rating": 5,
+    "reviews": 2
+  },
+  {
+    "district": "Varėnai",
+    "type": "basketball court",
+    "name": "Krepšinio aikštelė",
+    "address": "Dariaus ir Girėno g. 20, Vilnius",
+    "lat": 54.65942769999999,
+    "lng": 25.2743133,
+    "rating": 0,
+    "reviews": 0
+  },
+  {
+    "district": "Varėnai",
+    "type": "basketball court",
+    "name": "Баскетбольная площадка",
+    "address": "Dariaus ir Girėno g. 14, Vilnius",
+    "lat": 54.66235649999999,
+    "lng": 25.2754081,
+    "rating": 0,
+    "reviews": 0
+  },
+  {
+    "district": "Varėnai",
+    "type": "tennis court",
+    "name": "Baltictennis",
+    "address": "Telšių g. 17, Vilnius",
+    "lat": 54.6635882,
+    "lng": 25.2773786,
+    "rating": 4.7,
+    "reviews": 140
+  },
+  {
+    "district": "Varėnai",
+    "type": "tennis court",
+    "name": "Bsport arena Vilnius",
+    "address": "Telšių g. 17, Vilnius",
+    "lat": 54.66367,
+    "lng": 25.27722,
+    "rating": 0,
+    "reviews": 0
+  },
+  {
+    "district": "Varėnai",
+    "type": "football field",
+    "name": "Sports Direct",
+    "address": "Vikingų g. 3, Vilnius",
+    "lat": 54.6530238,
+    "lng": 25.2770225,
+    "rating": 4.2,
+    "reviews": 495
+  }
+]

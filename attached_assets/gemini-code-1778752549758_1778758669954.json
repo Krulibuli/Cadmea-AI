@@ -1,0 +1,96 @@
+{
+  "currently_managed": [
+    {
+      "name": "FABIJONIŠKIŲ SWIMMING POOL",
+      "address": "S. Stanevičiaus g. 24 / Vėtrungių g. 45A",
+      "latitude": 54.7287,
+      "longitude": 25.2458
+    },
+    {
+      "name": "LAZDYNAI SWIMMING POOL",
+      "address": "Erfurto g. 13",
+      "latitude": 54.6678,
+      "longitude": 25.2078
+    },
+    {
+      "name": "ŽIRMŪNAI SWIMMING POOL",
+      "address": "Žirmūnų g. 37",
+      "latitude": 54.7135,
+      "longitude": 25.3023
+    },
+    {
+      "name": "NBA BASKETBALL SCHOOL ARENA",
+      "address": "Žemynos g. 14",
+      "latitude": 54.7287,
+      "longitude": 25.2328
+    },
+    {
+      "name": "ACTIVE VILNIUS ARENA",
+      "address": "Ozo g. 14A",
+      "latitude": 54.7160,
+      "longitude": 25.2789
+    },
+    {
+      "name": "PILAITĖ INFLATABLE AIR DOME STADIUM",
+      "address": "Įsruties g. 3",
+      "latitude": 54.7118,
+      "longitude": 25.1818
+    },
+    {
+      "name": "ŽIRMŪNAI INFLATABLE AIR DOME STADIUM",
+      "address": "Žirmūnų g. 37",
+      "latitude": 54.7135,
+      "longitude": 25.3023
+    },
+    {
+      "name": "MYKOLAS BIRŽIŠKA HEATED STADIUM",
+      "address": "Taikos g. 81",
+      "latitude": 54.7121,
+      "longitude": 25.2215
+    },
+    {
+      "name": "VILNIUS PALACE OF CULTURE, ENTERTAINMENT AND SPORTS",
+      "address": "Rinktinės g. 1",
+      "latitude": 54.6908,
+      "longitude": 25.2911
+    }
+  ],
+  "planned_to_be_managed": [
+    {
+      "name": "PILAITĖ SWIMMING POOL",
+      "address": "Įsruties g. 3",
+      "latitude": 54.7118,
+      "longitude": 25.1818
+    },
+    {
+      "name": "BIRŽELIO 23-RD STREET 10A",
+      "address": "Birželio 23-iosios g. 10A",
+      "latitude": 54.6781,
+      "longitude": 25.2635
+    },
+    {
+      "name": "ŽYGIO STREET 46",
+      "address": "Žygio g. 46",
+      "latitude": 54.7054,
+      "longitude": 25.2956
+    },
+    {
+      "name": "INDOOR ATHLETICS ARENA (2028)",
+      "address": "Žirmūnų g. (prie Neries)",
+      "latitude": 54.7150,
+      "longitude": 25.3050
+    },
+    {
+      "name": "ROWING CENTER",
+      "address": "Žirmūnų g. 1P",
+      "latitude": 54.6947,
+      "longitude": 25.3047
+    },
+    {
+      "name": "KAUNO ST. 43",
+      "address": "Kauno g. 43",
+      "latitude": 54.6728,
+      "longitude": 25.2652
+    }
+  ]
+}
