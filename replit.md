@@ -5,6 +5,7 @@ Cadmea is an AI-powered city intelligence map for choosing where to live, invest
 ## Run & Operate
 
 - `pnpm run dev` - Replit run command: builds the React app, builds the API, starts Express on `PORT` or `8080`.
+- `pnpm run dev:local` - local Windows/macOS/Linux alias for the same single-server app. Open `http://localhost:8080` after it prints `Server listening`.
 - `pnpm run start` - alias for the same Replit-safe run path.
 - `pnpm run typecheck` - full workspace typecheck.
 - `pnpm --filter @workspace/db run push` - push Drizzle schema to the configured Postgres database.

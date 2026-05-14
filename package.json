@@ -4,6 +4,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "corepack pnpm --filter @workspace/cadmea run build && corepack pnpm --filter @workspace/api-server run build && node artifacts/api-server/dist/index.mjs",
+    "dev:local": "corepack pnpm run dev",
     "start": "corepack pnpm run dev",
     "build": "corepack pnpm run typecheck && corepack pnpm -r --if-present run build",
     "typecheck:libs": "tsc --build",
