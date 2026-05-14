@@ -72,23 +72,6 @@ export default function DemandRadarPage() {
           </div>
         )}
 
-        {r && (
-          <Card className="mb-6 border-amber-500/30 bg-amber-500/5">
-            <CardContent className="p-4 flex items-start gap-3">
-              <Info className="w-5 h-5 text-amber-600 mt-0.5 shrink-0" />
-              <div className="text-xs text-foreground space-y-1">
-                <p><strong>{language === "lt" ? "Skaidrumas:" : "Transparency:"}</strong> {r.scoring_explanation.demand_index_0_100}</p>
-                <p>{r.scoring_explanation.shortage_index_0_100}</p>
-                <p className="italic text-muted-foreground">
-                  {language === "lt"
-                    ? "Tikrieji Google paieškos kiekiai dar neimportuoti — naudojamas atviras proxy modelis."
-                    : "Real Google Keyword Planner volumes are not yet imported — open proxy model used instead."}
-                </p>
-              </div>
-            </CardContent>
-          </Card>
-        )}
-
         <h2 className="text-lg font-extrabold text-foreground mb-3 flex items-center gap-2">
           <TrendingUp className="w-5 h-5 text-primary" />
           {language === "lt" ? "Sporto šakų populiarumas" : "Sport popularity"}

@@ -9,12 +9,14 @@
       "facilityId": null,
       "discipline": null,
       "createdAt": "2026-05-14T13:40:38.347Z",
-      "updatedAt": "2026-05-14T13:40:38.347Z",
+      "updatedAt": "2026-05-14T14:03:36.501Z",
       "authorFingerprint": "test1",
       "authorAlias": "Tester",
       "status": "open",
       "supporters": [
-        "test1"
+        "test1",
+        "fp_gtuwbnjdvh_mp5jzg3r",
+        "fp_m7cff6lq31_mp5k6yag"
       ],
       "forwardedToCity": false
     },
@@ -31,12 +33,14 @@
       "facilityId": null,
       "discipline": null,
       "createdAt": "2026-05-14T13:50:21.158Z",
-      "updatedAt": "2026-05-14T13:50:21.158Z",
+      "updatedAt": "2026-05-14T14:03:38.480Z",
       "authorFingerprint": "smoke-1778766621",
       "authorAlias": null,
       "status": "open",
       "supporters": [
-        "smoke-1778766621"
+        "smoke-1778766621",
+        "fp_gtuwbnjdvh_mp5jzg3r",
+        "fp_m7cff6lq31_mp5k6yag"
       ],
       "forwardedToCity": false
     },
@@ -81,6 +85,50 @@
       "status": "open",
       "supporters": [
         "smk-4-15142"
+      ],
+      "forwardedToCity": false
+    },
+    {
+      "id": "740e0723-4124-4211-858c-eedcf0b0c5c1",
+      "kind": "request",
+      "title": "pls ",
+      "description": "lol",
+      "district": "Verkiai",
+      "sport": "basketball",
+      "requestType": "upgrade",
+      "lat": null,
+      "lng": null,
+      "facilityId": null,
+      "discipline": null,
+      "createdAt": "2026-05-14T13:58:22.687Z",
+      "updatedAt": "2026-05-14T13:58:22.687Z",
+      "authorFingerprint": "fp_gtuwbnjdvh_mp5jzg3r",
+      "authorAlias": null,
+      "status": "open",
+      "supporters": [
+        "fp_gtuwbnjdvh_mp5jzg3r"
+      ],
+      "forwardedToCity": false
+    },
+    {
+      "id": "12498412-31ca-4220-8305-849b8a473835",
+      "kind": "request",
+      "title": "MUM REIKIA DEPORTUOT MUSLIUS",
+      "description": "-",
+      "district": "Antakalnis",
+      "sport": null,
+      "requestType": "upgrade",
+      "lat": null,
+      "lng": null,
+      "facilityId": null,
+      "discipline": null,
+      "createdAt": "2026-05-14T14:12:54.031Z",
+      "updatedAt": "2026-05-14T14:12:54.031Z",
+      "authorFingerprint": "fp_gtuwbnjdvh_mp5jzg3r",
+      "authorAlias": "-",
+      "status": "open",
+      "supporters": [
+        "fp_gtuwbnjdvh_mp5jzg3r"
       ],
       "forwardedToCity": false
     }

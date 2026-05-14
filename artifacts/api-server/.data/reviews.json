@@ -17,6 +17,33 @@
       "alias": null,
       "authorFingerprint": "smk-rev-29083",
       "createdAt": "2026-05-14T13:50:21.388Z"
+    },
+    {
+      "id": "6c3b8f1e-2448-426a-93af-f6f758bad8d1",
+      "facilityId": "mgd-nba-basketball-school-arena",
+      "rating": 5,
+      "comment": "niga",
+      "alias": null,
+      "authorFingerprint": "fp_gtuwbnjdvh_mp5jzg3r",
+      "createdAt": "2026-05-14T13:59:34.871Z"
+    },
+    {
+      "id": "4a30fa7d-b7a6-4a05-bb90-f52d5c19a0b8",
+      "facilityId": "mgd-zirmunai-swimming-pool",
+      "rating": 5,
+      "comment": "0daygym fuuuuuu",
+      "alias": null,
+      "authorFingerprint": "fp_gtuwbnjdvh_mp5jzg3r",
+      "createdAt": "2026-05-14T14:00:00.402Z"
+    },
+    {
+      "id": "64cd7d56-384a-478c-9566-f65f6fccf7b6",
+      "facilityId": "od-pasilaiciu-zaidimu-aikstele",
+      "rating": 5,
+      "comment": "mmmm vaikai",
+      "alias": null,
+      "authorFingerprint": "fp_gtuwbnjdvh_mp5jzg3r",
+      "createdAt": "2026-05-14T14:00:42.188Z"
     }
   ]
 }
