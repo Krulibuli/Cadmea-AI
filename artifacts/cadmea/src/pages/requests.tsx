@@ -31,11 +31,13 @@ export default function RequestsPage() {
   const { toast } = useToast();
   const [kind, setKind] = useState<RequestKind | "__all">("__all");
   const [district, setDistrict] = useState<string>("__all");
+  const [sport, setSport] = useState<string>("__all");
   const [showForm, setShowForm] = useState(false);
 
   const requestsQ = useRequests({
     kind: kind === "__all" ? undefined : kind,
     district: district === "__all" ? undefined : district,
+    sport: sport === "__all" ? undefined : sport,
   });
   const items = requestsQ.data?.items ?? [];
   const threshold = requestsQ.data?.petitionThreshold ?? 100;
@@ -206,7 +208,7 @@ export default function RequestsPage() {
         )}
 
         <Card className="mb-5">
-          <CardContent className="p-3 grid gap-2 md:grid-cols-3">
+          <CardContent className="p-3 grid gap-2 md:grid-cols-4">
             <div>
               <Select value={kind} onValueChange={(v) => setKind(v as RequestKind | "__all")}>
                 <SelectTrigger><SelectValue /></SelectTrigger>
@@ -224,6 +226,15 @@ export default function RequestsPage() {
                 <SelectContent>
                   <SelectItem value="__all">{t("filter.allDistricts")}</SelectItem>
                   {(meta.data?.districts ?? []).map((d) => <SelectItem key={d} value={d}>{d}</SelectItem>)}
+                </SelectContent>
+              </Select>
+            </div>
+            <div>
+              <Select value={sport} onValueChange={setSport}>
+                <SelectTrigger><SelectValue /></SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="__all">{language === "lt" ? "Visos sporto šakos" : "All sports"}</SelectItem>
+                  {(meta.data?.disciplines ?? []).map((d) => <SelectItem key={d} value={d}>{d}</SelectItem>)}
                 </SelectContent>
               </Select>
             </div>

@@ -193,16 +193,19 @@ export default function AdminPage() {
             {aiQ.data?.items?.length ? (
               <ol className="space-y-2">
                 {aiQ.data.items.slice(0, 3).map((rec, i) => (
-                  <li key={`${rec.district}-${rec.sport}-${i}`} className="flex items-start gap-3 p-2 rounded-md border border-border bg-muted/30">
+                  <li key={rec.id ?? `${rec.district}-${rec.sport}-${i}`} className="flex items-start gap-3 p-2 rounded-md border border-border bg-muted/30">
                     <div className="shrink-0 w-7 h-7 rounded-full bg-primary text-primary-foreground font-extrabold flex items-center justify-center text-sm">{i + 1}</div>
                     <div className="min-w-0 flex-1">
                       <div className="flex flex-wrap items-center gap-1.5">
                         <Badge variant="outline" className="text-[10px]"><MapPin className="w-3 h-3 mr-1" />{rec.district}</Badge>
                         <Badge variant="secondary" className="text-[10px]">{rec.sport}</Badge>
-                        <Badge className="text-[10px] bg-primary text-primary-foreground">{language === "lt" ? "Balas" : "Score"} {rec.priority_score_0_100}</Badge>
+                        <Badge className="text-[10px] bg-primary text-primary-foreground">{language === "lt" ? "Balas" : "Score"} {Math.round(rec.score)}</Badge>
+                        <Badge variant="outline" className="text-[10px]">{rec.confidence}</Badge>
                       </div>
                       <p className="mt-1 text-xs font-bold text-foreground">{rec.action}</p>
-                      <p className="text-[10px] text-muted-foreground line-clamp-2">{(rec.reasons ?? []).join(" • ")}</p>
+                      <p className="text-[10px] text-muted-foreground line-clamp-2">
+                        {(rec.evidence ?? []).map((e) => e.label).join(" • ")}
+                      </p>
                     </div>
                   </li>
                 ))}

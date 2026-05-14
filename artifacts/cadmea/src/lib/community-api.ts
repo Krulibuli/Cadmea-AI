@@ -152,7 +152,7 @@ export function useDemandSummary() {
   return useQuery({ queryKey: ["demand/summary"], queryFn: () => get<DemandSummary>("/api/demand/summary") });
 }
 
-export function useRequests(filter: { district?: string; kind?: RequestKind; status?: RequestStatus; facilityId?: string } = {}) {
+export function useRequests(filter: { district?: string; kind?: RequestKind; status?: RequestStatus; facilityId?: string; sport?: string } = {}) {
   const sp = new URLSearchParams();
   Object.entries(filter).forEach(([k, v]) => { if (v) sp.set(k, v); });
   const qs = sp.toString();

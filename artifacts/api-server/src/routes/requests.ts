@@ -23,12 +23,13 @@ function getFingerprint(req: import("express").Request): string {
 }
 
 router.get("/requests", async (req, res) => {
-  const { district, kind, status, facilityId } = req.query as Record<string, string | undefined>;
+  const { district, kind, status, facilityId, sport } = req.query as Record<string, string | undefined>;
   const items = await listRequests({
     district,
     kind: kind as RequestKind | undefined,
     status: status as RequestStatus | undefined,
     facilityId,
+    sport,
   });
   res.json({ items, petitionThreshold: PETITION_THRESHOLD_VALUE });
 });

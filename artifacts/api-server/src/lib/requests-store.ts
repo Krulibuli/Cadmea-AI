@@ -54,13 +54,16 @@ export async function listRequests(filter: {
   kind?: RequestKind;
   status?: RequestStatus;
   facilityId?: string;
+  sport?: string;
 } = {}): Promise<ResidentRequest[]> {
   const { items } = await load();
+  const sportLc = filter.sport?.toLowerCase();
   return items
     .filter((r) => !filter.district || r.district === filter.district)
     .filter((r) => !filter.kind || r.kind === filter.kind)
     .filter((r) => !filter.status || r.status === filter.status)
     .filter((r) => !filter.facilityId || r.facilityId === filter.facilityId)
+    .filter((r) => !sportLc || (r.sport?.toLowerCase() === sportLc) || (r.discipline?.toLowerCase() === sportLc))
     .sort((a, b) => b.supporters.length - a.supporters.length || b.createdAt.localeCompare(a.createdAt));
 }
 
