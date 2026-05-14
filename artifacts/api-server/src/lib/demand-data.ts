@@ -50,9 +50,15 @@ export interface DemandReport {
   what_is_growing_fastest: GrowingTrend[];
   biggest_shortages: ShortageEntry[];
   top_district_recommendations: DistrictRecommendation[];
-  keyword_clusters_to_import_or_scrape_legally?: unknown;
-  district_keyword_matrix_sample?: unknown;
+  keyword_clusters_to_import_or_scrape_legally?: Record<string, string[]>;
+  district_keyword_matrix_sample?: DistrictKeywordRow[];
   app_integration?: unknown;
+}
+
+export interface DistrictKeywordRow {
+  district: string;
+  top_sports: string[];
+  must_test_keywords: string[];
 }
 
 const report = demandJson as unknown as DemandReport;

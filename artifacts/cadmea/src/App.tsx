@@ -47,6 +47,8 @@ function Router() {
       <Route path="/sports/facility/:id" component={SportsFacilityDetailPage} />
       <Route path="/sports/demand" component={DemandRadarPage} />
       <Route path="/sports/requests" component={RequestsPage} />
+      <Route path="/demand-radar" component={DemandRadarPage} />
+      <Route path="/requests" component={RequestsPage} />
       <Route path="/business" component={BusinessPage} />
       <Route path="/admin" component={AdminPage} />
       <Route path="/map" component={MapPage} />

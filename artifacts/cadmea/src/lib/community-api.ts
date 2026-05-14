@@ -39,6 +39,12 @@ export interface DemandReport {
     confidence: string;
     reasons: string[];
   }[];
+  keyword_clusters_to_import_or_scrape_legally?: Record<string, string[]>;
+  district_keyword_matrix_sample?: {
+    district: string;
+    top_sports: string[];
+    must_test_keywords: string[];
+  }[];
 }
 
 export interface DemandSummary {
@@ -52,7 +58,17 @@ export interface DemandSummary {
 }
 
 export type RequestKind = "issue" | "request" | "petition";
-export type RequestStatus = "open" | "reviewing" | "planned" | "rejected" | "resolved";
+export type RequestStatus = "open" | "forwarded" | "acknowledged" | "planned" | "rejected";
+
+export interface GoogleReviewSummary {
+  facilityId: string;
+  source: "placeholder" | "google_places";
+  averageRating: number | null;
+  totalReviews: number | null;
+  highlights: string[];
+  note: string;
+  fetchedAt: string;
+}
 
 export interface ResidentRequest {
   id: string;
@@ -196,6 +212,14 @@ export function useCreateReview(facilityId: string) {
 export function useAiRecommendations() {
   return useQuery({
     queryKey: ["ai-recommendations"],
-    queryFn: () => get<{ items: AiRecommendation[]; methodology: string; generatedAt: string }>("/api/recommendations/ai"),
+    queryFn: () => get<{ items: AiRecommendation[]; methodology: string; generatedAt: string }>("/api/recommendations"),
+  });
+}
+
+export function useGoogleReviewSummary(facilityId: string | undefined) {
+  return useQuery({
+    enabled: !!facilityId,
+    queryKey: ["google-review-summary", facilityId],
+    queryFn: () => get<GoogleReviewSummary>(`/api/facilities/${facilityId}/google-review-summary`),
   });
 }

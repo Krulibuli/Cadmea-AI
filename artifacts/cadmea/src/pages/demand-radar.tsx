@@ -1,4 +1,4 @@
-import { Radar, TrendingUp, AlertTriangle, MapPin, Sparkles, Info } from "lucide-react";
+import { Radar, TrendingUp, AlertTriangle, MapPin, Sparkles, Info, Hash, Grid3x3, Rocket } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
@@ -157,6 +157,105 @@ export default function DemandRadarPage() {
             </Card>
           ))}
         </div>
+
+        <h2 className="text-lg font-extrabold text-foreground mb-3 flex items-center gap-2">
+          <Rocket className="w-5 h-5 text-primary" />
+          {language === "lt" ? "Greičiausiai auga" : "What's growing fastest"}
+        </h2>
+        <div className="grid gap-3 md:grid-cols-2 mb-8">
+          {(r?.what_is_growing_fastest ?? []).map((g) => (
+            <Card key={g.sport_or_need} className="border-l-4" style={{ borderLeftColor: scoreColor(g.growth_proxy_0_100) }}>
+              <CardContent className="p-4">
+                <div className="flex items-start justify-between gap-2 mb-1">
+                  <h3 className="text-sm font-extrabold text-foreground">{g.sport_or_need}</h3>
+                  <span className="text-xl font-extrabold" style={{ color: scoreColor(g.growth_proxy_0_100) }}>
+                    {g.growth_proxy_0_100}
+                  </span>
+                </div>
+                <Progress value={g.growth_proxy_0_100} className="h-1.5 mt-1.5" />
+                <p className="mt-2 text-[11px] uppercase font-bold tracking-wider text-muted-foreground">
+                  {language === "lt" ? "Įrodymo tipas" : "Evidence type"}
+                </p>
+                <p className="text-xs text-foreground">{g.evidence_type}</p>
+                <p className="mt-2 text-xs text-foreground"><strong>{language === "lt" ? "Rekomendacija" : "Recommendation"}:</strong> {g.recommendation}</p>
+                <div className="mt-2 flex flex-wrap gap-1">
+                  {g.keywords.slice(0, 5).map((k) => (
+                    <Badge key={k} variant="outline" className="text-[10px]"><Hash className="w-2.5 h-2.5 mr-0.5" />{k}</Badge>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+
+        {r?.keyword_clusters_to_import_or_scrape_legally && (
+          <>
+            <h2 className="text-lg font-extrabold text-foreground mb-3 flex items-center gap-2">
+              <Hash className="w-5 h-5 text-primary" />
+              {language === "lt" ? "Raktažodžių grupės" : "Keyword clusters"}
+            </h2>
+            <Card className="mb-8">
+              <CardContent className="p-4">
+                <p className="text-xs italic text-muted-foreground mb-3">
+                  {language === "lt"
+                    ? "Importuojami / teisėtai surenkami raktažodžiai pagal sporto sritis."
+                    : "Cluster of keywords to import or legally scrape, grouped by sport area."}
+                </p>
+                <div className="grid gap-3 md:grid-cols-2">
+                  {Object.entries(r.keyword_clusters_to_import_or_scrape_legally).map(([cluster, kws]) => (
+                    <div key={cluster} className="border border-border rounded-lg p-3">
+                      <p className="text-[10px] uppercase font-bold tracking-wider text-muted-foreground mb-1.5">{cluster.replace(/_/g, " ")}</p>
+                      <div className="flex flex-wrap gap-1">
+                        {kws.map((k) => (
+                          <Badge key={k} variant="secondary" className="text-[10px]">{k}</Badge>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          </>
+        )}
+
+        {r?.district_keyword_matrix_sample && (
+          <>
+            <h2 className="text-lg font-extrabold text-foreground mb-3 flex items-center gap-2">
+              <Grid3x3 className="w-5 h-5 text-primary" />
+              {language === "lt" ? "Rajonų raktažodžių matrica" : "District keyword matrix"}
+            </h2>
+            <Card className="mb-8 overflow-x-auto">
+              <CardContent className="p-0">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b border-border bg-muted/40">
+                      <th className="text-left p-3 text-[11px] uppercase font-bold tracking-wider text-muted-foreground">{language === "lt" ? "Rajonas" : "District"}</th>
+                      <th className="text-left p-3 text-[11px] uppercase font-bold tracking-wider text-muted-foreground">{language === "lt" ? "Pagrindinės šakos" : "Top sports"}</th>
+                      <th className="text-left p-3 text-[11px] uppercase font-bold tracking-wider text-muted-foreground">{language === "lt" ? "Raktažodžiai" : "Must-test keywords"}</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {r.district_keyword_matrix_sample.map((row) => (
+                      <tr key={row.district} className="border-b border-border last:border-b-0">
+                        <td className="p-3 font-bold text-foreground"><MapPin className="w-3 h-3 inline mr-1 text-primary" />{row.district}</td>
+                        <td className="p-3">
+                          <div className="flex flex-wrap gap-1">
+                            {row.top_sports.map((s) => <Badge key={s} variant="outline" className="text-[10px]">{s}</Badge>)}
+                          </div>
+                        </td>
+                        <td className="p-3">
+                          <div className="flex flex-wrap gap-1">
+                            {row.must_test_keywords.map((k) => <Badge key={k} variant="secondary" className="text-[10px]"><Hash className="w-2.5 h-2.5 mr-0.5" />{k}</Badge>)}
+                          </div>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </CardContent>
+            </Card>
+          </>
+        )}
 
         <h2 className="text-lg font-extrabold text-foreground mb-3 flex items-center gap-2">
           <Sparkles className="w-5 h-5 text-primary" />

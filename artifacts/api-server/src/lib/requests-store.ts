@@ -2,7 +2,7 @@ import { randomUUID } from "node:crypto";
 import { readJson, writeJson, withFileLock } from "./json-store";
 
 export type RequestKind = "issue" | "request" | "petition";
-export type RequestStatus = "open" | "reviewing" | "planned" | "rejected" | "resolved";
+export type RequestStatus = "open" | "forwarded" | "acknowledged" | "planned" | "rejected";
 
 export interface ResidentRequest {
   id: string;
@@ -110,6 +110,7 @@ export async function supportRequest(id: string, fingerprint: string): Promise<R
         item.supporters.length >= PETITION_THRESHOLD
       ) {
         item.forwardedToCity = true;
+        if (item.status === "open") item.status = "forwarded";
       }
       await save(store);
     }

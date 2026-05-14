@@ -12,7 +12,7 @@ import {
 } from "@/lib/community-api";
 import { useToast } from "@/hooks/use-toast";
 
-const STATUS_OPTIONS: RequestStatus[] = ["open", "reviewing", "planned", "rejected", "resolved"];
+const STATUS_OPTIONS: RequestStatus[] = ["open", "forwarded", "acknowledged", "planned", "rejected"];
 
 function PetitionRow({ r }: { r: ResidentRequest }) {
   const { language } = useI18n();

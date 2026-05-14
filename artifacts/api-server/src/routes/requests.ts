@@ -13,7 +13,7 @@ import {
 const router = Router();
 
 const ALLOWED_KINDS: RequestKind[] = ["issue", "request", "petition"];
-const ALLOWED_STATUS: RequestStatus[] = ["open", "reviewing", "planned", "rejected", "resolved"];
+const ALLOWED_STATUS: RequestStatus[] = ["open", "forwarded", "acknowledged", "planned", "rejected"];
 
 function getFingerprint(req: import("express").Request): string {
   const fp = (req.headers["x-fingerprint"] || req.body?.fingerprint || "").toString().trim();

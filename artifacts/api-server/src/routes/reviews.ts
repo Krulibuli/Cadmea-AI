@@ -1,8 +1,13 @@
 import { Router } from "express";
 import { createReview, listReviews, reviewSummary } from "../lib/reviews-store";
 import { getFacility } from "../lib/sports-data";
+import { getGoogleReviewSummary } from "../lib/demand-ingest";
 
 const router = Router();
+
+router.get("/facilities/:id/google-review-summary", (req, res) => {
+  res.json(getGoogleReviewSummary(req.params.id));
+});
 
 function getFingerprint(req: import("express").Request): string {
   const fp = (req.headers["x-fingerprint"] || req.body?.fingerprint || "").toString().trim();

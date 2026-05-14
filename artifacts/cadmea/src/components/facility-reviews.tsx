@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
-import { useFacilityReviews, useCreateReview } from "@/lib/community-api";
+import { useFacilityReviews, useCreateReview, useGoogleReviewSummary } from "@/lib/community-api";
 import { getAlias, setAlias } from "@/lib/fingerprint";
 import { useI18n } from "@/lib/i18n";
 import { useToast } from "@/hooks/use-toast";
@@ -37,6 +37,7 @@ export function FacilityReviews({ facilityId }: { facilityId: string }) {
   const { language } = useI18n();
   const { toast } = useToast();
   const reviewsQ = useFacilityReviews(facilityId);
+  const googleQ = useGoogleReviewSummary(facilityId);
   const create = useCreateReview(facilityId);
   const [rating, setRating] = useState(5);
   const [comment, setComment] = useState("");
@@ -77,6 +78,18 @@ export function FacilityReviews({ facilityId }: { facilityId: string }) {
             </div>
           )}
         </div>
+
+        {googleQ.data && (
+          <div className="mb-3 rounded-lg border border-dashed border-border bg-muted/20 p-3">
+            <div className="flex items-center justify-between">
+              <p className="text-[10px] uppercase font-bold tracking-wider text-muted-foreground">
+                {language === "lt" ? "Google atsiliepimų santrauka" : "Google reviews summary"}
+              </p>
+              <Badge variant="outline" className="text-[10px]">{googleQ.data.source}</Badge>
+            </div>
+            <p className="mt-1.5 text-xs italic text-muted-foreground">{googleQ.data.note}</p>
+          </div>
+        )}
 
         <form onSubmit={submit} className="border border-border rounded-lg p-3 mb-4 bg-muted/20">
           <div className="flex items-center justify-between mb-2">

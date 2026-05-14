@@ -3,7 +3,7 @@ import { buildRecommendations } from "../lib/recommendation-engine";
 
 const router = Router();
 
-router.get("/recommendations/ai", async (_req, res) => {
+async function handleRecommendations(_req: import("express").Request, res: import("express").Response) {
   const items = await buildRecommendations();
   res.json({
     items,
@@ -11,6 +11,9 @@ router.get("/recommendations/ai", async (_req, res) => {
       "Transparent deterministic scoring (no LLM). Weights: shortage 45%, petitions 25%, open requests 10%, utilization 15%, reviews 5%.",
     generatedAt: new Date().toISOString(),
   });
-});
+}
+
+router.get("/recommendations", handleRecommendations);
+router.get("/recommendations/ai", handleRecommendations);
 
 export default router;
