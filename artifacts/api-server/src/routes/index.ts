@@ -7,6 +7,7 @@ import aiRouter from "./ai";
 import statsRouter from "./stats";
 import openaiConversationsRouter from "./openai-conversations";
 import ingestionRouter from "./ingestion";
+import sportsRouter from "./sports";
 
 const router: IRouter = Router();
 
@@ -18,5 +19,6 @@ router.use(aiRouter);
 router.use(statsRouter);
 router.use(openaiConversationsRouter);
 router.use(ingestionRouter);
+router.use(sportsRouter);
 
 export default router;
