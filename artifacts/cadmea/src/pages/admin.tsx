@@ -1,4 +1,5 @@
-import { Shield, Database, RefreshCcw, Activity, FileDown, Lock, Megaphone, Sparkles, MapPin, Radar, CheckCircle2, Loader2 } from "lucide-react";
+import { Link } from "wouter";
+import { Shield, Database, RefreshCcw, Activity, FileDown, Lock, Megaphone, Sparkles, MapPin, Radar, CheckCircle2, Loader2, ArrowRight, Trophy } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -177,6 +178,40 @@ export default function AdminPage() {
             </CardContent>
           </Card>
         </div>
+
+        <Card className="mb-4 border-primary/30">
+          <CardContent className="p-4">
+            <div className="flex items-start justify-between gap-3 mb-3">
+              <h2 className="text-sm font-extrabold text-foreground flex items-center gap-1.5">
+                <Trophy className="w-4 h-4 text-primary" />
+                {language === "lt" ? "Top 3 prioritetai (kur statyti / atnaujinti)" : "Top 3 priorities (where to build / upgrade)"}
+              </h2>
+              <Link href="/demand-radar" className="text-xs font-semibold text-primary hover:underline whitespace-nowrap inline-flex items-center gap-1">
+                {language === "lt" ? "Atidaryti Paklausos radarą" : "Open Demand Radar"} <ArrowRight className="w-3 h-3" />
+              </Link>
+            </div>
+            {aiQ.data?.items?.length ? (
+              <ol className="space-y-2">
+                {aiQ.data.items.slice(0, 3).map((rec, i) => (
+                  <li key={`${rec.district}-${rec.sport}-${i}`} className="flex items-start gap-3 p-2 rounded-md border border-border bg-muted/30">
+                    <div className="shrink-0 w-7 h-7 rounded-full bg-primary text-primary-foreground font-extrabold flex items-center justify-center text-sm">{i + 1}</div>
+                    <div className="min-w-0 flex-1">
+                      <div className="flex flex-wrap items-center gap-1.5">
+                        <Badge variant="outline" className="text-[10px]"><MapPin className="w-3 h-3 mr-1" />{rec.district}</Badge>
+                        <Badge variant="secondary" className="text-[10px]">{rec.sport}</Badge>
+                        <Badge className="text-[10px] bg-primary text-primary-foreground">{language === "lt" ? "Balas" : "Score"} {rec.priority_score_0_100}</Badge>
+                      </div>
+                      <p className="mt-1 text-xs font-bold text-foreground">{rec.action}</p>
+                      <p className="text-[10px] text-muted-foreground line-clamp-2">{(rec.reasons ?? []).join(" • ")}</p>
+                    </div>
+                  </li>
+                ))}
+              </ol>
+            ) : (
+              <Loader2 className="w-4 h-4 animate-spin" />
+            )}
+          </CardContent>
+        </Card>
 
         <div className="grid gap-4 md:grid-cols-2">
           <Card>

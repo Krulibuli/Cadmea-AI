@@ -17,6 +17,72 @@
         "test1"
       ],
       "forwardedToCity": false
+    },
+    {
+      "id": "838173e0-d6c6-4c88-a7c8-d9990e01d4a1",
+      "kind": "petition",
+      "title": "Test petition",
+      "description": "Need new pool",
+      "district": "Antakalnis",
+      "sport": "Plaukimas",
+      "requestType": "build",
+      "lat": 54.7,
+      "lng": 25.3,
+      "facilityId": null,
+      "discipline": null,
+      "createdAt": "2026-05-14T13:50:21.158Z",
+      "updatedAt": "2026-05-14T13:50:21.158Z",
+      "authorFingerprint": "smoke-1778766621",
+      "authorAlias": null,
+      "status": "open",
+      "supporters": [
+        "smoke-1778766621"
+      ],
+      "forwardedToCity": false
+    },
+    {
+      "id": "291259d7-d0da-4ea7-bb4a-e01decc89e44",
+      "kind": "request",
+      "title": "R5",
+      "description": "d",
+      "district": "Antakalnis",
+      "sport": "Krepšinis",
+      "requestType": "upgrade",
+      "lat": null,
+      "lng": null,
+      "facilityId": null,
+      "discipline": null,
+      "createdAt": "2026-05-14T13:50:21.294Z",
+      "updatedAt": "2026-05-14T13:50:21.294Z",
+      "authorFingerprint": "smk-5-28676",
+      "authorAlias": null,
+      "status": "open",
+      "supporters": [
+        "smk-5-28676"
+      ],
+      "forwardedToCity": false
+    },
+    {
+      "id": "c8a62f66-bdb6-4a1d-9fe0-dc68a8e13b10",
+      "kind": "request",
+      "title": "R4",
+      "description": "d",
+      "district": "Antakalnis",
+      "sport": "Krepšinis",
+      "requestType": "upgrade",
+      "lat": null,
+      "lng": null,
+      "facilityId": null,
+      "discipline": null,
+      "createdAt": "2026-05-14T13:50:21.367Z",
+      "updatedAt": "2026-05-14T13:50:21.367Z",
+      "authorFingerprint": "smk-4-15142",
+      "authorAlias": null,
+      "status": "open",
+      "supporters": [
+        "smk-4-15142"
+      ],
+      "forwardedToCity": false
     }
   ]
 }

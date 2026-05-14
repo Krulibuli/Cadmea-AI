@@ -21,7 +21,11 @@ export async function readJson<T>(filename: string, fallback: T): Promise<T> {
 
 const fileLocks = new Map<string, Promise<unknown>>();
 
-async function rawWrite<T>(filename: string, value: T): Promise<void> {
+/**
+ * Atomic write WITHOUT taking the per-file lock. Use this only inside an
+ * existing `withFileLock(filename, …)` block to avoid re-entrant deadlock.
+ */
+export async function writeJsonUnsafe<T>(filename: string, value: T): Promise<void> {
   await ensureDir();
   const filePath = path.join(DATA_DIR, filename);
   const tmp = `${filePath}.${process.pid}.${Date.now()}.${Math.random().toString(36).slice(2)}.tmp`;
@@ -30,7 +34,7 @@ async function rawWrite<T>(filename: string, value: T): Promise<void> {
 }
 
 export async function writeJson<T>(filename: string, value: T): Promise<void> {
-  return withFileLock(filename, () => rawWrite(filename, value));
+  return withFileLock(filename, () => writeJsonUnsafe(filename, value));
 }
 
 /**

@@ -8,6 +8,15 @@
       "alias": "Test",
       "authorFingerprint": "test2",
       "createdAt": "2026-05-14T13:40:50.614Z"
+    },
+    {
+      "id": "c3c21227-ab15-4830-8c37-02c63acdc01d",
+      "facilityId": "mgd-lazdynai-swimming-pool",
+      "rating": 4,
+      "comment": "ok",
+      "alias": null,
+      "authorFingerprint": "smk-rev-29083",
+      "createdAt": "2026-05-14T13:50:21.388Z"
     }
   ]
 }

@@ -59,6 +59,7 @@ export interface DemandSummary {
 
 export type RequestKind = "issue" | "request" | "petition";
 export type RequestStatus = "open" | "forwarded" | "acknowledged" | "planned" | "rejected";
+export type RequestType = "build" | "upgrade" | "maintenance";
 
 export interface GoogleReviewSummary {
   facilityId: string;
@@ -76,6 +77,10 @@ export interface ResidentRequest {
   title: string;
   description: string;
   district: string;
+  sport?: string | null;
+  requestType?: RequestType | null;
+  lat?: number | null;
+  lng?: number | null;
   facilityId?: string | null;
   discipline?: string | null;
   createdAt: string;
@@ -165,6 +170,10 @@ export function useCreateRequest() {
       title: string;
       description: string;
       district: string;
+      sport?: string | null;
+      requestType?: RequestType | null;
+      lat?: number | null;
+      lng?: number | null;
       facilityId?: string | null;
       discipline?: string | null;
       alias?: string | null;

@@ -10,7 +10,7 @@ import { Progress } from "@/components/ui/progress";
 import { useI18n } from "@/lib/i18n";
 import { useSportsMeta } from "@/lib/sports-api";
 import {
-  useRequests, useCreateRequest, useSupportRequest, type RequestKind, type ResidentRequest,
+  useRequests, useCreateRequest, useSupportRequest, type RequestKind, type RequestType, type ResidentRequest,
 } from "@/lib/community-api";
 import { getAlias, setAlias } from "@/lib/fingerprint";
 import { useToast } from "@/hooks/use-toast";
@@ -48,6 +48,10 @@ export default function RequestsPage() {
     title: "",
     description: "",
     district: "",
+    sport: "",
+    requestType: "build" as RequestType,
+    lat: "" as string,
+    lng: "" as string,
     alias: getAlias(),
   });
 
@@ -57,11 +61,23 @@ export default function RequestsPage() {
       toast({ title: language === "lt" ? "Užpildykite visus laukus" : "Please fill all required fields", variant: "destructive" });
       return;
     }
+    const latNum = form.lat.trim() ? Number(form.lat) : null;
+    const lngNum = form.lng.trim() ? Number(form.lng) : null;
     try {
-      await create.mutateAsync(form);
+      await create.mutateAsync({
+        kind: form.kind,
+        title: form.title,
+        description: form.description,
+        district: form.district,
+        sport: form.sport || null,
+        requestType: form.requestType,
+        lat: latNum != null && Number.isFinite(latNum) ? latNum : null,
+        lng: lngNum != null && Number.isFinite(lngNum) ? lngNum : null,
+        alias: form.alias,
+      });
       if (form.alias) setAlias(form.alias);
       toast({ title: language === "lt" ? "Padėka už įrašą!" : "Thanks — your submission is live." });
-      setForm((f) => ({ ...f, title: "", description: "" }));
+      setForm((f) => ({ ...f, title: "", description: "", lat: "", lng: "" }));
       setShowForm(false);
     } catch (err) {
       toast({ title: language === "lt" ? "Klaida" : "Failed", description: String(err), variant: "destructive" });
@@ -132,6 +148,27 @@ export default function RequestsPage() {
                     </SelectContent>
                   </Select>
                 </div>
+                <div className="md:col-span-1">
+                  <label className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">{language === "lt" ? "Veiksmas" : "Action"}</label>
+                  <Select value={form.requestType} onValueChange={(v) => setForm((f) => ({ ...f, requestType: v as RequestType }))}>
+                    <SelectTrigger className="mt-1"><SelectValue /></SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="build">{language === "lt" ? "Statyti naują" : "Build new"}</SelectItem>
+                      <SelectItem value="upgrade">{language === "lt" ? "Atnaujinti" : "Upgrade"}</SelectItem>
+                      <SelectItem value="maintenance">{language === "lt" ? "Priežiūra / remontas" : "Maintenance / repair"}</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+                <div className="md:col-span-1">
+                  <label className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">{language === "lt" ? "Sporto šaka" : "Sport"}</label>
+                  <Select value={form.sport || "__any"} onValueChange={(v) => setForm((f) => ({ ...f, sport: v === "__any" ? "" : v }))}>
+                    <SelectTrigger className="mt-1"><SelectValue placeholder={language === "lt" ? "Pasirinkite" : "Select…"} /></SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="__any">{language === "lt" ? "Bet kuri / nenurodyta" : "Any / unspecified"}</SelectItem>
+                      {(meta.data?.disciplines ?? []).map((d) => <SelectItem key={d} value={d}>{d}</SelectItem>)}
+                    </SelectContent>
+                  </Select>
+                </div>
                 <div className="md:col-span-2">
                   <label className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">{language === "lt" ? "Antraštė" : "Title"} *</label>
                   <Input value={form.title} onChange={(e) => setForm((f) => ({ ...f, title: e.target.value }))} maxLength={160} className="mt-1" />
@@ -139,6 +176,14 @@ export default function RequestsPage() {
                 <div className="md:col-span-2">
                   <label className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">{language === "lt" ? "Aprašymas" : "Description"} *</label>
                   <Textarea value={form.description} onChange={(e) => setForm((f) => ({ ...f, description: e.target.value }))} maxLength={2000} rows={4} className="mt-1" />
+                </div>
+                <div className="md:col-span-1">
+                  <label className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">{language === "lt" ? "Platuma (neprivaloma)" : "Latitude (optional)"}</label>
+                  <Input value={form.lat} onChange={(e) => setForm((f) => ({ ...f, lat: e.target.value }))} inputMode="decimal" placeholder="54.6872" className="mt-1" />
+                </div>
+                <div className="md:col-span-1">
+                  <label className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">{language === "lt" ? "Ilguma (neprivaloma)" : "Longitude (optional)"}</label>
+                  <Input value={form.lng} onChange={(e) => setForm((f) => ({ ...f, lng: e.target.value }))} inputMode="decimal" placeholder="25.2797" className="mt-1" />
                 </div>
                 <div className="md:col-span-2">
                   <label className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">{language === "lt" ? "Pseudonimas (neprivaloma)" : "Alias (optional)"}</label>
@@ -213,6 +258,13 @@ export default function RequestsPage() {
                             )}
                           </div>
                           <h3 className="text-sm font-extrabold text-foreground">{r.title}</h3>
+                          <div className="mt-1 flex flex-wrap gap-1.5">
+                            {r.sport && <Badge variant="outline" className="text-[10px]">{r.sport}</Badge>}
+                            {r.requestType && <Badge variant="outline" className="text-[10px] capitalize">{r.requestType}</Badge>}
+                            {r.lat != null && r.lng != null && (
+                              <Badge variant="outline" className="text-[10px]"><MapPin className="w-3 h-3 mr-1" />{r.lat.toFixed(4)}, {r.lng.toFixed(4)}</Badge>
+                            )}
+                          </div>
                           <p className="mt-1 text-xs text-muted-foreground whitespace-pre-wrap line-clamp-3">{r.description}</p>
                           <p className="mt-1.5 text-[10px] text-muted-foreground">
                             {r.authorAlias || (language === "lt" ? "Anoniminis" : "Anonymous")} · {new Date(r.createdAt).toLocaleDateString()}

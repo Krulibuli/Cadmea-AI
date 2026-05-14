@@ -6,8 +6,10 @@ import {
   setRequestStatus,
   supportRequest,
   PETITION_THRESHOLD_VALUE,
+  ALLOWED_REQUEST_TYPES,
   type RequestKind,
   type RequestStatus,
+  type RequestType,
 } from "../lib/requests-store";
 
 const router = Router();
@@ -41,7 +43,7 @@ router.get("/requests/:id", async (req, res) => {
 });
 
 router.post("/requests", async (req, res) => {
-  const { kind, title, description, district, facilityId, discipline, alias } = req.body ?? {};
+  const { kind, title, description, district, sport, requestType, lat, lng, facilityId, discipline, alias } = req.body ?? {};
   if (!kind || !ALLOWED_KINDS.includes(kind)) {
     res.status(400).json({ error: "kind must be issue|request|petition" });
     return;
@@ -50,12 +52,22 @@ router.post("/requests", async (req, res) => {
     res.status(400).json({ error: "title, description and district are required" });
     return;
   }
+  if (requestType && !ALLOWED_REQUEST_TYPES.includes(requestType)) {
+    res.status(400).json({ error: "requestType must be build|upgrade|maintenance" });
+    return;
+  }
+  const numLat = typeof lat === "number" ? lat : lat != null ? Number(lat) : null;
+  const numLng = typeof lng === "number" ? lng : lng != null ? Number(lng) : null;
   const fingerprint = getFingerprint(req);
   const item = await createRequest({
     kind,
     title: String(title),
     description: String(description),
     district: String(district),
+    sport: sport ? String(sport) : null,
+    requestType: (requestType as RequestType | undefined) ?? null,
+    lat: Number.isFinite(numLat) ? (numLat as number) : null,
+    lng: Number.isFinite(numLng) ? (numLng as number) : null,
     facilityId: facilityId ? String(facilityId) : null,
     discipline: discipline ? String(discipline) : null,
     authorFingerprint: fingerprint,

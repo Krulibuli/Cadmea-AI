@@ -1,8 +1,10 @@
 import { randomUUID } from "node:crypto";
-import { readJson, writeJson, withFileLock } from "./json-store";
+import { readJson, writeJsonUnsafe, withFileLock } from "./json-store";
 
 export type RequestKind = "issue" | "request" | "petition";
 export type RequestStatus = "open" | "forwarded" | "acknowledged" | "planned" | "rejected";
+export type RequestType = "build" | "upgrade" | "maintenance";
+export const ALLOWED_REQUEST_TYPES: RequestType[] = ["build", "upgrade", "maintenance"];
 
 export interface ResidentRequest {
   id: string;
@@ -10,6 +12,10 @@ export interface ResidentRequest {
   title: string;
   description: string;
   district: string;
+  sport?: string | null;
+  requestType?: RequestType | null;
+  lat?: number | null;
+  lng?: number | null;
   facilityId?: string | null;
   discipline?: string | null;
   createdAt: string;
@@ -33,7 +39,7 @@ async function load(): Promise<Store> {
 }
 
 async function save(store: Store): Promise<void> {
-  await writeJson(FILE, store);
+  await writeJsonUnsafe(FILE, store);
 }
 
 async function transaction<R>(fn: (store: Store) => Promise<R> | R): Promise<R> {
@@ -68,6 +74,10 @@ export async function createRequest(input: {
   title: string;
   description: string;
   district: string;
+  sport?: string | null;
+  requestType?: RequestType | null;
+  lat?: number | null;
+  lng?: number | null;
   facilityId?: string | null;
   discipline?: string | null;
   authorFingerprint: string;
@@ -81,6 +91,10 @@ export async function createRequest(input: {
       title: input.title.slice(0, 160),
       description: input.description.slice(0, 2000),
       district: input.district,
+      sport: input.sport ? String(input.sport).slice(0, 80) : null,
+      requestType: input.requestType ?? null,
+      lat: typeof input.lat === "number" && Number.isFinite(input.lat) ? input.lat : null,
+      lng: typeof input.lng === "number" && Number.isFinite(input.lng) ? input.lng : null,
       facilityId: input.facilityId ?? null,
       discipline: input.discipline ?? null,
       createdAt: now,

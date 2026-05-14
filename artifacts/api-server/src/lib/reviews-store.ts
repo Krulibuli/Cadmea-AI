@@ -1,5 +1,5 @@
 import { randomUUID } from "node:crypto";
-import { readJson, writeJson, withFileLock } from "./json-store";
+import { readJson, writeJsonUnsafe, withFileLock } from "./json-store";
 
 export interface FacilityReview {
   id: string;
@@ -22,7 +22,7 @@ async function load(): Promise<Store> {
 }
 
 async function save(store: Store): Promise<void> {
-  await writeJson(FILE, store);
+  await writeJsonUnsafe(FILE, store);
 }
 
 export async function listReviews(facilityId: string): Promise<FacilityReview[]> {
