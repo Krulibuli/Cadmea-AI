@@ -21,6 +21,11 @@ router.get("/pois", async (req, res) => {
       return cityMatches && categoryMatches;
     });
 
+    if (allPois.length === 0 || pois.length === 0) {
+      res.json(listPois(city, category));
+      return;
+    }
+
     res.json(pois.map((p) => ({
       id: p.id,
       name: p.name,

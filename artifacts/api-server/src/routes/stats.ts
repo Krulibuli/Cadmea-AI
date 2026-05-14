@@ -14,9 +14,10 @@ router.get("/stats/summary", async (_req, res) => {
     const districts = await db.select().from(districtsTable);
     const scores = await db.select().from(districtScoresTable);
     const pois = await db.select().from(poisTable);
+    const fallbackSummary = platformSummary();
 
     if (districts.length === 0 || scores.length === 0) {
-      res.json(platformSummary());
+      res.json(fallbackSummary);
       return;
     }
 
@@ -31,7 +32,7 @@ router.get("/stats/summary", async (_req, res) => {
     res.json({
       totalDistricts: districts.length,
       totalCities: cities.length,
-      totalPois: pois.length,
+      totalPois: pois.length || fallbackSummary.totalPois,
       avgOverallScore: Math.round(avgOverall * 10) / 10,
       topSafeDistrict: topSafe ? getDistrictName(topSafe.districtId) : "N/A",
       topFamilyDistrict: topFamily ? getDistrictName(topFamily.districtId) : "N/A",
