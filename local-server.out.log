@@ -349,3 +349,253 @@ computing gzip size...
       "statusCode": 200
     }
     [35mresponseTime[39m: 1
+[18:59:46.474] [32mINFO[39m (17872): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 35,
+      "method": "GET",
+      "url": "/api/sports/meta"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[18:59:46.476] [32mINFO[39m (17872): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 36,
+      "method": "GET",
+      "url": "/api/sports/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[18:59:46.477] [32mINFO[39m (17872): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 37,
+      "method": "GET",
+      "url": "/api/sports/facilities"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[18:59:46.477] [32mINFO[39m (17872): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 38,
+      "method": "GET",
+      "url": "/api/sports/district-kpis"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 0
+[18:59:46.479] [32mINFO[39m (17872): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 39,
+      "method": "GET",
+      "url": "/api/sports/recommendations"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[19:07:01.687] [32mINFO[39m (17872): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 40,
+      "method": "GET",
+      "url": "/api/sports/meta"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 0
+[19:07:01.690] [32mINFO[39m (17872): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 41,
+      "method": "GET",
+      "url": "/api/sports/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[19:07:01.692] [32mINFO[39m (17872): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 42,
+      "method": "GET",
+      "url": "/api/sports/facilities"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[19:07:01.692] [32mINFO[39m (17872): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 43,
+      "method": "GET",
+      "url": "/api/sports/district-kpis"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 0
+[19:07:01.693] [32mINFO[39m (17872): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 44,
+      "method": "GET",
+      "url": "/api/sports/recommendations"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[19:08:52.374] [32mINFO[39m (17872): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 45,
+      "method": "GET",
+      "url": "/api/sports/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 2
+[19:08:52.375] [32mINFO[39m (17872): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 46,
+      "method": "GET",
+      "url": "/api/sports/facilities"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[19:08:52.375] [32mINFO[39m (17872): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 47,
+      "method": "GET",
+      "url": "/api/sports/district-kpis"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 0
+[19:08:52.376] [32mINFO[39m (17872): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 48,
+      "method": "GET",
+      "url": "/api/sports/recommendations"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 0
+[19:08:52.377] [32mINFO[39m (17872): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 49,
+      "method": "GET",
+      "url": "/api/sports/meta"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 0
+[19:09:02.611] [32mINFO[39m (17872): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 50,
+      "method": "GET",
+      "url": "/api/sports/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[19:09:02.612] [32mINFO[39m (17872): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 51,
+      "method": "GET",
+      "url": "/api/sports/facilities"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[19:09:02.613] [32mINFO[39m (17872): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 52,
+      "method": "GET",
+      "url": "/api/sports/district-kpis"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[19:09:02.614] [32mINFO[39m (17872): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 53,
+      "method": "GET",
+      "url": "/api/sports/recommendations"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[19:09:02.615] [32mINFO[39m (17872): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 54,
+      "method": "GET",
+      "url": "/api/sports/meta"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 0
+[19:09:07.923] [32mINFO[39m (17872): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 55,
+      "method": "GET",
+      "url": "/api/sports/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[19:09:07.923] [32mINFO[39m (17872): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 56,
+      "method": "GET",
+      "url": "/api/sports/facilities"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 0
+[19:09:07.924] [32mINFO[39m (17872): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 57,
+      "method": "GET",
+      "url": "/api/sports/district-kpis"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[19:09:07.925] [32mINFO[39m (17872): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 58,
+      "method": "GET",
+      "url": "/api/sports/recommendations"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[19:09:07.925] [32mINFO[39m (17872): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 59,
+      "method": "GET",
+      "url": "/api/sports/meta"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 0
