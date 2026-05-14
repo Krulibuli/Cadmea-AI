@@ -1,0 +1,136 @@
+{
+  "items": [
+    {
+      "id": "1d10fea1-716a-4410-92f8-6518f7b07086",
+      "kind": "petition",
+      "title": "Pilaitė pool now",
+      "description": "We need a swimming pool",
+      "district": "Pilaitė",
+      "facilityId": null,
+      "discipline": null,
+      "createdAt": "2026-05-14T13:40:38.347Z",
+      "updatedAt": "2026-05-14T14:03:36.501Z",
+      "authorFingerprint": "test1",
+      "authorAlias": "Tester",
+      "status": "open",
+      "supporters": [
+        "test1",
+        "fp_gtuwbnjdvh_mp5jzg3r",
+        "fp_m7cff6lq31_mp5k6yag"
+      ],
+      "forwardedToCity": false
+    },
+    {
+      "id": "838173e0-d6c6-4c88-a7c8-d9990e01d4a1",
+      "kind": "petition",
+      "title": "Test petition",
+      "description": "Need new pool",
+      "district": "Antakalnis",
+      "sport": "Plaukimas",
+      "requestType": "build",
+      "lat": 54.7,
+      "lng": 25.3,
+      "facilityId": null,
+      "discipline": null,
+      "createdAt": "2026-05-14T13:50:21.158Z",
+      "updatedAt": "2026-05-14T14:03:38.480Z",
+      "authorFingerprint": "smoke-1778766621",
+      "authorAlias": null,
+      "status": "open",
+      "supporters": [
+        "smoke-1778766621",
+        "fp_gtuwbnjdvh_mp5jzg3r",
+        "fp_m7cff6lq31_mp5k6yag"
+      ],
+      "forwardedToCity": false
+    },
+    {
+      "id": "291259d7-d0da-4ea7-bb4a-e01decc89e44",
+      "kind": "request",
+      "title": "R5",
+      "description": "d",
+      "district": "Antakalnis",
+      "sport": "Krepšinis",
+      "requestType": "upgrade",
+      "lat": null,
+      "lng": null,
+      "facilityId": null,
+      "discipline": null,
+      "createdAt": "2026-05-14T13:50:21.294Z",
+      "updatedAt": "2026-05-14T13:50:21.294Z",
+      "authorFingerprint": "smk-5-28676",
+      "authorAlias": null,
+      "status": "open",
+      "supporters": [
+        "smk-5-28676"
+      ],
+      "forwardedToCity": false
+    },
+    {
+      "id": "c8a62f66-bdb6-4a1d-9fe0-dc68a8e13b10",
+      "kind": "request",
+      "title": "R4",
+      "description": "d",
+      "district": "Antakalnis",
+      "sport": "Krepšinis",
+      "requestType": "upgrade",
+      "lat": null,
+      "lng": null,
+      "facilityId": null,
+      "discipline": null,
+      "createdAt": "2026-05-14T13:50:21.367Z",
+      "updatedAt": "2026-05-14T13:50:21.367Z",
+      "authorFingerprint": "smk-4-15142",
+      "authorAlias": null,
+      "status": "open",
+      "supporters": [
+        "smk-4-15142"
+      ],
+      "forwardedToCity": false
+    },
+    {
+      "id": "740e0723-4124-4211-858c-eedcf0b0c5c1",
+      "kind": "request",
+      "title": "pls ",
+      "description": "lol",
+      "district": "Verkiai",
+      "sport": "basketball",
+      "requestType": "upgrade",
+      "lat": null,
+      "lng": null,
+      "facilityId": null,
+      "discipline": null,
+      "createdAt": "2026-05-14T13:58:22.687Z",
+      "updatedAt": "2026-05-14T13:58:22.687Z",
+      "authorFingerprint": "fp_gtuwbnjdvh_mp5jzg3r",
+      "authorAlias": null,
+      "status": "open",
+      "supporters": [
+        "fp_gtuwbnjdvh_mp5jzg3r"
+      ],
+      "forwardedToCity": false
+    },
+    {
+      "id": "12498412-31ca-4220-8305-849b8a473835",
+      "kind": "request",
+      "title": "MUM REIKIA DEPORTUOT MUSLIUS",
+      "description": "-",
+      "district": "Antakalnis",
+      "sport": null,
+      "requestType": "upgrade",
+      "lat": null,
+      "lng": null,
+      "facilityId": null,
+      "discipline": null,
+      "createdAt": "2026-05-14T14:12:54.031Z",
+      "updatedAt": "2026-05-14T14:12:54.031Z",
+      "authorFingerprint": "fp_gtuwbnjdvh_mp5jzg3r",
+      "authorAlias": "-",
+      "status": "open",
+      "supporters": [
+        "fp_gtuwbnjdvh_mp5jzg3r"
+      ],
+      "forwardedToCity": false
+    }
+  ]
+}
