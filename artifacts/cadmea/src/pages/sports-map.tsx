@@ -181,6 +181,11 @@ export default function SportsMap() {
                             <p className="text-xs font-semibold" style={{ color: level.color }}>
                               Užimtumas: {level.label.toLowerCase()} · {occupancy}%
                             </p>
+                            {(f.rating || f.reviews) && (
+                              <p className="text-xs text-muted-foreground">
+                                {f.reviews ? `${f.reviews} reviews` : "No reviews"}{f.rating ? ` · ${f.rating}★` : ""}
+                              </p>
+                            )}
                             {f.occupancyUpdatedAt && (
                               <p className="text-[10px] text-muted-foreground">
                                 Atnaujinta: {new Date(f.occupancyUpdatedAt).toLocaleTimeString("lt-LT", { hour: "2-digit", minute: "2-digit" })}

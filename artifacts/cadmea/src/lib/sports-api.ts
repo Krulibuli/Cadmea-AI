@@ -45,6 +45,8 @@ export interface SportsFacility {
   capacity: number;
   annualVisits: number;
   annualOpsCostEur: number;
+  rating?: number | null;
+  reviews?: number;
   status: "operational" | "planned" | "construction" | "maintenance";
   automation: {
     energy: number; lighting: number; security: number;

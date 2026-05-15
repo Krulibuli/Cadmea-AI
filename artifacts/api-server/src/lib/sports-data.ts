@@ -1,4 +1,5 @@
 import managedFacilitiesJson from "../data/managed-facilities.json" with { type: "json" };
+import sportLocationsJson from "../data/sport-locations.json" with { type: "json" };
 
 export type FacilityType =
   | "swimming_pool"
@@ -36,6 +37,17 @@ export interface ManagedFacility {
   address: string;
   latitude: number;
   longitude: number;
+}
+
+export interface SportLocation {
+  district: string;
+  type: string;
+  name: string;
+  address: string;
+  lat: number;
+  lng: number;
+  rating: number | null;
+  reviews: number;
 }
 
 export type AgeGroup = "kids" | "children" | "teens" | "adults" | "seniors";
@@ -96,6 +108,8 @@ export interface SportsFacility {
   capacity: number;
   status: "operational" | "planned" | "construction" | "maintenance";
   yearOpened?: number;
+  rating?: number | null;
+  reviews?: number;
 }
 
 export const ALL_AGE_GROUPS: AgeGroup[] = ["kids", "children", "teens", "adults", "seniors"];
@@ -155,6 +169,10 @@ function loadManaged(): ManagedFile {
   return managedFacilitiesJson as ManagedFile;
 }
 
+function loadSportLocations(): SportLocation[] {
+  return sportLocationsJson as SportLocation[];
+}
+
 const slug = (s: string) =>
   s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")
     .replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
@@ -170,6 +188,29 @@ function classifyManaged(name: string): { type: FacilityType; disciplines: Disci
   if (n.includes("rowing")) return { type: "rowing", disciplines: ["rowing"] };
   if (n.includes("palace of culture")) return { type: "palace_of_sports", disciplines: ["basketball", "general", "fitness"] };
   return { type: "sports_centre", disciplines: ["general"] };
+}
+
+function classifySportLocation(type: string): { type: FacilityType; disciplines: Discipline[] } {
+  switch (type.toLowerCase()) {
+    case "gym":
+      return { type: "fitness_centre", disciplines: ["fitness", "general"] };
+    case "basketball court":
+      return { type: "pitch", disciplines: ["basketball", "outdoor"] };
+    case "football field":
+      return { type: "pitch", disciplines: ["football", "outdoor"] };
+    case "stadium":
+      return { type: "stadium", disciplines: ["football", "athletics", "running"] };
+    case "sports club":
+      return { type: "sports_centre", disciplines: ["general", "fitness"] };
+    case "tennis court":
+      return { type: "tennis", disciplines: ["tennis", "outdoor"] };
+    case "swimming pool":
+      return { type: "swimming_pool", disciplines: ["swimming", "fitness"] };
+    case "park":
+      return { type: "park", disciplines: ["running", "cycling", "outdoor", "general"] };
+    default:
+      return { type: "sports_centre", disciplines: ["general"] };
+  }
 }
 
 /** Heuristic age-group + accessibility tagging based on facility type & disciplines. */
@@ -410,6 +451,7 @@ const PLAYGROUNDS: SeedFacility[] = [
 
 function buildAll(): SportsFacility[] {
   const managed = loadManaged();
+  const sportLocations = loadSportLocations();
   const out: SportsFacility[] = [];
 
   for (const m of managed.currently_managed) {
@@ -479,6 +521,34 @@ function buildAll(): SportsFacility[] {
       entryType: bk.entryType,
       priceFromEur: bk.priceFromEur,
       ...buildKpis(id, p.type, p.status),
+    });
+  }
+  for (const location of sportLocations) {
+    if (!Number.isFinite(location.lat) || !Number.isFinite(location.lng)) continue;
+    const c = classifySportLocation(location.type);
+    const id = `gpl-${slug(`${location.type}-${location.name}-${location.address}`)}`;
+    const tags = tagAgeAndAccess(c.type, c.disciplines);
+    const bk = bookingFor(c.type, "open_data", location.name);
+    out.push({
+      id,
+      name: titleCaseLt(location.name),
+      type: c.type,
+      source: "open_data",
+      district: location.district || nearestDistrict(location.lat, location.lng),
+      address: location.address,
+      lat: location.lat,
+      lng: location.lng,
+      disciplines: c.disciplines,
+      ageGroups: tags.ageGroups,
+      accessibility: tags.accessibility,
+      bookingProvider: bk.bookingProvider,
+      bookingUrl: bk.bookingUrl,
+      entryType: bk.entryType,
+      priceFromEur: bk.priceFromEur,
+      status: "operational",
+      rating: location.rating,
+      reviews: location.reviews,
+      ...buildKpis(id, c.type, "operational"),
     });
   }
   return out;
