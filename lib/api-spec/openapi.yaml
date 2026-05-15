@@ -1,0 +1,842 @@
+openapi: 3.1.0
+info:
+  # Do not change the title, if the title changes, the import paths will be broken
+  title: Api
+  version: 0.1.0
+  description: Cadmea — AI Urban Decision Platform API
+servers:
+  - url: /api
+    description: Base API path
+tags:
+  - name: health
+    description: Health operations
+  - name: districts
+    description: Lithuanian district data and scoring
+  - name: overlays
+    description: Map overlay data (air quality, transport, etc.)
+  - name: pois
+    description: Points of interest for tourist mode
+  - name: ai
+    description: AI urban query assistant
+  - name: stats
+    description: Platform statistics and summaries
+  - name: openai
+    description: OpenAI AI chat operations
+
+paths:
+  /healthz:
+    get:
+      operationId: healthCheck
+      tags: [health]
+      summary: Health check
+      description: Returns server health status
+      responses:
+        "200":
+          description: Healthy
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthStatus"
+
+  /districts:
+    get:
+      operationId: listDistricts
+      tags: [districts]
+      summary: List all Lithuanian districts
+      responses:
+        "200":
+          description: List of districts
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/District"
+
+  /districts/{id}:
+    get:
+      operationId: getDistrict
+      tags: [districts]
+      summary: Get district details
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: District with scores
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/DistrictDetail"
+        "404":
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiError"
+
+  /districts/{id}/scores:
+    get:
+      operationId: getDistrictScores
+      tags: [districts]
+      summary: Get scoring breakdown for a district
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: District scores
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/DistrictScores"
+
+  /districts/compare:
+    post:
+      operationId: compareDistricts
+      tags: [districts]
+      summary: Compare multiple districts side by side
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/DistrictCompareInput"
+      responses:
+        "200":
+          description: Comparison result
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/DistrictDetail"
+
+  /overlays/{type}:
+    get:
+      operationId: getOverlayData
+      tags: [overlays]
+      summary: Get map overlay data for a specific overlay type
+      parameters:
+        - name: type
+          in: path
+          required: true
+          schema:
+            type: string
+            enum:
+              - air_quality
+              - crime
+              - transport
+              - schools
+              - healthcare
+              - green_spaces
+              - noise
+              - light_pollution
+              - walkability
+              - bike_paths
+              - housing_prices
+              - pharmacies
+      responses:
+        "200":
+          description: GeoJSON feature collection for the overlay
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/OverlayData"
+
+  /pois:
+    get:
+      operationId: listPois
+      tags: [pois]
+      summary: List points of interest (tourist mode)
+      parameters:
+        - name: city
+          in: query
+          required: false
+          schema:
+            type: string
+            default: vilnius
+        - name: category
+          in: query
+          required: false
+          schema:
+            type: string
+            enum:
+              - attraction
+              - restaurant
+              - hotel
+              - nightlife
+              - transport
+              - emergency
+              - pharmacy
+              - park
+      responses:
+        "200":
+          description: List of POIs
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Poi"
+
+  /ai/query:
+    post:
+      operationId: aiUrbanQuery
+      tags: [ai]
+      summary: Ask AI a natural-language urban question
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/AiQueryInput"
+      responses:
+        "200":
+          description: AI response with district insights
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AiQueryResponse"
+
+  /ai/best-match:
+    post:
+      operationId: aiBestMatch
+      tags: [ai]
+      summary: Get AI-powered best district match based on user preferences
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/BestMatchInput"
+      responses:
+        "200":
+          description: Best matching districts
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/BestMatchResponse"
+
+  /stats/summary:
+    get:
+      operationId: getPlatformSummary
+      tags: [stats]
+      summary: Get platform-wide statistics and totals
+      responses:
+        "200":
+          description: Platform summary
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PlatformSummary"
+
+  /stats/top-districts:
+    get:
+      operationId: getTopDistricts
+      tags: [stats]
+      summary: Get top-ranked districts by various criteria
+      parameters:
+        - name: scoreType
+          in: query
+          required: false
+          schema:
+            type: string
+            enum: [overall, safety, family, affordability, environment, transport, tourism, walkability]
+            default: overall
+        - name: limit
+          in: query
+          required: false
+          schema:
+            type: integer
+            default: 5
+      responses:
+        "200":
+          description: Top districts
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/DistrictRanking"
+
+  /openai/conversations:
+    get:
+      operationId: listOpenaiConversations
+      tags: [openai]
+      summary: List all conversations
+      responses:
+        "200":
+          description: List of conversations
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/OpenaiConversation"
+    post:
+      operationId: createOpenaiConversation
+      tags: [openai]
+      summary: Create a new conversation
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/OpenaiConversationInput"
+      responses:
+        "201":
+          description: Created conversation
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/OpenaiConversation"
+
+  /openai/conversations/{id}:
+    get:
+      operationId: getOpenaiConversation
+      tags: [openai]
+      summary: Get conversation with messages
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Conversation with messages
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/OpenaiConversationWithMessages"
+        "404":
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/OpenaiError"
+    delete:
+      operationId: deleteOpenaiConversation
+      tags: [openai]
+      summary: Delete a conversation
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "204":
+          description: Deleted
+        "404":
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/OpenaiError"
+
+  /openai/conversations/{id}/messages:
+    get:
+      operationId: listOpenaiMessages
+      tags: [openai]
+      summary: List messages in a conversation
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: List of messages
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/OpenaiMessage"
+    post:
+      operationId: sendOpenaiMessage
+      tags: [openai]
+      summary: Send a text message and receive a streaming text response
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/OpenaiChatInput"
+      responses:
+        "200":
+          description: SSE stream of assistant text chunks
+          content:
+            text/event-stream: {}
+
+components:
+  schemas:
+    HealthStatus:
+      type: object
+      properties:
+        status:
+          type: string
+      required:
+        - status
+
+    District:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        nameLt:
+          type: string
+        city:
+          type: string
+        population:
+          type: ["integer", "null"]
+        areaKm2:
+          type: ["number", "null"]
+        lat:
+          type: number
+        lng:
+          type: number
+        overallScore:
+          type: number
+        description:
+          type: ["string", "null"]
+        descriptionLt:
+          type: ["string", "null"]
+      required:
+        - id
+        - name
+        - nameLt
+        - city
+        - lat
+        - lng
+        - overallScore
+
+    DistrictDetail:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        nameLt:
+          type: string
+        city:
+          type: string
+        population:
+          type: ["integer", "null"]
+        areaKm2:
+          type: ["number", "null"]
+        lat:
+          type: number
+        lng:
+          type: number
+        overallScore:
+          type: number
+        description:
+          type: ["string", "null"]
+        descriptionLt:
+          type: ["string", "null"]
+        scores:
+          $ref: "#/components/schemas/DistrictScores"
+        highlights:
+          type: array
+          items:
+            type: string
+        highlightsLt:
+          type: array
+          items:
+            type: string
+      required:
+        - id
+        - name
+        - nameLt
+        - city
+        - lat
+        - lng
+        - overallScore
+        - scores
+        - highlights
+        - highlightsLt
+
+    DistrictScores:
+      type: object
+      properties:
+        districtId:
+          type: integer
+        safety:
+          type: number
+        family:
+          type: number
+        affordability:
+          type: number
+        environment:
+          type: number
+        transport:
+          type: number
+        tourism:
+          type: number
+        walkability:
+          type: number
+        overall:
+          type: number
+      required:
+        - districtId
+        - safety
+        - family
+        - affordability
+        - environment
+        - transport
+        - tourism
+        - walkability
+        - overall
+
+    DistrictCompareInput:
+      type: object
+      properties:
+        districtIds:
+          type: array
+          items:
+            type: integer
+          minItems: 2
+          maxItems: 4
+      required:
+        - districtIds
+
+    DistrictRanking:
+      type: object
+      properties:
+        rank:
+          type: integer
+        district:
+          $ref: "#/components/schemas/District"
+        score:
+          type: number
+        scoreType:
+          type: string
+      required:
+        - rank
+        - district
+        - score
+        - scoreType
+
+    OverlayData:
+      type: object
+      properties:
+        type:
+          type: string
+        features:
+          type: array
+          items:
+            $ref: "#/components/schemas/GeoFeature"
+        metadata:
+          $ref: "#/components/schemas/OverlayMetadata"
+      required:
+        - type
+        - features
+        - metadata
+
+    GeoFeature:
+      type: object
+      properties:
+        id:
+          type: string
+        lat:
+          type: number
+        lng:
+          type: number
+        value:
+          type: ["number", "null"]
+        label:
+          type: ["string", "null"]
+        category:
+          type: ["string", "null"]
+        city:
+          type: ["string", "null"]
+        districtId:
+          type: ["integer", "null"]
+      required:
+        - id
+        - lat
+        - lng
+
+    OverlayMetadata:
+      type: object
+      properties:
+        label:
+          type: string
+        labelLt:
+          type: string
+        unit:
+          type: ["string", "null"]
+        lastUpdated:
+          type: string
+        source:
+          type: string
+      required:
+        - label
+        - labelLt
+        - source
+        - lastUpdated
+
+    Poi:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        nameLt:
+          type: ["string", "null"]
+        category:
+          type: string
+        lat:
+          type: number
+        lng:
+          type: number
+        city:
+          type: string
+        description:
+          type: ["string", "null"]
+        descriptionLt:
+          type: ["string", "null"]
+        rating:
+          type: ["number", "null"]
+        districtId:
+          type: ["integer", "null"]
+      required:
+        - id
+        - name
+        - category
+        - lat
+        - lng
+        - city
+
+    AiQueryInput:
+      type: object
+      properties:
+        question:
+          type: string
+        language:
+          type: string
+          enum: [en, lt]
+          default: en
+        city:
+          type: string
+          default: vilnius
+        mode:
+          type: string
+          enum: [resident, tourist, student, investor]
+          default: resident
+      required:
+        - question
+
+    AiQueryResponse:
+      type: object
+      properties:
+        answer:
+          type: string
+        recommendedDistricts:
+          type: array
+          items:
+            $ref: "#/components/schemas/District"
+        reasoning:
+          type: string
+        scores:
+          type: array
+          items:
+            $ref: "#/components/schemas/DistrictScores"
+        dataSource:
+          type: string
+        language:
+          type: string
+      required:
+        - answer
+        - recommendedDistricts
+        - reasoning
+        - dataSource
+        - language
+
+    BestMatchInput:
+      type: object
+      properties:
+        priorities:
+          type: array
+          items:
+            type: string
+            enum: [safety, family, affordability, environment, transport, tourism, walkability]
+        language:
+          type: string
+          enum: [en, lt]
+          default: en
+        city:
+          type: string
+          default: vilnius
+        userType:
+          type: string
+          enum: [family, student, professional, tourist, retiree, expat]
+      required:
+        - priorities
+
+    BestMatchResponse:
+      type: object
+      properties:
+        topDistricts:
+          type: array
+          items:
+            $ref: "#/components/schemas/DistrictDetail"
+        reasoning:
+          type: string
+        language:
+          type: string
+      required:
+        - topDistricts
+        - reasoning
+        - language
+
+    PlatformSummary:
+      type: object
+      properties:
+        totalDistricts:
+          type: integer
+        totalCities:
+          type: integer
+        totalPois:
+          type: integer
+        avgOverallScore:
+          type: number
+        topSafeDistrict:
+          type: string
+        topFamilyDistrict:
+          type: string
+        topAffordableDistrict:
+          type: string
+        topEnvironmentDistrict:
+          type: string
+        lastDataRefresh:
+          type: string
+      required:
+        - totalDistricts
+        - totalCities
+        - totalPois
+        - avgOverallScore
+        - topSafeDistrict
+        - topFamilyDistrict
+        - topAffordableDistrict
+        - topEnvironmentDistrict
+        - lastDataRefresh
+
+    ApiError:
+      type: object
+      properties:
+        error:
+          type: string
+      required:
+        - error
+
+    OpenaiConversation:
+      type: object
+      properties:
+        id:
+          type: integer
+        title:
+          type: string
+        createdAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - title
+        - createdAt
+
+    OpenaiMessage:
+      type: object
+      properties:
+        id:
+          type: integer
+        conversationId:
+          type: integer
+        role:
+          type: string
+        content:
+          type: string
+        createdAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - conversationId
+        - role
+        - content
+        - createdAt
+
+    OpenaiConversationInput:
+      type: object
+      properties:
+        title:
+          type: string
+      required:
+        - title
+
+    OpenaiChatInput:
+      type: object
+      properties:
+        content:
+          type: string
+        language:
+          type: string
+        context:
+          type: object
+          properties:
+            city:
+              type: string
+            districtId:
+              type: integer
+            mode:
+              type: string
+      required:
+        - content
+
+    OpenaiConversationWithMessages:
+      type: object
+      properties:
+        id:
+          type: integer
+        title:
+          type: string
+        createdAt:
+          type: string
+          format: date-time
+        messages:
+          type: array
+          items:
+            $ref: "#/components/schemas/OpenaiMessage"
+      required:
+        - id
+        - title
+        - createdAt
+        - messages
+
+    OpenaiError:
+      type: object
+      properties:
+        error:
+          type: string
+      required:
+        - error

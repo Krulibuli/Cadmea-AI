@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "fingerprint": "63cdef53939499d790e6e2d123b75ab8",
+      "alias": "Narys-63cdef",
+      "role": "admin",
+      "createdAt": "2026-05-14T21:33:48.697Z",
+      "lastSeenAt": "2026-05-14T22:09:54.045Z",
+      "postCount": 0,
+      "mutedUntil": null
+    },
+    {
+      "fingerprint": "4e58cd594aecdc27cef0760de50db34d",
+      "alias": "Narys-4e58cd",
+      "role": "member",
+      "createdAt": "2026-05-14T21:57:14.970Z",
+      "lastSeenAt": "2026-05-14T22:09:03.595Z",
+      "postCount": 0,
+      "mutedUntil": null
+    }
+  ],
+  "posts": [],
+  "moderationEvents": []
+}
