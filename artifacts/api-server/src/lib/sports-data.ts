@@ -290,13 +290,16 @@ export function getOccupancy(id: string): OccupancyResponse | null {
     : Array.from({ length: 7 }, () => Array.from({ length: 24 }, () => 0));
   // Use Vilnius local time (UTC+2/+3 — approximate via Europe/Vilnius)
   const now = new Date();
-  const vilniusHour = Number(
-    new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/Vilnius", hour: "2-digit", hour12: false }).format(now),
-  );
-  // Mon-first 0..6 (compute via Vilnius offset of UTC time)
-  const vilniusOffsetMs = 2 * 60 * 60 * 1000; // EET; close enough for modeled data
-  const local = new Date(now.getTime() + vilniusOffsetMs);
-  const vilniusDay = (local.getUTCDay() + 6) % 7;
+  const vilniusParts = new Intl.DateTimeFormat("en-GB", {
+    timeZone: "Europe/Vilnius",
+    weekday: "short",
+    hour: "2-digit",
+    hourCycle: "h23",
+  }).formatToParts(now);
+  const hourPart = vilniusParts.find((part) => part.type === "hour")?.value ?? "0";
+  const weekdayPart = vilniusParts.find((part) => part.type === "weekday")?.value ?? "Mon";
+  const vilniusHour = Number(hourPart);
+  const vilniusDay = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"].indexOf(weekdayPart);
   const today = week[vilniusDay] ?? week[0];
   return {
     facilityId: f.id,

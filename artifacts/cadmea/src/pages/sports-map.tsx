@@ -161,7 +161,7 @@ export default function SportsMap() {
                     const level = occupancyLevel(occupancy);
                     return (
                       <CircleMarker
-                        key={`${f.id}-${occupancy}-${level.color}`}
+                        key={`${f.id}-${occupancy}-${f.occupancyUpdatedAt ?? "no-update"}`}
                         center={[f.lat, f.lng]}
                         radius={f.source === "managed" || f.source === "managed_planned" ? 9 : 6}
                         pathOptions={{
@@ -173,7 +173,7 @@ export default function SportsMap() {
                           className: "occupancy-marker",
                         }}
                       >
-                        <Popup>
+                        <Popup key={`${f.id}-popup-${f.occupancyUpdatedAt ?? "no-update"}`}>
                           <div className="space-y-1">
                             <p className="text-xs font-bold uppercase text-primary">{FACILITY_TYPE_LABEL[f.type]}</p>
                             <p className="font-extrabold text-sm leading-tight">{f.name}</p>

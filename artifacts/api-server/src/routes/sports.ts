@@ -145,6 +145,7 @@ function buildNeedHeatmap(discipline?: Discipline) {
 }
 
 router.get("/sports/facilities", (req, res) => {
+  res.set("Cache-Control", "no-store");
   const { district, type, discipline, source, status, q, ageGroup, accessibility, entryType, bookingProvider } =
     req.query as Record<string, string | undefined>;
   let list = getAllFacilities();
@@ -188,6 +189,7 @@ router.get("/sports/facilities/:id", (req, res) => {
 });
 
 router.get("/sports/facilities/:id/occupancy", (req, res) => {
+  res.set("Cache-Control", "no-store");
   const occ = getOccupancy(req.params.id);
   if (!occ) {
     res.status(404).json({ error: "Facility not found" });

@@ -167,7 +167,9 @@ export function useSportsFacilities(params: {
   return useQuery({
     queryKey: ["sports/facilities", params],
     queryFn: () => get<SportsFacility[]>(`/api/sports/facilities${qs ? `?${qs}` : ""}`),
-    refetchInterval: 60 * 60 * 1000,
+    staleTime: 0,
+    refetchInterval: 5 * 60 * 1000,
+    refetchOnWindowFocus: true,
   });
 }
 
@@ -184,7 +186,9 @@ export function useFacilityOccupancy(id: string | undefined) {
     enabled: !!id,
     queryKey: ["sports/occupancy", id],
     queryFn: () => get<OccupancyResponse>(`/api/sports/facilities/${id}/occupancy`),
+    staleTime: 0,
     refetchInterval: 5 * 60 * 1000,
+    refetchOnWindowFocus: true,
   });
 }
 
